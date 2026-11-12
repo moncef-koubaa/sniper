@@ -1,0 +1,81 @@
+# Search scope for /find-contacts and /find-offers. Command arguments override these defaults.
+
+defaults:
+  find_contacts: {companies: 20, language: auto}
+  find_offers: {max_offers: 30}
+
+# Ordered by priority. Visa/language notes are working assumptions (see profile/open-questions.md).
+countries:
+  - {name: France, lang: fr, note: "French PFE culture, convention de stage standard, gratification legally required >2 months"}
+  - {name: Belgium, lang: fr, note: "Wallonia/Brussels in FR; Flanders in EN"}
+  - {name: Switzerland, lang: fr, note: "Romandie in FR; EPFL/PSI/Empa labs take master-thesis interns"}
+  - {name: Luxembourg, lang: fr}
+  - {name: Germany, lang: en, note: "Max Planck, Fraunhofer, DLR, KIT, Helmholtz take English-speaking interns"}
+  - {name: Netherlands, lang: en}
+  - {name: Canada, lang: fr, note: "Québec in FR; visa lead time is longer"}
+  - {name: Spain, lang: en}
+  - {name: Italy, lang: en}
+  - {name: Sweden, lang: en}
+  - {name: Norway, lang: en}
+  - {name: Tunisia, lang: fr, note: "fallback / local R&D; no visa"}
+
+sectors:
+  - battery cell / materials / battery safety & recycling
+  - hydrogen (electrolysers, fuel cells), e-fuels, Power-to-X
+  - process engineering & simulation, engineering contractors (EPC)
+  - chemical & petrochemical industry, specialty chemicals
+  - energy efficiency & industrial decarbonisation, CCUS
+  - LCA / eco-design consultancies, environmental engineering
+  - water & waste treatment, circular economy, biogas
+  - catalysis & materials R&D
+  - nuclear fuel cycle
+  - analytical / testing laboratories (R&D, not routine QC only)
+
+keywords:
+  offer_labels:
+    fr: ["stage de fin d'études", "PFE", "stage ingénieur 6 mois", "stage M2", "stage fin d'études génie des procédés"]
+    en: ["master thesis internship", "end-of-studies internship", "6-month internship engineering", "M2 internship", "final year internship chemical engineering"]
+    de: ["Masterarbeit", "Praktikum Verfahrenstechnik"]
+  domains:
+    fr: [génie des procédés, simulation de procédés, Aspen Plus, Aspen HYSYS, COMSOL, électrochimie, batteries lithium-ion, hydrogène, électrolyseur, pile à combustible, analyse de cycle de vie, ACV, éco-conception, catalyse, matériaux, chimie analytique, traitement des eaux, valorisation des déchets, cycle du combustible nucléaire, efficacité énergétique, décarbonation]
+    en: [process engineering, process simulation, Aspen Plus, Aspen HYSYS, COMSOL, electrochemistry, lithium-ion battery, battery modelling, hydrogen, electrolysis, PEM fuel cell, life cycle assessment, LCA, techno-economic assessment, catalysis, materials characterization, analytical chemistry, water treatment, waste valorisation, nuclear fuel cycle, energy efficiency, decarbonisation, Power-to-X]
+
+# Offer sources (set enabled: false to skip one). "via_search" = reached through web-search results only.
+offer_sources:
+  - {name: CEA (emploi.cea.fr / stages), url: "https://www.emploi.cea.fr", enabled: true}
+  - {name: IFP Energies nouvelles, url: "https://www.ifpenergiesnouvelles.fr/emplois-et-stages", enabled: true}
+  - {name: Air Liquide careers, url: "https://www.airliquide.com/careers", enabled: true}
+  - {name: TotalEnergies careers, url: "https://jobs.totalenergies.com", enabled: true}
+  - {name: Technip Energies careers, url: "https://www.technipenergies.com/careers", enabled: true}
+  - {name: Orano careers, url: "https://www.orano.group/fr/carrieres", enabled: true}
+  - {name: Arkema careers, url: "https://www.arkema.com/global/en/careers/", enabled: true}
+  - {name: Saint-Gobain careers, url: "https://joinus.saint-gobain.com", enabled: true}
+  - {name: Welcome to the Jungle, url: "https://www.welcometothejungle.com", enabled: true}
+  - {name: JobTeaser, url: "https://www.jobteaser.com", enabled: true, note: "most listings need a school login: via_search"}
+  - {name: Indeed, url: "https://fr.indeed.com", enabled: true, note: "via_search; never Indeed Apply"}
+  - {name: APEC, url: "https://www.apec.fr", enabled: true}
+  - {name: Hellowork, url: "https://www.hellowork.com", enabled: true}
+  - {name: LinkedIn Jobs, url: "https://www.linkedin.com/jobs", enabled: true, note: "via_search only; record URL, never log in or scrape"}
+  - {name: EURAXESS, url: "https://euraxess.ec.europa.eu/jobs/search", enabled: true}
+  - {name: ABG (Association Bernard Gregory), url: "https://www.abg.asso.fr", enabled: true}
+  - {name: Lab / university pages, url: "", enabled: true, note: "CNRS, INSA, EPFL, KIT, Fraunhofer, DLR, Helmholtz, PSI internship pages"}
+
+# Company discovery sources for /find-contacts
+company_sources: [company websites (team/contact/careers/press), press releases, scientific publications and patents (corresponding authors), conference speaker lists, public job postings, web search results pointing to LinkedIn profiles (URL only)]
+
+contact_priority:   # /find-contacts tries these in order
+  - chem_eng      # chemical/process/R&D engineers, lab or team leaders in my domains (try 1-3)
+  - hr            # HR / talent acquisition / campus recruiters
+  - careers       # generic careers / recruitment email
+  - ceo           # CEO / founder / site director (mainly small companies and startups)
+  - other         # research managers, shared background, INSAT alumni
+
+exclusions:
+  organisations: []          # never apply to these (add names)
+  domains: []                # e.g. "defence", "tobacco"
+  offer_terms: ["alternance", "apprentissage", "CDI", "CDD", "stage de 2 mois", "PhD position"]   # skip offers whose type is clearly not a PFE
+
+politeness:
+  min_seconds_between_requests_same_domain: 1
+  respect_robots_txt: true
+  never_login: true

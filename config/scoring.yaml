@@ -1,0 +1,43 @@
+# Shared scoring rubric for /find-contacts and /find-offers.
+# Edit freely: scripts/score.py reads this file on every run. Weights must sum to 100.
+# Each criterion receives a sub-score from 0.0 to 1.0 (judged by Claude, with a one-line note);
+# points = weight x sub-score, rounded to 1 decimal; total = sum of points (0-100).
+
+weights:
+  domain_fit: 30          # overlap between the company/offer activity and my domains/projects (facts.json)
+  skills_match: 20        # required tools/techniques I actually have (hands-on > studied)
+  feasibility: 15         # start ~Feb 2027, 4-6 months, location/visa realistic, language I speak
+  hiring_signal: 15       # offer: real PFE posting; company: intern/PFE history, R&D presence, growth
+  contact_quality: 10     # named, relevant, verified contact (process/R&D > HR > generic)
+  strategic_value: 10     # preferred sectors (batteries, H2, LCA, process simulation...), thesis/job after
+
+custom_cv_threshold: 75      # score >= this -> /tailor-cv builds a custom CV
+max_custom_cvs_per_run: 5    # extra high scorers get "custom CV pending"
+cover_letter_threshold: 60   # /find-offers drafts a letter for every offer scoring >= this
+
+# Colour bands used in the Excel sheets
+bands:
+  green_min: 75     # >= custom_cv_threshold (kept equal by score.py if you change the threshold)
+  amber_min: 60     # 60-74 amber, below grey
+
+# Anchors that keep sub-scores consistent between runs (see .claude/skills/application-scoring/SKILL.md)
+skills_match:
+  hands_on_weight: 1.0     # a required tool I operated
+  studied_weight: 0.5      # a required tool I only studied / used in coursework
+  missing_weight: 0.0
+
+feasibility:
+  ideal_start: 2027-02-01
+  start_tolerance_weeks: 6        # starts within +/- 6 weeks count as on time
+  duration_months: {min: 3, ideal: 6, max: 9}
+  preferred_languages: [fr, en]
+
+strategic_sectors:   # full strategic_value when the target is squarely in one of these
+  - Li-ion batteries / battery materials / battery safety
+  - hydrogen (electrolysis, fuel cells, e-fuels, Power-to-X)
+  - process simulation / process engineering for decarbonisation
+  - LCA / eco-design / techno-economic assessment
+  - electrochemistry (corrosion, electrochemical processes, sensors)
+  - catalysis and green chemistry / biomass valorisation
+  - water and waste treatment / circular economy
+  - nuclear fuel cycle

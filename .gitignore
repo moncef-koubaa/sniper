@@ -7,3 +7,14 @@ node_modules/
 .env
 .venv/
 02_setup_prompt/answers.json
+
+# LaTeX build by-products
+*.aux
+*.log
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+# Excel/LibreOffice lock files
+~$*
+.~lock.*
