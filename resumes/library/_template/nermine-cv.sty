@@ -1,0 +1,47 @@
+% nermine-cv.sty — reproduces the layout of Nermine Moumen's CVs (Jake's-resume style, pdfTeX).
+% Rebuilt 2026-11-12 from the PDFs because the original .tex sources were not in the project (logs/decisions.md D-03).
+% Usage: \usepackage[a4]{nermine-cv} (EN family) or \usepackage[letter]{nermine-cv} (FR family, default).
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{nermine-cv}[2026/11/12]
+\newif\if@cva \@cvafalse
+\DeclareOption{a4}{\@cvatrue}
+\DeclareOption{letter}{\@cvafalse}
+\ProcessOptions\relax
+\RequirePackage[T1]{fontenc}
+\RequirePackage[utf8]{inputenc}
+\RequirePackage{lmodern}
+\RequirePackage{textcomp}
+\if@cva
+  \RequirePackage[a4paper,left=0.32in,right=0.32in,top=0.35in,bottom=0.35in]{geometry}
+\else
+  \RequirePackage[letterpaper,left=0.32in,right=0.32in,top=0.35in,bottom=0.35in]{geometry}
+\fi
+\RequirePackage{titlesec}
+\RequirePackage[hidelinks]{hyperref}
+\RequirePackage{enumitem}
+\RequirePackage{tabularx}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\tabcolsep}{0pt}
+\urlstyle{same}
+\raggedbottom
+% Section: uppercase bold, rule underneath
+\titleformat{\section}{\vspace{-5pt}\bfseries\large}{}{0em}{}[\vspace{-6pt}\rule{\linewidth}{0.6pt}\vspace{-4pt}]
+\titlespacing*{\section}{0pt}{6pt}{4pt}
+% Header
+\newcommand{\cvheader}[5]{% name, title, email, phone, linkedin
+  \begin{center}
+    {\fontsize{22}{24}\selectfont #1}\\[2pt]
+    {\small\bfseries #2}\\[2pt]
+    \small $\bullet$\ \href{mailto:#3}{\textit{#3}}\quad $\bullet$\ #4\quad $\bullet$\ \href{https://#5}{\textit{#5}}
+  \end{center}\vspace{-10pt}}
+% Entry heading: bold left, dates right
+\newcommand{\entry}[2]{\par\noindent\textbf{#1}\hfill #2\par\vspace{1pt}}
+\newcommand{\project}[1]{\par\noindent\textbf{#1}\par\vspace{1pt}}
+% Tight bullet lists
+\newenvironment{bul}{\begin{itemize}[leftmargin=0.12in,label=$\bullet$,itemsep=0pt,parsep=0pt,topsep=0pt,partopsep=0pt]}{\end{itemize}\vspace{1pt}}
+\newcommand{\summary}[1]{{#1\par}\vspace{1pt}}
+\newcommand{\sep}{\ \ $\bullet$\ \ }
+% Two-column last block (languages | certificates)
+\newcommand{\twocol}[4]{\par\noindent\begin{tabularx}{\linewidth}{@{}X X@{}}\textbf{#1} & \textbf{#3}\\ #2 & #4\end{tabularx}\par}
+\endinput

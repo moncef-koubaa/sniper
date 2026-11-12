@@ -28,3 +28,13 @@ Every default I picked without asking. Format: **what** · why · how to change 
   (see `profile/open-questions.md` Q-01/Q-02). CVs may reuse your own most recent wording verbatim, but letters and
   emails never upgrade a "studied" item into "hands-on experience". · Change: answer Q-01/Q-02 in
   `profile/open-questions.md`, then run `/get-to-know-me --full`.
+- **D-08 Library = the newest CV per focus (10 CVs); 3 superseded versions stay as samples only** (CV08, CV11,
+  CV13). Library sources were transcribed word for word with four normalisations, listed in each `source.tex`
+  header: summary as a paragraph (CV-04), official project titles (CV-17), "manger" → "Chair/manager" typos fixed,
+  French `%` spacing. · Change: edit `resumes/library/index.yaml`.
+- **D-09 Library CV attached = `original.pdf`** (your own export) rather than the rebuilt `source.pdf`. · Why: it is
+  exactly what you wrote. · Change: cv-library skill step 4.
+- **D-10 `config/applied.csv` pre-filled with the 8 letters; `date_applied` = unknown, `status` = applied.** · Change:
+  fill dates/outcomes in the CSV (Q-17).
+- **D-11 Source IDs in `me.md` are short codes (CV01, CL04 …) with a legend table** instead of full file names in
+  every tag. · Why: readability; the legend maps each code to its file. · Change: none needed.

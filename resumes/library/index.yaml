@@ -1,0 +1,109 @@
+# Resume library — one entry per ready-made CV. Read by the cv-library skill and scripts/pick_cv.py.
+# Each folder holds: source.tex (LaTeX, rebuilt from the PDF — see logs/decisions.md D-03), source.pdf (compiled
+# from source.tex), original.pdf (your own PDF), preview.png.
+# To add a CV: create resumes/library/<id>/source.tex (copy the closest one), run
+#   python3 scripts/build_cv.py resumes/library/<id> --png
+# and add an entry here. Superseded versions (CV08, CV11, CV13) stay in writing-samples/ only.
+
+template: resumes/library/_template/nermine-cv.sty
+
+cvs:
+  - id: process_fr
+    name: "CV1 Process & Energy Engineering (FR)"
+    sample: CV01   # Moumen_Nermine_procédés.pdf, 2026-11-11
+    language: fr
+    paper: letter
+    focus: génie des procédés, simulation de procédés, électrochimie, ACV, TEA
+    projects: [P1, P2, P3, P4]
+    keywords: [génie des procédés, process engineering, aspen plus, aspen hysys, simulation, reactor, catalytic reactor, langmuir-hinshelwood, optimisation, bilans matière et énergie, pfd, acv, lca, openlca, comsol, ansys fluent, pem, électrolyseur, hydrogène, li-ion, battery, fvm, matlab, thermodynamique, lle, extraction, icp-oes, astm, iso 17025, carburants, fuels]
+    best_for: "French process-engineering, process-simulation, EPC/engineering firms, hydrogen and general chemical-engineering PFEs; default FR CV"
+
+  - id: process_en
+    name: "CV1 Process & Energy Engineering (EN)"
+    sample: CV10   # Nermine_Moumen_CV_Process.pdf, 2026-09-25
+    language: en
+    paper: a4
+    focus: process simulation, techno-economic & LCA of sustainable energy routes, hydrogen
+    projects: [P3, P4, P2, P1]
+    keywords: [process engineering, process simulation, aspen plus, aspen hysys, techno-economic, tea, lca, life cycle assessment, energy integration, ethylene, bioethanol, decarbonisation, hydrogen, pem fuel cell, electrolyzer, comsol, ansys fluent, sensitivity analysis, thermodynamics, li-ion, battery modelling, matlab, python]
+    best_for: "English process-simulation, Power-to-X/e-fuels, TEA/LCA, hydrogen roles; default EN CV"
+
+  - id: energy_fr
+    name: "Énergie & décarbonation (FR)"
+    sample: CV06   # 2026-10-10
+    language: fr
+    paper: letter
+    focus: décarbonation, efficacité énergétique de l'industrie, simulation, ACV
+    projects: [P3, P2, P1]
+    keywords: [décarbonation, efficacité énergétique, energy efficiency, transition énergétique, énergies renouvelables, thermodynamique, transferts thermiques, bilans matière et énergie, dimensionnement, aspen plus, aspen hysys, acv, openlca, hydrogène, électrolyseur, pile à combustible, comsol]
+    best_for: "French energy-transition, industrial decarbonisation, energy-efficiency and utilities roles"
+
+  - id: materials_fr
+    name: "CV2 Materials Science & Functional Chemistry (FR)"
+    sample: CV05   # 2026-11-06
+    language: fr
+    paper: letter
+    focus: matériaux, catalyse, chimie verte, valorisation de la biomasse
+    projects: [P6, P7, P3, P4]
+    keywords: [matériaux, materials, polymères, mip, adsorption, isothermes, catalyse, catalyseur, hzsm-5, chimie verte, biomasse, bioéthanol, supraconducteurs, caractérisation, xrd, meb, ftir, raman, acv, synthèse]
+    best_for: "French materials, catalysis, green-chemistry, polymer and functional-materials PFEs"
+
+  - id: materials_en
+    name: "CV2 Materials Science & Functional Chemistry (EN)"
+    sample: CV03   # 2026-11-07
+    language: en
+    paper: letter
+    focus: materials, catalysis, green chemistry, biomass valorization
+    projects: [P6, P3, P7, P4]
+    keywords: [materials science, functional materials, polymers, mip, adsorption isotherms, catalysis, hzsm-5, green chemistry, biomass, characterization, xrd, sem, tem, ftir, raman, lca, synthesis]
+    best_for: "English materials, catalysis and green-chemistry PFEs/M2 internships"
+
+  - id: electrochem_fr
+    name: "Électrochimie (FR)"
+    sample: CV04   # 2026-11-06
+    language: fr
+    paper: letter
+    focus: comportement électrochimique des matériaux, modélisation électrochimique, batteries, hydrogène
+    projects: [P1, P5, P6, P7]
+    keywords: [électrochimie, electrochemistry, batteries, li-ion, modélisation électrochimique, comsol, matlab, polarographie, voltamétrie, électro-floculation, corrosion, électrolyseur, pile à combustible, hydrogène, oer, caractérisation de matériaux]
+    best_for: "French battery, electrochemistry, corrosion, fuel-cell/electrolyser and electrochemical-process PFEs"
+
+  - id: electrochem_en
+    name: "Electrochemistry (EN)"
+    sample: CV02   # 2026-11-11
+    language: en
+    paper: a4
+    focus: electrochemical kinetics & measurements, battery modelling, metallic materials
+    projects: [P5, P6, P1, P4]
+    keywords: [electrochemistry, electrochemical measurements, battery, li-ion, battery modelling, ocp, comsol, matlab, polarography, cyclic voltammetry, faradaic yield, corrosion, metallic materials, electrolyzer, fuel cell, hydrogen, characterization]
+    best_for: "English battery, electrochemistry, corrosion and hydrogen-device PFEs; best EN CV for battery labs"
+
+  - id: water_fr
+    name: "Traitement des eaux (FR)"
+    sample: CV07   # 2026-09-28
+    language: fr
+    paper: letter
+    focus: traitement des eaux, essais laboratoire, chimie analytique
+    projects: [P5, P9, P6]
+    keywords: [traitement des eaux, water treatment, eaux usées, effluent, coagulation, floculation, électrocoagulation, métaux lourds, chimie analytique, chromatographie ionique, icp, essais laboratoire, suivi de procédés]
+    best_for: "French water/wastewater treatment, environmental-lab and utilities PFEs"
+
+  - id: waste_fr
+    name: "Déchets & économie circulaire (FR)"
+    sample: CV09   # 2026-09-25
+    language: fr
+    paper: letter
+    focus: valorisation des déchets, méthanisation, économie circulaire, déchets radioactifs
+    projects: [P10, P11, P3]
+    keywords: [déchets, valorisation, économie circulaire, méthanisation, biogaz, digestion anaérobie, boues, déchets radioactifs, nucléaire, vitrification, cycle du combustible, acv, aspen plus]
+    best_for: "French waste-management, biogas, circular-economy and nuclear-waste PFEs"
+
+  - id: analytical_fr
+    name: "Chimie analytique (FR)"
+    sample: CV12   # 2026-09-21
+    language: fr
+    paper: letter
+    focus: développement et validation de méthodes analytiques
+    projects: [P8, P6, P4]
+    keywords: [chimie analytique, analytical chemistry, validation de méthode, étalonnage, spectrométrie, icp-oes, chromatographie, contrôle qualité, iso 17025, astm, laboratoire, dosage]
+    best_for: "French analytical-method, QC/QA lab and characterisation PFEs"
