@@ -73,10 +73,14 @@ def check(c: dict) -> list[str]:
         if not src:
             p.append("verified without source_url")
         elif "linkedin.com" not in src:
-            html = page(src).lower()
+            import html as _html
+            raw = page(src)
+            html = _html.unescape(re.sub(r"<[^>]+>", "", raw)).lower() if raw else ""  # entities (&#64;) + tags
             deob = re.sub(r"\s*[\[\(]\s*at\s*[\]\)]\s*|\s+at\s+", "@", html)
             deob = re.sub(r"\s*[\[\(]\s*dot\s*[\]\)]\s*", ".", deob)
-            if html and email.lower() not in html and email.lower() not in deob:
+            deob = re.sub(r"\\?-?code to remove to avoid spam-?", "", deob)  # ICMMO-style anti-spam token
+            if html and email.lower() not in html and email.lower() not in deob \
+                    and email.lower() not in _html.unescape(raw).lower():  # also inside href/mailto attributes
                 p.append("not found verbatim on source_url (page may be JS-rendered: re-check, else mark inferred)")
             if not html:
                 p.append("source_url not fetchable now (kept verified: re-check by hand)")

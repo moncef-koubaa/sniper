@@ -1,0 +1,101 @@
+[
+ {
+  "key": "Elogen",
+  "subscores": {
+   "domain_fit": 0.9,
+   "skills_match": 0.8,
+   "feasibility": 0.6,
+   "hiring_signal": 0.7,
+   "contact_quality": 0.9,
+   "strategic_value": 0.9
+  },
+  "notes": {
+   "domain_fit": "PEM electrolysers = P1 (3D PEM electrolyser model, OER limiting)",
+   "skills_match": "PEM modelling + electrochemical measurements hands-on; electrocatalyst characterisation studied",
+   "feasibility": "Les Ulis FR, FR; spontaneous: start/duration to agree",
+   "hiring_signal": "R&D site + Paris-Saclay convention citing student projects; no live internship found",
+   "contact_quality": "named Innovation Director, email on his ICMMO page (may be his former academic address)",
+   "strategic_value": "hydrogen / PEM electrolysis, industrial R&D"
+  },
+  "points": {
+   "domain_fit": 27.0,
+   "skills_match": 16.0,
+   "feasibility": 9.0,
+   "hiring_signal": 10.5,
+   "contact_quality": 9.0,
+   "strategic_value": 9.0
+  },
+  "score": 80.5,
+  "breakdown": "Domain 27/30 · Skills 16/20 · Feasibility 9/15 · Hiring 10.5/15 · Contact 9/10 · Strategic 9/10",
+  "band": "green",
+  "letter_due": true,
+  "rank": 1,
+  "cv_decision": "Custom"
+ },
+ {
+  "key": "Sunfire",
+  "subscores": {
+   "domain_fit": 0.7,
+   "skills_match": 0.7,
+   "feasibility": 0.6,
+   "hiring_signal": 0.7,
+   "contact_quality": 0.6,
+   "strategic_value": 0.9
+  },
+  "notes": {
+   "domain_fit": "alkaline + SOEC electrolysers: electrolysis via P1 (PEM) + process simulation",
+   "skills_match": "process eng, Python data analysis, electrochemistry hands-on; alkaline/SOEC not documented",
+   "feasibility": "Dresden DE, EN; spontaneous: start/duration to agree",
+   "hiring_signal": "careers FAQ covers internships/theses, student roles in Dresden",
+   "contact_quality": "named Talent Manager (Dresden) + verified career@ address",
+   "strategic_value": "hydrogen electrolysis scale-up"
+  },
+  "points": {
+   "domain_fit": 21.0,
+   "skills_match": 14.0,
+   "feasibility": 9.0,
+   "hiring_signal": 10.5,
+   "contact_quality": 6.0,
+   "strategic_value": 9.0
+  },
+  "score": 69.5,
+  "breakdown": "Domain 21/30 · Skills 14/20 · Feasibility 9/15 · Hiring 10.5/15 · Contact 6/10 · Strategic 9/10",
+  "band": "amber",
+  "letter_due": true,
+  "rank": 2,
+  "cv_decision": "Library"
+ },
+ {
+  "key": "Tiamat",
+  "subscores": {
+   "domain_fit": 0.8,
+   "skills_match": 0.5,
+   "feasibility": 0.6,
+   "hiring_signal": 0.5,
+   "contact_quality": 0.5,
+   "strategic_value": 0.8
+  },
+  "notes": {
+   "domain_fit": "Na-ion cells: battery electrochemistry, different chemistry from her Li-ion model",
+   "skills_match": "cell modelling hands-on; cycling/cell assembly missing; materials synthesis studied",
+   "feasibility": "Amiens FR, FR; spontaneous: start/duration to agree",
+   "hiring_signal": "engineer postings seen via search (now closed), no internships; gigafactory project postponed (AFP)",
+   "contact_quality": "CEO named; only generic contact@ address verified",
+   "strategic_value": "batteries, scale-up start-up"
+  },
+  "points": {
+   "domain_fit": 24.0,
+   "skills_match": 10.0,
+   "feasibility": 9.0,
+   "hiring_signal": 7.5,
+   "contact_quality": 5.0,
+   "strategic_value": 8.0
+  },
+  "score": 63.5,
+  "breakdown": "Domain 24/30 · Skills 10/20 · Feasibility 9/15 · Hiring 7.5/15 · Contact 5/10 · Strategic 8/10",
+  "band": "amber",
+  "letter_due": true,
+  "rank": 3,
+  "cv_decision": "Library"
+ }
+]

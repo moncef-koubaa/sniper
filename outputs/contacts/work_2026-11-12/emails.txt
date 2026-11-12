@@ -1,0 +1,54 @@
+Candidature spontanée – PFE 6 mois dès février 2027 – Électrolyse PEM – Nermine Moumen
+Monsieur Millet,
+
+Étudiante en dernière année d'ingénieur en Chimie Industrielle (Procédés et Environnement) à l'INSAT, Tunisie, je m'intéresse de près aux travaux d'Elogen sur l'électrolyse PEM, et en particulier à la convention signée avec l'Université Paris-Saclay, qui prévoit des projets étudiants autour de l'efficacité des électrolyseurs.
+
+Lors d'un projet académique, j'ai modélisé un électrolyseur PEM 3D sous ANSYS Fluent et identifié l'OER comme réaction limitante. Lors de mon stage chez SEGULA Technologies, j'ai calibré un modèle électrochimique de cellule Li-ion sous MATLAB sur des données expérimentales, réduisant l'erreur RMSE de 202,13 mV à 40,5 mV.
+
+Je souhaiterais savoir s'il serait possible d'effectuer mon stage de fin d'études au sein de vos équipes R&D, à partir du 1er février 2027, pour une durée de 6 mois (3 à 9 mois possibles), ou, à défaut, être orientée vers la personne appropriée.
+
+Vous trouverez mon CV en pièce jointe. Je vous remercie par avance pour votre attention.
+
+Bien cordialement,
+
+Nermine Moumen
+Élève-ingénieure en Chimie Industrielle, INSAT
+nermine.moumen@insat.ucar.tn · +216 27 040 414 · linkedin.com/in/nermine-moumen
+
+-----
+
+Candidature spontanée – PFE 6 mois dès février 2027 – Batteries – Nermine Moumen
+Monsieur Beuffe,
+
+Étudiante en dernière année d'ingénieur en Chimie Industrielle (Procédés et Environnement) à l'INSAT, Tunisie, je suis avec intérêt le développement de TIAMAT, issue du CNRS, et de ses cellules sodium-ion conçues pour la haute puissance et la charge rapide.
+
+Lors de mon stage chez SEGULA Technologies, j'ai modélisé une cellule Li-ion (NMC811/Graphite-SiOx) avec le Single Particle Model sous MATLAB, puis calibré le modèle sur des données de décharge expérimentales, réduisant l'erreur RMSE de 202,13 mV à 40,5 mV.
+
+Je souhaiterais savoir s'il serait possible d'effectuer mon stage de fin d'études chez TIAMAT, en R&D ou en industrialisation, à partir du 1er février 2027, pour une durée de 6 mois (3 à 9 mois possibles), ou, à défaut, être orientée vers la personne appropriée au sein de vos équipes.
+
+Vous trouverez mon CV en pièce jointe. Je vous remercie par avance pour votre attention.
+
+Bien cordialement,
+
+Nermine Moumen
+Élève-ingénieure en Chimie Industrielle, INSAT
+nermine.moumen@insat.ucar.tn · +216 27 040 414 · linkedin.com/in/nermine-moumen
+
+-----
+
+Final-year internship request (6 months from Feb 2027) – Electrolysis – Nermine Moumen
+Dear Ms. Weichelt,
+
+I am a final-year Industrial Chemical Engineering student at INSAT (Tunisia), specializing in Process and Environment, and I have been following Sunfire's pressurized alkaline and SOEC electrolyzers, in particular the HyLink Alkaline 23 and your recent 200 MW of orders in Spain.
+
+In an academic project, I modeled a 3D PEM electrolyzer in Ansys Fluent, reaching 1.40 L/h of H2 and identifying the oxygen evolution reaction as the dominant kinetic bottleneck. During my internship at SEGULA Technologies, I calibrated an electrochemical cell model in MATLAB against experimental data, reducing the RMSE from 202.13 mV to 40.5 mV.
+
+Would your team consider hosting my final-year internship or master thesis from 1 February 2027, for 6 months (3 to 9 months possible), for example in process engineering or electrolyzer data analysis? If not, could you point me to the right person?
+
+My CV is attached. Thank you for your time.
+
+Best regards,
+
+Nermine Moumen
+Engineering student, Industrial Chemistry, INSAT
+nermine.moumen@insat.ucar.tn · +216 27 040 414 · linkedin.com/in/nermine-moumen
