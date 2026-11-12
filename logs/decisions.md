@@ -42,3 +42,15 @@ Every default I picked without asking. Format: **what** · why · how to change 
   now lists only these two countries (others commented out, previous file archived in
   `_archive/2026-11-12/config/search.yaml`) and adds German sources (Fraunhofer, DLR, KIT, Helmholtz, StepStone).
   Germany defaults to English letters/emails. · Change: uncomment countries in `config/search.yaml`.
+- **D-13 The `company-researcher` agent was not used in the test runs.** Agent types are loaded when a session starts,
+  so it cannot run in the session that created it; research was done inline with the same rules. It works from the
+  next session. · Change: nothing to do.
+- **D-14 Letter language = posting language, even for French employers.** The 3 IFPEN and the CEA offers are
+  posted in English → English letters and CVs (rule CL-15). · Change: ask for `--lang fr` when you prefer French.
+- **D-15 Sunfire salutation "Dear Ms. Weichelt"** uses a surname that appears only in an image file name on the careers
+  page; flagged in the sheet with the fallback "Dear Anna,". · Change: edit the draft in the sheet.
+- **D-16 Pierre Millet (Elogen) is contacted at his ICMMO university address**, the only professional address
+  published for him; his Elogen role is documented in a 2021 press release. A fallback (Elogen contact form) is in
+  the Notes. · Change: replace the primary contact in the sheet.
+- **D-17 Test run size:** /find-offers kept the top 5 of 7 live offers (max = 5), all ≥ 75 → 5 custom CVs (= the
+  per-run cap). /find-contacts researched exactly 3 companies. · Change: the arguments of each command.
