@@ -1,0 +1,50 @@
+                                          Moumen Nermine
+                       Étudiante en dernière année du cycle ingénieur en Chimie Industrielle
+                 • nermine.moumen@insat.ucar.tn • +21627040414 • linkedin.com/in/nermine − moumen
+
+FORMATION
+Institut National des Sciences Appliquées et de Technologie (INSAT)                                                           2022–Présent
+Étudiante en Chimie Industrielle, spécialité Procédés et Environnement, avec une formation solide en électrochimie, science des
+matériaux, synthèse et caractérisation, génie des procédés et chimie analytique. Orientée vers la caractérisation expérimentale des
+systèmes électrochimiques et l’élaboration de matériaux fonctionnel. À la recherche d’un PFE.
+EXPÉRIENCE PROFESSIONNELLE
+SEGULA Technologies - Stage en Modélisation Électrochimique des Batteries                                   06/2026-08/2026
+• Modélisation d’une cellule Li-ion (NMC811/Graphite-SiOx) via le Single Particle Model (SPM) implémenté sous MATLAB.
+• Résolution des équations aux dérivées partielles par FVM avec intégration temporelle de Crank-Nicolson.
+• Optimisation du maillage et des coefficients de diffusion via une analyse de données, réduisant l’erreur RMSE de 80%
+• Validation des résultats par une approche itérative et une analyse critique avec les données expérimentales et COMSOL.
+Control Union - Stage en Contrôle Qualité                                                                     08/2025–09/2025
+• Analyse de lubrifiants (viscosité et métaux lourds par ICP-OES).
+• Préparation et interprétation de rapports d’analyse pour vérifier la conformité aux normes ASTM D5185 et ISO 17025.
+ETAP - Stage en Caractérisation Analytique d’hydrocarbures et traitement des Eaux industrielles 07/2024–08/2024
+• Etude des méthodes de traitement des eaux pétrolières par échange d’ions et par coagulation-floculation.
+• Formation aux techniques de géochimie organique, incluant la chromatographie phase gazeuse (GC, GC-MS).
+PROJETS ACADÉMIQUES
+Traitement Électrochimique d’un Rejet Industriel par Électro-floculation
+• Élimination des cations toxiques (Cd², Zn²) d’un effluent simulé, mesurée par un taux d’abattement de 85 % (Cd²) et 57
+  % (Zn²) en 20 min, par électro-coagulation/floculation à électrodes d’aluminium.
+• Quantification de la cinétique d’élimination par polarographie impulsionnelle et loi de Fick.
+Etude Bibliographique : Synthèse et Caractérisation de Matériaux Supraconducteurs
+• Analyse des propriétés fondamentales des supraconducteurs et étude des voies d’élaboration : synthèse céramique à l’état solide,
+  croissance cristalline (flux, Bridgman, Czochralski), et dépôt de couches minces (ALD).
+• Etude des méthodes de caractérisation : RAMAN, FTIR, XRD, MEB et MET.
+Polymères à Impression Moléculaire (MIPs) en Applications Pharmaceutiques
+• Synthèse et caractérisation d’un MIP sélectif au sulpiride par polymérisation radicalaire, avec extraction Soxhlet, suivi par
+  spectrophotométrie UV-Vis et validation par cinétique de libération contrôlée (240 min)
+• Synthèse d’un MIP core-shell MOF/polymère pour la délivrance ciblée de doxorubicine, avec 85% de taux d’encapsulation.
+Modélisation de Piles à Combustible PEM et Electrolyseurs PEM sous COMSOL et ANSYS Fluent
+• Modélisation de piles à combustible: écoulement diphasique, effets thermiques, engorgement de la couche de diffusion.
+• Modélisation d’un électrolyseur PEM 3D: conservation de charge, identification de la réaction limitante (OER).
+COMPÉTENCES TECHNIQUES
+• Techniques de Laboratoire: Chromatographie (HPLC, GC, CCM), Spectrométrie (MS, ICP-OES), Spectroscopie (RMN,
+  FTIR, UV-Vis), Diffraction (XRD), Microscopie (MEB, MET), Électrochimie (Voltamétrie cyclique, polarographie).
+• Simulation: Aspen Plus et HYSYS, COMSOL Multiphysics                 •    Programmation:        M AT LAB, M athematica, P ython
+• Données & Bureautique: Pack Microsoft Office, OpenLCA               •   Normes:ISO9001, ISO14001, ISO45001, ISO17025, ISO14040
+
+ACTIVITÉS EXTRASCOLAIRES
+IEEE INSAT — Chef d’organisation de TRSYP 3.0 ; Responsable des activités sociales – MENASYP ; Présidente de l’EMBS.
+THEATRO INSAT — Membre de l’équipe de danse.
+LANGUES ET CERTIFICATS
+Langues                                                                    Certificats
+Anglais (Avancé), Français (Bilingue), Arabe (Natif).                    Aspen HYSYS – MATLAB
+

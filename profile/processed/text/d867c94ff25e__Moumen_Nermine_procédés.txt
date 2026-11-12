@@ -1,0 +1,49 @@
+                                         Moumen Nermine
+   Étudiante en dernière année du cycle ingénieur en Chimie – Génie des procédés, énergie et environnement
+               ∙   𝑛𝑒𝑟𝑚𝑖𝑛𝑒.𝑚𝑜𝑢𝑚𝑒𝑛@𝑖𝑛𝑠𝑎𝑡.𝑢𝑐𝑎𝑟.𝑡𝑛         ∙ +21627040414    ∙ 𝑙𝑖𝑛𝑘𝑒𝑑𝑖𝑛.𝑐𝑜𝑚/𝑖𝑛/𝑛𝑒𝑟𝑚𝑖𝑛𝑒 − 𝑚𝑜𝑢𝑚𝑒𝑛
+FORMATION
+Institut National des Sciences Appliquées et de Technologie (INSAT)                                                   2022–Présent
+Étudiante en dernière année de Chimie Industrielle (spéc. Procédés et Environnement), avec une formation solide en génie des
+procédés, thermodynamique, mécanique des fluides et opérations unitaires, complétée par la simulation de procédés industriels, la
+modélisation de systèmes électrochimiques, l’évaluation technico-économique et l’analyse de cycle de vie. À la recherche d’un PFE.
+EXPÉRIENCE PROFESSIONNELLE
+SEGULA Technologies - Stage en modélisation électrochimique des batteries                                  06/2026-08/2026
+• Modélisation d’une cellule Li-ion (NMC811/Graphite-SiOx) via le Single Particle Model (SPM) implémenté sous MATLAB.
+• Résolution des équations aux dérivées partielles par FVM avec intégration temporelle de Crank-Nicolson.
+• Optimisation du maillage via une analyse des données réduisant l’erreur RMSE de 202,13 mV à 40,5 mV.
+• Validation des résultats par une approche itérative et une analyse critique avec les données expérimentales et COMSOL.
+Control Union - Stage en contrôle qualité des carburants et lubrifiants                                        08/2025–09/2025
+• Caractérisation de lubrifiants selon les normes ASTM/ISO : viscosité cinématique et métaux d’usure et additifs par ICP-OES.
+• Rédaction de diagnostics et recommandations dans des rapports d’analyse techniques conformément à la norme ISO 17025.
+AGIL - Stage en contrôle qualité des carburants                                                             07/2025–08/2025
+• Réalisation d’analyses physico-chimiques (point d’éclair et distillation atmosphérique) de carburants diesel et Jet A-1.
+ETAP - Stage en caractérisation des hydrocarbures et traitement des eaux industrielles                      07/2024–08/2024
+• Formation aux techniques de géochimie organique (GC, GC-MS, pyrolyse Rock-Eval) pour la caractérisation d’hydrocarbures.
+• Analyses physico-chimiques des eaux (pH, salinité, bicarbonates, sulfates, chlorures) par chromatographie ionique et ICP-AES.
+PROJETS ACADÉMIQUES
+Modélisation de Piles à Combustible PEM et Electrolyseurs PEM sous COMSOL et ANSYS Fluent
+• Modélisation de piles à combustible: écoulement diphasique, effets thermiques, engorgement de la couche de diffusion.
+• Modélisation d’un électrolyseur PEM 3D: cinétique électrochimique et identification de la réaction limitante (OER).
+Simulation du procédé de production d’oxyde d’éthylène sous Aspen HYSYS V14
+• Modélisation d’un réacteur catalytique gaz-solide tubulaire à lit fixe à partir de ses paramètres de fonctionnement et de
+  sa géométrie avec la cinétique de Langmuir-Hinshelwood de deux réactions.
+• Optimisation des conditions opératoires par analyse de sensibilité, atteignant 96 % de récupération et 97,14 % de pureté.
+Analyse techno-environnementale de la production d’éthylène : vapocraquage vs déshydratation du bioéthanol
+• Simulation comparative de deux voies de production sous Aspen Plus V14, avec établissement des bilans matière et énergie
+  et des diagrammes de flux (PFD) du procédé, pour évaluer la faisabilité technique de chaque filière.
+• Analyse de Cycle de Vie cradle-to-gate sous OpenLCA pour comparer les impacts environnementaux des deux voies.
+Prédiction des Équilibres Liquide–Liquide pour Systèmes Ternaires d’Extraction
+• Formulation du système thermodynamique LLE et résolution via Rachford-Rice et continuation par longueur d’arc.
+• Implémentation du workflow en Python, MATLAB et Mathematica (spline/fsolve, SciPy/mpltern, Interpolation/FindRoot).
+COMPÉTENCES TECHNIQUES
+• Simulation: Aspen Plus et HYSYS, COMSOL Multiphysics ∙ Programmation: 𝑃 𝑦𝑡ℎ𝑜𝑛, 𝑀 𝑎𝑡ℎ𝑒𝑚𝑎𝑡𝑖𝑐𝑎, 𝑀 𝐴𝑇 𝐿𝐴𝐵
+• Normes:ISO 9001, ISO 14001, ISO 45001, ISO 17025, ISO 14040 ∙ Données & Bureautique:𝐸𝑥𝑐𝑒𝑙(𝑎𝑣𝑎𝑛𝑐), 𝑂𝑝𝑒𝑛𝐿𝐶𝐴
+• Techniques de Laboratoire: Chromatographie (HPLC, GC, CCM), Spectrométrie (MS, ICP-OES), Spectroscopie (RMN,
+  FTIR, UV-Vis), Diffraction (XRD), Microscopie (MEB, MET)
+ACTIVITÉS EXTRASCOLAIRES
+IEEE INSAT — Chef d’organisation de TRSYP 3.0 ; Responsable des activités sociales – MENASYP ; Présidente de l’EMBS.
+THEATRO INSAT — Membre de l’équipe de danse.
+LANGUES ET CERTIFICATS
+Langues                                                             Certificats
+Anglais (Avancé), Français (Bilingue), Arabe (Natif).               Aspen HYSYS – MATLAB
+

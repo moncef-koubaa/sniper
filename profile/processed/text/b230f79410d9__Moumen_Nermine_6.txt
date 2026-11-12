@@ -1,0 +1,50 @@
+                                         Moumen Nermine
+                      Étudiante en dernière année du cycle ingénieur en Chimie Industrielle
+                • nermine.moumen@insat.ucar.tn • +21627040414 • linkedin.com/in/nermine − moumen
+FORMATION
+Institut National des Sciences Appliquées et de Technologie (INSAT)                                                   2022–Présent
+Étudiante en Chimie Industrielle, spécialité Procédés et Environnement, avec une formation solide en traitement et valorisation
+des déchets, complétée par des bases en génie des procédés, chimie analytique et HSE en laboratoire. Orientée vers l’économie
+circulaire et l’optimisation des filières de traitement des déchets. À la recherche d’un PFE.
+EXPÉRIENCE PROFESSIONNELLE
+SEGULA Technologies - Stage en Modélisation Électrochimique des batteries                                 06/2026-08/2026
+• Développement d’un modèle numérique (Single Particle Model, MATLAB) d’une cellule Li-ion, résolu par FVM.
+• Optimisation du maillage et des coefficients de diffusion via une analyse de données, réduisant l’erreur RMSE de 80%.
+• Validation des résultats par une approche itérative et une analyse critique avec les données expérimentales et COMSOL.
+Control Union - Stage en Contrôle Qualité                                                                     08/2025–09/2025
+• Analyse de lubrifiants (viscosité et métaux lourds par ICP-OES).
+• Préparation et interprétation de rapports d’analyse pour vérifier la conformité aux normes ASTM D5185 et ISO 17025.
+ETAP - Stage en Caractérisation d’hydrocarbures et traitement des Eaux industrielles                            07/2024–08/2024
+• Formation aux techniques de géochimie organique (GC, GC-MS, pyrolyse Rock-Eval) pour la caractérisation d’hydrocarbures.
+• Analyses physico-chimiques des eaux (pH, salinité, bicarbonates, sulfates, chlorures) par chromatographie ionique et ICP-AES.
+• Étude des méthodes de traitement des eaux pétrolières par échange d’ions et par coagulation-floculation.
+EXPÉRIENCE COMPLÉMENTAIRE
+Cascade - Enseignante de Chimie en Ligne (Temps partiel)                                                             2024–Présent
+• Accompagnement individualisé en chimie pour des élèves de Terminale française, couvrant les concepts du niveau examen.
+PROJETS ACADÉMIQUES
+Valorisation énergétique des déchets organiques par méthanisation(ASBR)
+• Étude de la chaı̂ne de traitement des déchets organiques : réception, tri, broyage, homogénéisation et préparation de la charge.
+• Caractérisation et suivi expérimental de 5 configurations de traitement (boues primaires, secondaires, mixtes et co-digestion avec
+  déchets fruits/légumes) dans des digesteurs ASBR (TRH = 20 j).
+• Analyse des performances des différentes filières à travers la DCO, MVS, charge volumique, production de biogaz et teneur
+  en CH4, avec jusqu’à 0,50 L/j de biogaz à 64,52 % CH4.
+Gestion et traitement des déchets radioactifs : stratégies de confinement, de stabilisation et de valorisation
+• Étude comparative des filières de gestion des déchets nucléaires : entreposage en piscine et entreposage à sec en surface.
+• Analyse du procédé d’immobilisation par vitrification et du stockage géologique profond pour le confinement des déchets.
+• Étude des voies de réduction de la radiotoxicité par transmutation nucléaire et par les réacteurs nucléaires de 4e génération.
+Analyse techno-environnementale de la production d’éthylène : vapocraquage vs déshydratation du bioéthanol
+• Simulation comparative de deux voies de production sous Aspen Plus V14, avec établissement des bilans matière et énergie
+  et des diagrammes de flux (PFD) du procédé, pour évaluer la faisabilité technique de chaque filière.
+• Analyse de Cycle de Vie cradle-to-gate sous OpenLCA pour comparer les impacts environnementaux des deux voies.
+COMPÉTENCES TECHNIQUES
+• Techniques de Laboratoire: Chromatographie (HPLC, GC, CCM), Spectrométrie (MS, ICP-OES), Spectroscopie (RMN,
+  FTIR, UV-Vis), Diffraction (XRD), Microscopie (MEB, MET), Électrochimie (Voltamétrie cyclique, polarographie).
+• Simulation: Aspen Plus et HYSYS, COMSOL Multiphysics               •    Programmation:       M AT LAB, M athematica, P ython
+• Données & Bureautique: Pack Microsoft Office, OpenLCA             •   Normes:ISO9001, ISO14001, ISO45001, ISO17025, ISO14040
+ACTIVITÉS EXTRASCOLAIRES
+IEEE INSAT — Chef d’organisation de TRSYP 3.0 ; Responsable des activités sociales – MENASYP ; Présidente de l’EMBS.
+THEATRO INSAT — Membre de l’équipe de danse.
+LANGUES ET CERTIFICATS
+Langues                                                                  Certificats
+Anglais (Avancé), Français (Bilingue), Arabe (Natif).                  Aspen HYSYS – MATLAB
+

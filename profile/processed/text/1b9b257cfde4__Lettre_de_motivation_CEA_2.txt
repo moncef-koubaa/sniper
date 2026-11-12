@@ -1,0 +1,45 @@
+Moumen Nermine​
+nermine.moumen@insat.ucar.tn | +216 27 040 414
+
+Objet : Candidature pour un stage de fin d'études – Ingénieure en Génie
+Chimique
+
+Madame, Monsieur,
+
+Actuellement en dernière année du cycle ingénieur en Chimie Industrielle à l'Institut National
+des Sciences Appliquées et de Technologie (INSAT – Tunisie), avec une spécialisation en
+Génie des Procédés et Environnement, je suis à la recherche d'un stage de fin d'études d'une
+durée de 5 à 6 mois, idéalement à partir de février 2027, avec une flexibilité possible selon
+vos besoins. C'est dans ce cadre que je me permets de vous adresser ma candidature pour le
+stage portant sur la cinétique de combustion de particules de graphite lors d'un emballement
+thermique.
+
+Au cours de ma formation, j'ai développé une expertise concrète en modélisation numérique
+sous COMSOL et en résolution d'équations aux dérivées partielles : lors d'un stage chez
+SEGULA Technologies, j'ai modélisé le comportement électrochimique d'une cellule Li-ion
+par méthode des volumes finis, puis validé mes résultats par confrontation systématique à des
+données expérimentales et à des simulations COMSOL. Cette double compétence en
+modélisation physique et en analyse critique de résultats expérimentaux, associée à ma
+pratique de Python, correspond directement à la démarche itérative modèle-expérience que
+demande votre stage. Ma connaissance des mécanismes d'emballement thermique des cellules
+Li-ion, acquise lors de ce même stage, me donne par ailleurs une bonne compréhension du
+contexte physique de votre étude.
+
+Votre laboratoire, à l'interface entre analyse expérimentale et modélisation de combustion
+hétérogène, représente pour moi une opportunité stimulante d'appliquer mon expérience en
+modélisation COMSOL à une problématique de sécurité des batteries à fort enjeu industriel.
+
+Je suis consciente que Cantera et la combustion à proprement parler sont des domaines
+nouveaux pour moi, mais je suis convaincue que ma solide expérience de modélisation
+numérique et ma capacité d'adaptation me permettront de m'investir rapidement dans ce
+projet, en lien quotidien avec l'équipe de recherche.
+
+Je me tiens à votre disposition pour tout complément d'information ou un entretien à votre
+convenance.
+
+Je vous remercie par avance pour l'attention portée à ma candidature, et vous prie d'agréer,
+Madame, Monsieur, l'expression de mes salutations distinguées.
+
+Bien cordialement,​
+Nermine Moumen
+

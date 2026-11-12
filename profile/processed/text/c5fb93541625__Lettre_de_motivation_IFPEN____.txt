@@ -1,0 +1,46 @@
+Moumen Nermine​
+nermine.moumen@insat.ucar.tn | +216 27 040 414
+
+Objet : Candidature pour un stage de fin d'études – Étude des risques
+électriques liés à l'emballement thermique d'une batterie Li-ion
+Monsieur Grondin,
+
+Actuellement en dernière année du cycle ingénieur en Chimie Industrielle à l'Institut National
+des Sciences Appliquées et de Technologie (INSAT – Tunisie), avec une spécialisation en
+Génie des Procédés et Environnement, je suis à la recherche d'un stage de fin d'études d'une
+durée de 6 mois à partir de janvier/février 2027. C'est dans ce cadre que je me permets de
+vous adresser ma candidature pour le stage "Étude des risques électriques liés à l'emballement
+thermique d'une batterie Li-ion" au sein d'IFPEN.
+
+Au cours de ma formation, j'ai développé une solide base en électrochimie des batteries et en
+caractérisation métrologique de phénomènes électriques, notamment à travers mon stage
+actuel chez SEGULA Technologies où je modélise une cellule Li-ion
+(NMC811/Graphite-SiOx) sous MATLAB, ainsi qu'un projet académique sur
+l'électro-floculation où j'ai quantifié des phénomènes électrochimiques par polarographie
+impulsionnelle et calculé un rendement faradique à partir de mesures de charge précises. J'ai
+également suivi un cours de physico-chimie des solides qui m'a donné une bonne
+compréhension des propriétés physiques, thermiques et électriques des matériaux, complétée
+par un projet sur la synthèse et la caractérisation de matériaux supraconducteurs, directement
+utile pour raisonner sur les propriétés diélectriques et conductrices des dépôts et aérosols
+étudiés dans ce stage.
+
+Pour le volet pré-dimensionnement d'un dispositif expérimental, mon expérience de
+simulation du procédé de production d'oxyde d'éthylène sous Aspen HYSYS, incluant
+l'établissement de bilans matière et énergie et l'optimisation des conditions opératoires par
+analyse de sensibilité, m'a donné une pratique concrète de la définition d'une architecture de
+procédé à partir de contraintes de sécurité et d'instrumentation, une démarche transposable à
+la conception du banc d'essai dédié au venting et à l'emballement thermique.
+
+Votre projet, combinant état de l'art ciblé, pré-dimensionnement d'un dispositif expérimental
+et premiers essais de preuve de concept, représente pour moi une opportunité stimulante
+d'aborder la sûreté des batteries sous un angle multiphysique inédit, à l'interface entre
+l'électrochimie, la science des matériaux et le génie des procédés.
+
+Je me tiens à votre disposition pour tout complément d'information.
+
+Je vous remercie par avance pour l'attention portée à ma candidature, et vous prie d'agréer,
+Monsieur, l'expression de mes salutations distinguées.
+
+Bien cordialement,​
+Nermine Moumen
+

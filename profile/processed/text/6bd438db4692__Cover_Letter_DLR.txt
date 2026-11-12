@@ -1,0 +1,43 @@
+Moumen Nermine​
+nermine.moumen@insat.ucar.tn | +216 27 040 414
+
+Subject: Application for the CO2-Active Fischer-Tropsch Process Modeling
+Internship — Institute for Future Fuels
+Dear Hiring Team,
+
+I am a final-year Industrial Chemical Engineering student at INSAT (Université de Carthage,
+Tunisia), specializing in Process and Environment, and I am writing to apply for the
+internship on techno-economic assessment of the CO2-active Fischer-Tropsch route within
+the Solar Production Process Assessment department. I am available for a six-month
+internship starting February 1, 2027 (flexible between 3 and 9 months).
+
+My coursework at INSAT has given me a strong grounding in renewable energy,
+environmental science, resource valorization, and sustainability, backed by the mathematics
+and thermodynamics needed to actually quantify them, a foundation I've also put into practice
+outside the classroom: with Enactus INSAT, I led PhosphAct, a project valorizing
+phosphogypsum waste into paint. This same techno-economic and environmental lens is what
+I've applied in my project work: a comparative Aspen Plus study of two ethylene production
+routes (steam cracking vs. bioethanol dehydration), combining reactor and separation-train
+design with a cradle-to-gate Life Cycle Assessment in OpenLCA and a cost evaluation via
+the Aspen Process Economic Analyzer, an evaluation workflow directly analogous to the
+reference-case benchmarking and techno-economic assessment this role requires. In a
+separate project, I modeled a PEM electrolyzer in Ansys Fluent, which gives me a working
+grasp of the electrolysis stage upstream of your process.
+
+DLR's work on intensifying RWGS and Fischer-Tropsch onto a single catalyst is exactly the
+kind of process-intensification question I want to build my final-year project around. I don't
+yet have hands-on experience with Fischer-Tropsch catalysis specifically, but I have solved
+reaction-kinetics problems in Aspen (Langmuir-Hinshelwood kinetics for an ethylene oxide
+reactor) and numerically solved coupled PDEs for an electrochemical model during my
+current internship at SEGULA Technologies, calibrating parameters against experimental
+data which is the same kind of quantitative, self-directed modeling work this project calls for.
+
+I am drawn to this internship because it sits precisely at the intersection I want to specialize
+in: renewable-energy-driven process simulation and its techno-economic viability.
+
+I would welcome the opportunity to discuss my application further and am available for an
+interview at your convenience. Thank you for your consideration.
+
+Sincerely,​
+Nermine Moumen
+

@@ -1,0 +1,50 @@
+                                         Moumen Nermine
+                      Étudiante en dernière année du cycle ingénieur en Chimie Industrielle
+                • nermine.moumen@insat.ucar.tn • +21627040414 • linkedin.com/in/nermine − moumen
+FORMATION
+Institut National des Sciences Appliquées et de Technologie (INSAT)                                                       2022–Présent
+Étudiante en Chimie Industrielle, spécialité Procédés et Environnement, avec une formation solide en chimie analytique et techniques
+de caractérisation, complétée par des bases en science des matériaux, électrochimie, génie des procédés et HSE en laboratoire.
+Orientée vers le développement, la validation et l’optimisation de méthodes d’analyse chimique. À la recherche d’un PFE.
+EXPÉRIENCE PROFESSIONNELLE
+SEGULA Technologies - Stage en Modélisation Électrochimique des batteries                                 06/2026-08/2026
+• Développement d’un modèle numérique (Single Particle Model, MATLAB) d’une cellule Li-ion, résolu par FVM.
+• Optimisation des paramètres du modèle, réduisant l’erreur de prédiction de plus de 80 % par rapport aux données expérimentales.
+• Validation des résultats par comparaison à des essais de décharge et au logiciel COMSOL Multiphysics.
+Control Union - Stage en Contrôle Qualité                                                                           08/2025–09/2025
+• Analyse de lubrifiants (viscosité et métaux lourds par ICP-OES).
+• Préparation et interprétation de rapports d’analyse pour vérifier la conformité aux normes ASTM D5185 et ISO 17025.
+AGIL - Stage en Contrôle Qualité                                                                               07/2025–07/2025
+• Réalisation d’analyses physico-chimiques (point d’éclair et distillation atmosphérique) de carburants diesel et Jet A-1.
+ETAP - Stage en Caractérisation d’hydrocarbures et traitement des Eaux industrielles                            07/2024–08/2024
+• Formation aux techniques de géochimie organique (GC, GC-MS, pyrolyse Rock-Eval) pour la caractérisation d’hydrocarbures.
+• Analyses physico-chimiques des eaux (pH, salinité, bicarbonates, sulfates, chlorures) par chromatographie ionique et ICP-AES.
+• Étude des méthodes de traitement des eaux pétrolières par échange d’ions et par coagulation-floculation.
+EXPÉRIENCE COMPLÉMENTAIRE
+Cascade - Enseignante de Chimie en Ligne (Temps partiel)                                                             2024–Présent
+• Accompagnement individualisé en chimie pour des élèves de Terminale française, couvrant les concepts du niveau examen.
+PROJETS ACADÉMIQUES
+Validation de Méthodes de Dosage du Sodium et du Potassium par Spectrométrie d’Émission de Flamme
+• Validation de trois protocoles de quantification (étalonnage externe, étalonnage interne, ajouts dosés) pour le dosage de
+  Na+ et K+, selon la norme NT ISO 9964-3.
+• Correction des interférences d’ionisation par étalon interne et évaluation de l’effet de matrice via le taux de recouvrement.
+Polymères à Impression Moléculaire (MIPs) en Applications Pharmaceutiques
+• Synthèse et caractérisation d’un MIP sélectif au sulpiride par polymérisation radicalaire, avec extraction Soxhlet, suivi par
+  spectrophotométrie UV-Vis et validation par cinétique de libération contrôlée (240 min).
+• Synthèse d’un MIP core-shell MOF/polymère pour la délivrance ciblée de doxorubicine, avec 85% de taux d’encapsulation.
+Prédiction des Équilibres Liquide–Liquide pour Systèmes Ternaires
+• Formulation et résolution du système thermodynamique LLE (Rachford-Rice, continuation par longueur d’arc).
+• Réimplémentation multi-langages (Python, MATLAB, Mathematica) avec équivalence démontrée entre méthodes Hunter-Nash
+  et McCabe-Thiele.
+COMPÉTENCES TECHNIQUES
+• Techniques de Laboratoire: Chromatographie (HPLC, GC, CCM), Spectrométrie (MS, ICP-OES), Spectroscopie (RMN,
+  FTIR, UV-Vis), Diffraction (XRD), Microscopie (MEB, MET), Électrochimie (Voltamétrie cyclique, polarographie).
+• Simulation: Aspen Plus et HYSYS, COMSOL Multiphysics                •    Programmation:       M AT LAB, M athematica, P ython
+• Données & Bureautique: Pack Microsoft Office, OpenLCA             •    Normes:ISO9001, ISO14001, ISO45001, ISO17025, ISO14040
+ACTIVITÉS EXTRASCOLAIRES
+IEEE INSAT — Chef d’organisation de TRSYP 3.0 ; Responsable des activités sociales – MENASYP ; Présidente de l’EMBS.
+THEATRO INSAT — Membre de l’équipe de danse.
+LANGUES ET CERTIFICATS
+Langues                                                                   Certificats
+Anglais (Avancé), Français (Bilingue), Arabe (Natif).                   Aspen HYSYS – MATLAB
+

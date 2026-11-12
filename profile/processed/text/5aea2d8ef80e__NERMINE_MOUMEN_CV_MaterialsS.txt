@@ -1,0 +1,50 @@
+                                         Moumen Nermine
+                                  Final-year Industrial Chemistry Engineering Student
+                ∙   𝑛𝑒𝑟𝑚𝑖𝑛𝑒.𝑚𝑜𝑢𝑚𝑒𝑛@𝑖𝑛𝑠𝑎𝑡.𝑢𝑐𝑎𝑟.𝑡𝑛       ∙ +21627040414     ∙ 𝑙𝑖𝑛𝑘𝑒𝑑𝑖𝑛.𝑐𝑜𝑚/𝑖𝑛/𝑛𝑒𝑟𝑚𝑖𝑛𝑒 − 𝑚𝑜𝑢𝑚𝑒𝑛
+
+EDUCATION
+National Institute of Applied Science and Technology (INSAT)                                                        2022–Present
+Industrial Chemistry student, specializing in Process and Environmental Engineering, with a solid training in chemical catalysis,
+electrochemical kinetics and materials science, complemented by foundations in analytical chemistry, organic chemistry and labo-
+ratory HSE. Interested in green chemistry, biomass valorization and catalytic materials. Seeking a 6-month final-year internship.
+PROFESSIONAL EXPERIENCE
+SEGULA Technologies - Internship in Electrochemical Modeling of Batteries                                06/2026-08/2026
+• Modeling of a Li-ion cell (NMC811/Graphite-SiOx) using the Single Particle Model (SPM) implemented in MATLAB.
+• Optimization of the mesh and diffusion coefficient values, reducing the RMSE from 202.13 mV to 40.5 mV.
+• Validation of the results through an iterative approach and a critical analysis against experimental data and COMSOL.
+Control Union - Quality Control Internship                                                                   08/2025–09/2025
+• Analysis of lubricants (viscosity and heavy metals by ICP-OES).
+• Preparation and interpretation of analysis reports to verify compliance with ASTM D5185 and ISO 17025 standards.
+ETAP - Internship in Analytical Characterization of Hydrocarbons and Water Treatment                         07/2024–08/2024
+• Training in organic geochemistry techniques (GC, GC-MS, Rock-Eval pyrolysis) for the characterization of hydrocarbons.
+• Physico-chemical analyses of water (pH, salinity, bicarbonates, sulfates, chlorides) by ion chromatography and ICP-AES.
+ACADEMIC PROJECTS
+Molecularly Imprinted Polymers (MIPs) for Pharmaceutical Applications
+• Synthesis and characterization of a sulpiride-selective MIP by radical polymerization, with Soxhlet extraction, monitored by
+  UV-Vis spectrophotometry and validated by controlled-release kinetics (240 min).
+• Synthesis of a MOF/polymer core-shell MIP for targeted delivery of doxorubicin, with an 85% encapsulation efficiency.
+• Modeling of adsorption isotherms (bi-Langmuir, Freundlich) to relate material properties, binding sites and performance.
+Techno-Environmental Analysis of Ethylene Production: Steam Cracking vs Bioethanol Dehydration
+• Simulation of both routes in Aspen Plus V14, including bioethanol dehydration over an HZSM-5 acid catalyst.
+• Cradle-to-gate LCA (OpenLCA, ISO 14040/14044) on 5 impact categories; identification of the origin of the biomass and indirect
+  land-use change as the main uncertainties.
+Literature Review: Synthesis and Characterization of Superconducting Materials
+• Analysis of the fundamental properties of superconductors and study of fabrication routes: solid-state ceramic synthesis, crystal
+  growth (flux, Bridgman, Czochralski), and thin-film deposition (ALD).
+• Study of characterization methods: RAMAN, FTIR, XRD, SEM and TEM.
+Prediction of Liquid–Liquid Equilibria for Ternary Extraction Systems
+• Formulation of the LLE thermodynamic system and resolution via Rachford-Rice and arc-length continuation.
+• Implementation of the workflow in Python, MATLAB and Mathematica (spline/fsolve, SciPy/mpltern, Interpolation/FindRoot).
+TECHNICAL SKILLS
+• Laboratory Techniques: Electrochemistry (Cyclic voltammetry, polarography), Chromatography (HPLC, GC, TLC), Spec-
+  trometry (MS, ICP-OES), Spectroscopy (NMR, FTIR, UV-Vis), Diffraction (XRD), Microscopy (SEM, TEM).
+• Simulation: Aspen Plus and HYSYS, COMSOL Multiphysics             ∙   Programming:       𝑀 𝐴𝑇 𝐿𝐴𝐵, 𝑀 𝑎𝑡ℎ𝑒𝑚𝑎𝑡𝑖𝑐𝑎, 𝑃 𝑦𝑡ℎ𝑜𝑛
+• Data & Office Tools: Microsoft Office Suite, OpenLCA       ∙   Standards:𝐼𝑆𝑂9001, 𝐼𝑆𝑂14001, 𝐼𝑆𝑂45001, 𝐼𝑆𝑂17025, 𝐼𝑆𝑂14040
+
+EXTRACURRICULAR ACTIVITIES
+IEEE INSAT — Organizing Chair of TRSYP 3.0; Social Activities Chair – MENASYP; Chair of EMBS.
+THEATRO INSAT — Member of the dance team.
+LANGUAGES AND CERTIFICATES
+Languages                                                            Certificates
+English (Advanced), French (Bilingual), Arabic (Native).             Aspen HYSYS – MATLAB
+

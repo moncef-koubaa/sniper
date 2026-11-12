@@ -1,0 +1,49 @@
+                                        Moumen Nermine
+   Étudiante en dernière année du cycle ingénieur en Chimie – Génie des procédés, énergie et environnement
+                •   nermine.moumen@insat.ucar.tn          • +21627040414   • linkedin.com/in/nermine − moumen
+
+FORMATION
+Institut National des Sciences Appliquées et de Technologie (INSAT)                                                 2022–Présent
+Étudiante en dernière année de Chimie Industrielle (spéc. Procédés et Environnement) avec une formation solide en thermody-
+namique, transferts thermiques, bilans matière et énergie et énergies renouvelables, complétée par la simulation de procédés
+et l’analyse de cycle de vie. À la recherche d’un PFE en décarbonation et efficacité énergétique de l’industrie.
+EXPÉRIENCE PROFESSIONNELLE
+SEGULA Technologies - Stage en Modélisation Électrochimique des batteries                                   06/2026-08/2026
+• Modélisation d’une cellule Li-ion (NMC811/Graphite-SiOx) via le Single Particle Model (SPM) implémenté sous MATLAB.
+• Résolution des équations aux dérivées partielles par FVM avec intégration temporelle de Crank-Nicolson.
+• Optimisation du maillage et des coefficients de diffusion via une analyse de données, réduisant l’erreur RMSE de 80%.
+• Validation des résultats par une approche itérative et une analyse critique avec les données expérimentales et COMSOL.
+Control Union - Stage en Contrôle Qualité                                                                     08/2025–09/2025
+• Analyse de lubrifiants (viscosité et métaux lourds par ICP-OES) avec suivi de la conformité ISO 17025.
+• Documentation technique et rédaction de rapports d’analyse destinés aux clients, avec rigueur et traçabilité.
+ETAP - Stage en traitement et caractérisation des eaux industrielles                                            07/2024–08/2024
+• Analyses physico-chimiques des eaux (pH, salinité, bicarbonates, sulfates, chlorures) par chromatographie ionique et ICP-AES.
+• Étude des méthodes de traitement des eaux pétrolières par échange d’ions et par coagulation-floculation.
+EXPÉRIENCE COMPLÉMENTAIRE
+Cascade - Enseignante de Chimie en Ligne (Temps partiel)                                                             2024–Présent
+• Accompagnement individualisé en chimie pour des élèves de Terminale française, couvrant les concepts du niveau examen.
+PROJETS ACADÉMIQUES
+Analyse techno-environnementale de la production d’éthylène : vapocraquage vs déshydratation du bioéthanol
+• Simulation comparative de deux voies de production sous Aspen Plus V14, avec établissement des bilans matière et énergie
+  et des diagrammes de flux (PFD) du procédé, pour évaluer la faisabilité technique de chaque filière.
+• Analyse de Cycle de Vie cradle-to-gate sous OpenLCA pour comparer les impacts environnementaux des deux voies.
+Simulation du procédé de production d’oxyde d’éthylène sous Aspen HYSYS V14
+• Simulation du procédé en utilisant la thermodynamique NRTL-RK et la cinétique de Langmuir-Hinshelwood, avec établissement
+  des bilans de matière et d’énergie et dimensionnement des équipements clés.
+• Optimisation des conditions opératoires par analyse de sensibilité, atteignant 96 % de récupération et 97,14 % de pureté.
+Modélisation de Piles à Combustible PEM et Electrolyseurs PEM sous COMSOL et ANSYS Fluent
+• Modélisation de piles à combustible: écoulement diphasique, effets thermiques, engorgement de la couche de diffusion.
+• Modélisation d’un électrolyseur PEM 3D: conservation de charge, identification de la réaction limitante (OER).
+COMPÉTENCES TECHNIQUES
+• Simulation: Aspen Plus et HYSYS, COMSOL Multiphysics              • Programmation: M AT LAB, M athematica, P ython
+• Données & Bureautique: Pack Microsoft Office, OpenLCA           • Normes:ISO9001, ISO14001, ISO45001, ISO17025, ISO14040
+
+• Techniques de Laboratoire: Chromatographie (HPLC, GC, CCM), Spectrométrie (MS, ICP-OES), Spectroscopie (RMN,
+  FTIR, UV-Vis), Diffraction (XRD), Microscopie (MEB, MET)
+ACTIVITÉS EXTRASCOLAIRES
+IEEE INSAT — Chef d’organisation de TRSYP 3.0 ; Responsable des activités sociales – MENASYP ; Présidente de l’EMBS.
+THEATRO INSAT — Membre de l’équipe de danse.
+LANGUES ET CERTIFICATS
+Langues                                                               Certificats
+Anglais (Avancé), Français (Bilingue), Arabe (Natif).               Aspen HYSYS – MATLAB
+

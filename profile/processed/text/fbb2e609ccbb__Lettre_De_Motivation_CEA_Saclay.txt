@@ -1,0 +1,40 @@
+Moumen Nermine​
+nermine.moumen@insat.ucar.tn | +216 27 040 414
+
+Subject: Application for the M2 Internship – Sol-Gel and Flame Spray
+Pyrolysis Approach for Layered Oxide Cathode Materials
+Dear Dr. Leconte, Dr. Yagoubi, Dr. Pongilat, Dr. Bertrand, and Dr. Foy,
+
+I am writing to apply for the M2 internship on combining sol-gel precursor chemistry with
+Flame Spray Pyrolysis for the synthesis of layered oxide cathode materials for Li-ion
+batteries, at CEA Paris-Saclay (LEEL/LAPA). I am currently in my final year of the
+Industrial Chemical engineering program at INSAT (University of Carthage), specializing in
+Process and Environment Engineering, and I am seeking a 6-month end-of-studies internship
+from February 2027.
+
+This project sits directly at the intersection of my two main areas of experience: battery
+materials and sol-gel/nanoparticle synthesis. My last internship at SEGULA Technologies
+focuses on electrochemical modeling of a Li-ion cell (NMC811/Graphite-SiOx) using the
+Single Particle Model in MATLAB, solved via finite-volume discretization with
+Crank-Nicolson time integration and validated against COMSOL and experimental data,
+which gives me a strong working knowledge of the electrochemical behavior your cathode
+materials are designed to improve. On the synthesis side, I have hands-on experience with
+sol-gel-type nanomaterial synthesis and structural characterization (XRD, SEM/TEM),
+including a core-shell MOF/polymer system built via controlled precipitation and surface
+functionalization. I am also familiar with electrochemical characterization techniques (cyclic
+voltammetry, polarography) from a separate project. Flame Spray Pyrolysis and half-cell
+galvanostatic cycling are new to me specifically, but my track record across synthetic,
+structural, and electrochemical projects shows I adapt quickly to new techniques and lab
+environments.
+
+This project particularly appeals to me because it combines precursor chemistry, nanomaterial
+synthesis, and battery electrochemistry and this is the exact combination I have been building
+toward through my academic and internship experience, while addressing a concrete scale-up
+challenge for next-generation cathode materials.
+
+I would welcome the opportunity to discuss my application further and thank you for
+considering my candidacy.
+
+Sincerely,​
+Nermine Moumen
+

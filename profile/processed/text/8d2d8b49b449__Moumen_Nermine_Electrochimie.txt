@@ -1,0 +1,50 @@
+                                         Moumen Nermine
+                       Étudiante en dernière année du cycle ingénieur en Chimie Industrielle
+               ∙   𝑛𝑒𝑟𝑚𝑖𝑛𝑒.𝑚𝑜𝑢𝑚𝑒𝑛@𝑖𝑛𝑠𝑎𝑡.𝑢𝑐𝑎𝑟.𝑡𝑛 ∙ +21627040414 ∙ 𝑙𝑖𝑛𝑘𝑒𝑑𝑖𝑛.𝑐𝑜𝑚/𝑖𝑛/𝑛𝑒𝑟𝑚𝑖𝑛𝑒 − 𝑚𝑜𝑢𝑚𝑒𝑛
+
+FORMATION
+Institut National des Sciences Appliquées et de Technologie (INSAT)                                              2022–Présent
+Étudiante en Chimie Industrielle, spécialité Procédés et Environnement, avec une formation solide en cinétique électrochim-
+ique, modélisation électrochimique sous COMSOL et MATLAB, et caractérisation de matériaux. Orientée vers la mesure et
+l’interprétation du comportement électrochimique des matériaux. À la recherche d’un PFE de 6 mois à partir de février 2027.
+EXPÉRIENCE PROFESSIONNELLE
+SEGULA Technologies - Stage en Modélisation Électrochimique des Batteries                                  06/2026-08/2026
+• Modélisation d’une cellule Li-ion (NMC811/Graphite-SiOx) via le Single Particle Model (SPM) implémenté sous MATLAB.
+• Résolution des équations aux dérivées partielles par FVM avec intégration temporelle de Crank-Nicolson.
+• Optimisation du maillage et des coefficients de diffusion via une analyse de données, réduisant l’erreur RMSE de 80%
+• Validation des résultats par une approche itérative et une analyse critique avec les données expérimentales et COMSOL.
+Control Union - Stage en Contrôle Qualité                                                                   08/2025–09/2025
+• Analyse de lubrifiants (viscosité et métaux lourds par ICP-OES).
+• Préparation et interprétation de rapports d’analyse pour vérifier la conformité aux normes ASTM D5185 et ISO 17025.
+ETAP - Stage en Caractérisation Analytique d’hydrocarbures et traitement des Eaux industrielles 07/2024–08/2024
+• Etude des méthodes de traitement des eaux pétrolières par échange d’ions et par coagulation-floculation.
+• Formation aux techniques de géochimie organique, incluant la chromatographie phase gazeuse (GC, GC-MS).
+PROJETS ACADÉMIQUES
+Modélisation de Piles à Combustible et Électrolyseurs PEM sous COMSOL et ANSYS Fluent
+• Modélisation de piles à combustible (écoulement diphasique, effets thermiques) à courant imposé puis à potentiel imposé.
+• Modélisation d’un électrolyseur PEM 3D pour la production d’hydrogène: conservation de charge, identification de l’OER.
+Traitement Électrochimique d’un Rejet Industriel par Électro-floculation
+• Élimination des cations toxiques (Cd2+ , Zn2+ ) d’un effluent simulé par électro-coagulation/floculation avec des électrodes
+  d’aluminium : taux d’abattement de 85 % (Cd2+ ) et 57 % (Zn2+ ) en 20 min.
+• Quantification de la cinétique d’élimination par polarographie impulsionnelle (courbes courant-potentiel) et loi de Fick.
+Polymères à Impression Moléculaire (MIPs) en Applications Pharmaceutiques
+• Synthèse et caractérisation d’un MIP sélectif au sulpiride par polymérisation radicalaire, avec extraction Soxhlet, suivi par
+  spectrophotométrie UV-Vis et validation par cinétique de libération contrôlée (240 min)
+• Synthèse d’un MIP core-shell MOF/polymère pour la délivrance ciblée de doxorubicine, avec 85% de taux d’encapsulation.
+• Modélisation des isothermes d’adsorption (bi-Langmuir, Freundlich) pour relier les propriétés des matériaux.
+Etude Bibliographique : Synthèse et Caractérisation de Matériaux Supraconducteurs
+• Etude des voies de synthèse: synthèse céramique, croissance cristalline, et dépôt de couches minces (ALD).
+• Etude des méthodes de caractérisation : RAMAN, FTIR, XRD, MEB et MET.
+COMPÉTENCES TECHNIQUES
+• Techniques de Laboratoire: Chromatographie (HPLC, GC, CCM), Spectrométrie (MS, ICP-OES), Spectroscopie (RMN,
+  FTIR, UV-Vis), Diffraction (XRD), Microscopie (MEB, MET), Électrochimie (Voltamétrie cyclique, polarographie).
+• Simulation: Aspen Plus et HYSYS, COMSOL Multiphysics           ∙    Programmation:     𝑀 𝐴𝑇 𝐿𝐴𝐵, 𝑀 𝑎𝑡ℎ𝑒𝑚𝑎𝑡𝑖𝑐𝑎, 𝑃 𝑦𝑡ℎ𝑜𝑛
+• Données & Bureautique: Pack Microsoft Office, OpenLCA         ∙ Normes:𝐼𝑆𝑂9001, 𝐼𝑆𝑂14001, 𝐼𝑆𝑂45001, 𝐼𝑆𝑂17025, 𝐼𝑆𝑂14040
+
+ACTIVITÉS EXTRASCOLAIRES
+IEEE INSAT — Chef d’organisation de TRSYP 3.0 ; Responsable des activités sociales – MENASYP ; Présidente de l’EMBS.
+THEATRO INSAT — Membre de l’équipe de danse.
+LANGUES ET CERTIFICATS
+Langues                                                              Certificats
+Anglais (Avancé), Français (Bilingue), Arabe (Natif).                Aspen HYSYS – MATLAB
+

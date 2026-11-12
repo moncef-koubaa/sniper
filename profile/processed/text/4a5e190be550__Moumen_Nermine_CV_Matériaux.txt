@@ -1,0 +1,51 @@
+                                         Moumen Nermine
+                        Étudiante en dernière année du cycle ingénieur en Chimie Industrielle
+               ∙   𝑛𝑒𝑟𝑚𝑖𝑛𝑒.𝑚𝑜𝑢𝑚𝑒𝑛@𝑖𝑛𝑠𝑎𝑡.𝑢𝑐𝑎𝑟.𝑡𝑛         ∙ +21627040414    ∙ 𝑙𝑖𝑛𝑘𝑒𝑑𝑖𝑛.𝑐𝑜𝑚/𝑖𝑛/𝑛𝑒𝑟𝑚𝑖𝑛𝑒 − 𝑚𝑜𝑢𝑚𝑒𝑛
+
+FORMATION
+Institut National des Sciences Appliquées et de Technologie (INSAT)                                                   2022–Présent
+Etudiante en Chimie Industrielle, spécialité Procédés et Environnement, avec une formation solide en catalyse chimique, cinétique
+électrochimique, science des matériaux, complétée par des bases en chimie analytique, chimie organique et HSE en laboratoire.
+Intéressée par la chimie verte et la valorisation de la biomasse. A la recherche d’un PFE de 6 mois à partir de février 2027.
+EXPÉRIENCE PROFESSIONNELLE
+SEGULA Technologies - Stage en Modélisation Électrochimique des batteries                                  06/2026-08/2026
+• Modélisation d’une cellule Li-ion (NMC811/Graphite-SiOx) via le Single Particle Model (SPM) implémenté sous MATLAB.
+• Optimisation du maillage et des valeurs des coefficients de diffusion, réduisant l’erreur RMSE de 202,13 mV à 40,5 mV.
+• Validation des résultats par une approche itérative et une analyse critique avec les données expérimentales et COMSOL.
+Control Union - Stage en Contrôle Qualité                                                                   08/2025–09/2025
+• Analyse de lubrifiants (viscosité et métaux lourds par ICP-OES).
+• Préparation et interprétation de rapports d’analyse pour vérifier la conformité aux normes ASTM D5185 et ISO 17025.
+ETAP - Stage en Caractérisation Analytique d’hydrocarbures et en Traitement des Eaux                         07/2024–08/2024
+• Formation aux techniques de géochimie organique (GC, GC-MS, pyrolyse Rock-Eval) pour la caractérisation d’hydrocarbures.
+• Analyses physico-chimiques des eaux (pH, salinité, bicarbonates, sulfates, chlorures) par chromatographie ionique et ICP-AES.
+PROJETS ACADÉMIQUES
+Polymères à Impression Moléculaire (MIPs) en Applications Pharmaceutiques
+• Synthèse et caractérisation d’un MIP sélectif au sulpiride par polymérisation radicalaire, avec extraction Soxhlet, suivi par
+  spectrophotométrie UV-Vis et validation par cinétique de libération contrôlée (240 min).
+• Synthèse d’un MIP core-shell MOF/polymère pour la délivrance ciblée de doxorubicine, avec 85% de taux d’encapsulation.
+• Modélisation des isothermes d’adsorption (bi-Langmuir, Freundlich, R2 = 0,9877) pour relier les propriétés des matériaux,
+  leurs sites de liaison et leurs performances.
+Etude Bibliographique : Synthèse et Caractérisation de Matériaux Supraconducteurs
+• Analyse des propriétés fondamentales des supraconducteurs et étude des voies d’élaboration : synthèse céramique à l’état solide,
+  croissance cristalline (flux, Bridgman, Czochralski), et dépôt de couches minces (ALD).
+• Etude des méthodes de caractérisation : RAMAN, FTIR, XRD, MEB et MET.
+Analyse techno-environnementale de la production d’éthylène : vapocraquage vs déshydratation du bioéthanol
+• Simulation sous Aspen Plus V14 des deux voies, dont la déshydratation du bioéthanol sur catalyseur HZSM-5.
+• ACV cradle-to-gate (OpenLCA, ISO 14040/14044) sur 5 catégories d’impact ; identification de l’origine de la biomasse et du
+  changement d’affectation des sols indirect comme principales incertitudes.
+Prédiction des Équilibres Liquide–Liquide pour Systèmes Ternaires d’Extraction
+• Formulation du système thermodynamique LLE et résolution via Rachford-Rice et continuation par longueur d’arc.
+• Implémentation du workflow en Python, MATLAB et Mathematica (spline/fsolve, SciPy/mpltern, Interpolation/FindRoot).
+COMPÉTENCES TECHNIQUES
+• Techniques de Laboratoire: Chromatographie (HPLC, GC, CCM), Spectrométrie (MS, ICP-OES), Spectroscopie (RMN,
+  FTIR, UV-Vis), Diffraction (XRD), Microscopie (MEB, MET), Électrochimie (Voltamétrie cyclique, polarographie).
+• Simulation: Aspen Plus et HYSYS, COMSOL Multiphysics            ∙    Programmation:      𝑀 𝐴𝑇 𝐿𝐴𝐵, 𝑀 𝑎𝑡ℎ𝑒𝑚𝑎𝑡𝑖𝑐𝑎, 𝑃 𝑦𝑡ℎ𝑜𝑛
+• Données & Bureautique: Pack Microsoft Office, OpenLCA           ∙ Normes:𝐼𝑆𝑂9001, 𝐼𝑆𝑂14001, 𝐼𝑆𝑂45001, 𝐼𝑆𝑂17025, 𝐼𝑆𝑂14040
+
+ACTIVITÉS EXTRASCOLAIRES
+IEEE INSAT — Chef d’organisation de TRSYP 3.0 ; Responsable des activités sociales – MENASYP ; Présidente de l’EMBS.
+THEATRO INSAT — Membre de l’équipe de danse.
+LANGUES ET CERTIFICATS
+Langues                                                               Certificats
+Anglais (Avancé), Français (Bilingue), Arabe (Natif).                 Aspen HYSYS – MATLAB
+

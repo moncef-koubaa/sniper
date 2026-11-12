@@ -1,0 +1,61 @@
+                                     Nermine Moumen
+                                  Industrial Chemical Engineering Student
+               • nermine.moumen@insat.ucar.tn        • +21627040414       • linkedin.com/in/nermine − moumen
+
+EDUCATION
+
+National Institute of Applied Sciences and Technology (INSAT)                                                 2022–Present
+• Final-year Industrial Chemical Engineering student, specialized in Process and Environment, with a foundation in Polymer
+  Chemistry, Materials Science, and Organic Chemistry, complemented by Analytical Chemistry, Physicochemical Characteri-
+  zation, and Electrochemistry. Seeking a final-year internship (PFE).
+PROFESSIONAL EXPERIENCE
+
+SEGULA Technologies – Electrochemical Battery Modeling Internship                                   06/2026–08/2026
+• Modeled a Li-ion cell (NMC811/Graphite-SiOx) using the Single Particle Model (SPM) implemented in MATLAB.
+• Optimized the mesh and diffusion coefficient values, reducing the RMSE error from 202.13 mV to 40.5 mV.
+• Extracted and processed experimental discharge data from a database to validate MATLAB and COMSOL results.
+Control Union – Quality Control Internship                                                     08/2025–09/2025
+• Analyzed lubricants for viscosity and heavy metals (ICP-OES).
+• Prepared and interpreted analytical reports to verify compliance with ASTM D5185 and ISO 17025 standards.
+ETAP – Water Treatment and Petrochemistry Internship                                                       07/2024–08/2024
+• Performed physico-chemical and ionic analyses of water samples (pH, salinity, chlorides via ion chromatography).
+• Studied water treatment methods (coagulation-flocculation, ion exchange) for contaminant and corrosion control.
+• Performed organic geochemistry techniques (GC, GC-MS, Rock-Eval pyrolysis) for hydrocarbon characterization.
+ADDITIONAL EXPERIENCE
+
+Cascade – Online Chemistry Teacher (Part-time)                                                                  2024–Present
+• Provide individualized online chemistry tutoring for French Terminale students, covering exam-level concepts.
+ACADEMIC PROJECTS
+
+Molecularly Imprinted Polymers (MIPs) in Pharmaceutical Applications
+• Reviewed MIP synthesis routes: bulk, suspension, multistep swelling, and core-shell polymerization.
+• Evaluated three drug delivery case studies: precipitation MIP for ribavirin, sulpiride-imprinted MIP, and core-shell MOF-
+  MIP for doxorubicin (85% encapsulation efficiency and 48h sustained release).
+Superconducting Materials: From Synthesis Routes to Structural Characterization
+• Analyzed the fundamental properties of superconductors and studied elaboration routes including solid-state ceramic syn-
+  thesis, crystal growth (flux, Bridgman, Czochralski), and thin-film deposition (ALD).
+• Reviewed characterization methods: RAMAN, FTIR, XRD, SEM and TEM.
+Prediction of Liquid–Liquid Equilibria and Cross-flow and Countercurrent Extraction for Ternary Systems
+• Formulated the LLE thermodynamic system and solved it via Rachford-Rice and arc-length continuation.
+• Reproduced 7 Mathematica notebooks proving equivalence of the Hunter-Nash and McCabe-Thiele methods.
+Ethylene Oxide Production Process Simulation using Aspen HYSYS
+• Simulated the ethylene oxide production process using NRTL-RK thermodynamics and Langmuir-Hinshelwood kinetics.
+• Optimized operating conditions via sensitivity analysis, achieving 96% recovery and 97.14% final purity.
+TECHNICAL SKILLS
+
+• Lab Techniques: Chromatography (HPLC, GC, TLC), Spectrometry (MS, ICP-OES), Spectroscopy (NMR, FTIR, UV-
+  Vis), Diffraction (XRD), Microscopy (SEM, TEM)
+• Simulation: Aspen Plus, Aspen HYSYS, COMSOL Multiphysics            •   Programming:     M AT LAB, M athematica, P ython
+• Data & Office: Pack Microsoft Office, OpenLCA      •   Standards:       ISO9001, ISO14001, ISO45001, ISO17025, ISO14040
+
+EXTRACURRICULAR ACTIVITIES
+
+• IEEE INSAT – Chair of EMBS; Organization team leader of TRSYP 3.0; Social activities manger of MENASYP
+• THEATRO INSAT – Member of the dancing team
+LANGUAGES
+
+ English (Advanced)                       French (Advanced)                          Arabic (Native)
+CERTIFICATES
+
+Aspen HYSYS – MATLAB
+

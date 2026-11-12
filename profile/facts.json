@@ -1,0 +1,1016 @@
+{
+ "generated": "2026-11-12",
+ "source": "profile/me.md (authoritative)",
+ "identity": {
+  "name": "Nermine Moumen",
+  "email": "nermine.moumen@insat.ucar.tn",
+  "phone": "+216 27 040 414",
+  "linkedin": "linkedin.com/in/nermine-moumen",
+  "school": "INSAT (Université de Carthage)",
+  "programme": "Chimie Industrielle — Procédés et Environnement",
+  "years": "2022-present"
+ },
+ "constraints": {
+  "start": "2027-02-01",
+  "duration_months": {
+   "min": 3,
+   "ideal": 6,
+   "max": 9
+  },
+  "languages_for_work": [
+   "fr",
+   "en"
+  ],
+  "visa": "non-EU, needs visa + INSAT convention [assumed]"
+ },
+ "languages": {
+  "ar": "native",
+  "fr": "bilingual/fluent",
+  "en": "advanced/fluent"
+ },
+ "skills": [
+  {
+   "name": "ICP-OES",
+   "category": "analytical",
+   "level": "hands_on",
+   "evidence": "Control Union: lubricants wear metals/additives [CV01,CV02]",
+   "keywords": [
+    "icp-oes",
+    "icp",
+    "elemental analysis",
+    "metals",
+    "spectrometry"
+   ]
+  },
+  {
+   "name": "Kinematic viscosity (ASTM)",
+   "category": "analytical",
+   "level": "hands_on",
+   "evidence": "Control Union [CV01]",
+   "keywords": [
+    "viscosity",
+    "lubricants",
+    "astm",
+    "tribology"
+   ]
+  },
+  {
+   "name": "Flash point / atmospheric distillation",
+   "category": "analytical",
+   "level": "hands_on",
+   "evidence": "AGIL diesel & Jet A-1 [CV01]",
+   "keywords": [
+    "flash point",
+    "distillation",
+    "fuels",
+    "jet a-1",
+    "diesel",
+    "petroleum"
+   ]
+  },
+  {
+   "name": "Ion chromatography",
+   "category": "analytical",
+   "level": "hands_on",
+   "evidence": "ETAP water analyses [CV01,CV02]",
+   "keywords": [
+    "ion chromatography",
+    "water analysis",
+    "anions"
+   ]
+  },
+  {
+   "name": "ICP-AES",
+   "category": "analytical",
+   "level": "hands_on",
+   "evidence": "ETAP water analyses [CV01]",
+   "keywords": [
+    "icp-aes",
+    "icp"
+   ]
+  },
+  {
+   "name": "Water physico-chemical analysis (pH, salinity, sulfates, chlorides, bicarbonates)",
+   "category": "analytical",
+   "level": "hands_on",
+   "evidence": "ETAP [CV01]",
+   "keywords": [
+    "water quality",
+    "water analysis",
+    "ph",
+    "salinity"
+   ]
+  },
+  {
+   "name": "Pulse polarography / current-potential curves",
+   "category": "electrochemistry",
+   "level": "hands_on",
+   "evidence": "P5 electroflocculation [CV02,CV04]",
+   "keywords": [
+    "polarography",
+    "voltammetry",
+    "electrochemical measurements",
+    "electroanalysis"
+   ]
+  },
+  {
+   "name": "Electrocoagulation / electroflocculation",
+   "category": "process",
+   "level": "hands_on",
+   "evidence": "P5 [CV07]",
+   "keywords": [
+    "electrocoagulation",
+    "electroflocculation",
+    "heavy metals removal",
+    "effluent treatment"
+   ]
+  },
+  {
+   "name": "Coagulation-flocculation jar tests",
+   "category": "process",
+   "level": "hands_on",
+   "evidence": "P9 real effluent [CV07]",
+   "keywords": [
+    "coagulation",
+    "flocculation",
+    "water treatment",
+    "jar test"
+   ]
+  },
+  {
+   "name": "Flame emission spectrometry & method validation",
+   "category": "analytical",
+   "level": "hands_on",
+   "evidence": "P8 NT ISO 9964-3 [CV12] (assumed hands-on)",
+   "keywords": [
+    "flame photometry",
+    "method validation",
+    "calibration",
+    "standard addition",
+    "internal standard"
+   ]
+  },
+  {
+   "name": "Anaerobic digestion monitoring (COD, VSS, biogas)",
+   "category": "process",
+   "level": "hands_on",
+   "evidence": "P10 ASBR [CV09] (assumed hands-on)",
+   "keywords": [
+    "anaerobic digestion",
+    "biogas",
+    "methanisation",
+    "cod",
+    "sludge"
+   ]
+  },
+  {
+   "name": "GC / GC-MS / Rock-Eval pyrolysis",
+   "category": "analytical",
+   "level": "trained",
+   "evidence": "ETAP training [CV01]",
+   "keywords": [
+    "gc",
+    "gc-ms",
+    "gas chromatography",
+    "rock-eval",
+    "geochemistry",
+    "hydrocarbons"
+   ]
+  },
+  {
+   "name": "HPLC",
+   "category": "analytical",
+   "level": "studied",
+   "evidence": "listed only",
+   "keywords": [
+    "hplc",
+    "liquid chromatography"
+   ]
+  },
+  {
+   "name": "TLC",
+   "category": "analytical",
+   "level": "studied",
+   "evidence": "listed only",
+   "keywords": [
+    "tlc",
+    "ccm"
+   ]
+  },
+  {
+   "name": "NMR",
+   "category": "analytical",
+   "level": "studied",
+   "evidence": "listed only",
+   "keywords": [
+    "nmr",
+    "rmn"
+   ]
+  },
+  {
+   "name": "FTIR",
+   "category": "analytical",
+   "level": "studied",
+   "evidence": "listed; studied in P7",
+   "keywords": [
+    "ftir",
+    "infrared"
+   ]
+  },
+  {
+   "name": "UV-Vis",
+   "category": "analytical",
+   "level": "studied",
+   "evidence": "listed; P6 unresolved (Q-01)",
+   "keywords": [
+    "uv-vis",
+    "spectrophotometry"
+   ]
+  },
+  {
+   "name": "XRD",
+   "category": "materials",
+   "level": "studied",
+   "evidence": "listed; studied in P7",
+   "keywords": [
+    "xrd",
+    "diffraction",
+    "crystallography"
+   ]
+  },
+  {
+   "name": "SEM / TEM",
+   "category": "materials",
+   "level": "studied",
+   "evidence": "listed; studied in P7",
+   "keywords": [
+    "sem",
+    "tem",
+    "meb",
+    "met",
+    "microscopy"
+   ]
+  },
+  {
+   "name": "Raman",
+   "category": "materials",
+   "level": "studied",
+   "evidence": "studied in P7",
+   "keywords": [
+    "raman"
+   ]
+  },
+  {
+   "name": "Cyclic voltammetry",
+   "category": "electrochemistry",
+   "level": "studied",
+   "evidence": "listed; 'familiar' [CV02,CL03]",
+   "keywords": [
+    "cyclic voltammetry",
+    "cv"
+   ]
+  },
+  {
+   "name": "Sol-gel / nanomaterial synthesis",
+   "category": "materials",
+   "level": "studied",
+   "evidence": "only claimed in CL03 (Q-02)",
+   "keywords": [
+    "sol-gel",
+    "nanoparticles",
+    "synthesis"
+   ]
+  },
+  {
+   "name": "MIP synthesis (radical polymerisation, Soxhlet)",
+   "category": "materials",
+   "level": "studied",
+   "evidence": "P6 unresolved (Q-01)",
+   "keywords": [
+    "molecularly imprinted polymers",
+    "mip",
+    "polymer synthesis",
+    "drug delivery",
+    "adsorption isotherms"
+   ]
+  },
+  {
+   "name": "Li-ion battery electrochemical modelling (SPM)",
+   "category": "modelling",
+   "level": "hands_on",
+   "evidence": "SEGULA [CV01,CV02]",
+   "keywords": [
+    "battery modelling",
+    "lithium-ion",
+    "li-ion",
+    "spm",
+    "single particle model",
+    "nmc811",
+    "graphite",
+    "siox",
+    "battery",
+    "electrochemical model",
+    "cell modelling"
+   ]
+  },
+  {
+   "name": "PDE numerical solving (FVM, Crank-Nicolson)",
+   "category": "modelling",
+   "level": "hands_on",
+   "evidence": "SEGULA [CV01]",
+   "keywords": [
+    "finite volume",
+    "fvm",
+    "pde",
+    "numerical methods",
+    "crank-nicolson"
+   ]
+  },
+  {
+   "name": "Model calibration / parameter fitting against experimental data",
+   "category": "modelling",
+   "level": "hands_on",
+   "evidence": "SEGULA RMSE 202.13->40.5 mV [CV01]",
+   "keywords": [
+    "parameter estimation",
+    "model validation",
+    "calibration",
+    "data analysis"
+   ]
+  },
+  {
+   "name": "PEM fuel cell modelling",
+   "category": "modelling",
+   "level": "hands_on",
+   "evidence": "P1 COMSOL [CV10]",
+   "keywords": [
+    "pem fuel cell",
+    "pemfc",
+    "fuel cell",
+    "hydrogen",
+    "two-phase flow"
+   ]
+  },
+  {
+   "name": "PEM electrolyser modelling",
+   "category": "modelling",
+   "level": "hands_on",
+   "evidence": "P1 Ansys Fluent [CV10]",
+   "keywords": [
+    "electrolyser",
+    "electrolyzer",
+    "pem electrolysis",
+    "hydrogen production",
+    "oer",
+    "green hydrogen"
+   ]
+  },
+  {
+   "name": "Process simulation (steady state)",
+   "category": "process",
+   "level": "hands_on",
+   "evidence": "P2 HYSYS, P3 Aspen Plus [CV01]",
+   "keywords": [
+    "process simulation",
+    "aspen",
+    "flowsheet",
+    "pfd",
+    "mass and energy balances",
+    "process design"
+   ]
+  },
+  {
+   "name": "Reactor modelling with LH kinetics",
+   "category": "process",
+   "level": "hands_on",
+   "evidence": "P2 [CV01]",
+   "keywords": [
+    "reactor design",
+    "kinetics",
+    "langmuir-hinshelwood",
+    "catalytic reactor",
+    "fixed bed"
+   ]
+  },
+  {
+   "name": "Sensitivity analysis / process optimisation",
+   "category": "process",
+   "level": "hands_on",
+   "evidence": "P2 96% recovery 97.14% purity [CV01]",
+   "keywords": [
+    "optimisation",
+    "optimization",
+    "sensitivity analysis"
+   ]
+  },
+  {
+   "name": "Heat/energy integration",
+   "category": "process",
+   "level": "hands_on",
+   "evidence": "P3 [CV10]",
+   "keywords": [
+    "energy integration",
+    "heat integration",
+    "energy efficiency"
+   ]
+  },
+  {
+   "name": "Life cycle assessment (cradle-to-gate, ISO 14040/44)",
+   "category": "environment",
+   "level": "hands_on",
+   "evidence": "P3 OpenLCA [CV03]",
+   "keywords": [
+    "lca",
+    "acv",
+    "life cycle assessment",
+    "analyse de cycle de vie",
+    "eco-design",
+    "carbon footprint",
+    "environmental impact"
+   ]
+  },
+  {
+   "name": "Techno-economic assessment",
+   "category": "process",
+   "level": "hands_on",
+   "evidence": "P3 cost evaluation APEA [CL01] (single source)",
+   "keywords": [
+    "techno-economic",
+    "tea",
+    "cost estimation",
+    "capex",
+    "opex"
+   ]
+  },
+  {
+   "name": "Phase equilibria / thermodynamics (LLE, Rachford-Rice)",
+   "category": "process",
+   "level": "hands_on",
+   "evidence": "P4 [CV01]",
+   "keywords": [
+    "thermodynamics",
+    "phase equilibria",
+    "lle",
+    "liquid-liquid extraction",
+    "separation"
+   ]
+  },
+  {
+   "name": "QC reporting under ISO 17025",
+   "category": "quality",
+   "level": "hands_on",
+   "evidence": "Control Union [CV02]",
+   "keywords": [
+    "iso 17025",
+    "quality control",
+    "accredited lab",
+    "reporting"
+   ]
+  },
+  {
+   "name": "Thermal runaway mechanisms (Li-ion)",
+   "category": "electrochemistry",
+   "level": "studied",
+   "evidence": "learned at SEGULA [CL05]",
+   "keywords": [
+    "thermal runaway",
+    "battery safety"
+   ]
+  },
+  {
+   "name": "Radioactive waste management",
+   "category": "nuclear",
+   "level": "studied",
+   "evidence": "P11 study [CV09]",
+   "keywords": [
+    "nuclear",
+    "radioactive waste",
+    "vitrification",
+    "fuel cycle",
+    "geological disposal"
+   ]
+  },
+  {
+   "name": "Superconducting materials synthesis routes",
+   "category": "materials",
+   "level": "studied",
+   "evidence": "P7 literature review [CV03]",
+   "keywords": [
+    "superconductors",
+    "ceramics",
+    "crystal growth",
+    "ald",
+    "thin films"
+   ]
+  }
+ ],
+ "tools": [
+  {
+   "name": "MATLAB",
+   "level": "hands_on",
+   "evidence": "SEGULA, P4; certificate"
+  },
+  {
+   "name": "Aspen HYSYS",
+   "level": "hands_on",
+   "evidence": "P2; certificate"
+  },
+  {
+   "name": "Aspen Plus",
+   "level": "hands_on",
+   "evidence": "P3"
+  },
+  {
+   "name": "COMSOL Multiphysics",
+   "level": "hands_on",
+   "evidence": "P1; SEGULA comparison"
+  },
+  {
+   "name": "Ansys Fluent",
+   "level": "hands_on",
+   "evidence": "P1"
+  },
+  {
+   "name": "Python",
+   "level": "hands_on",
+   "evidence": "P4 (SciPy, mpltern)"
+  },
+  {
+   "name": "Mathematica",
+   "level": "hands_on",
+   "evidence": "P4"
+  },
+  {
+   "name": "OpenLCA",
+   "level": "hands_on",
+   "evidence": "P3"
+  },
+  {
+   "name": "Aspen Process Economic Analyzer",
+   "level": "hands_on",
+   "evidence": "P3 (CL01 only)"
+  },
+  {
+   "name": "Microsoft Office / Excel (advanced)",
+   "level": "hands_on",
+   "evidence": "listed"
+  }
+ ],
+ "projects": [
+  {
+   "id": "P1",
+   "title_fr": "Modélisation de Piles à Combustible PEM et Électrolyseurs PEM sous COMSOL et ANSYS Fluent",
+   "title_en": "PEM Fuel Cell and Electrolyzer Modeling with COMSOL and ANSYS Fluent",
+   "nature": "modelling",
+   "results": [
+    "PEMFC cell voltage 0.584 V",
+    "1.40 L/h H2 (3D PEM electrolyser)",
+    "OER identified as limiting reaction"
+   ],
+   "keywords": [
+    "hydrogen",
+    "pem",
+    "fuel cell",
+    "electrolyser",
+    "comsol",
+    "ansys fluent",
+    "cfd",
+    "two-phase flow",
+    "oer"
+   ],
+   "domains": [
+    "hydrogen",
+    "electrochemistry",
+    "simulation"
+   ]
+  },
+  {
+   "id": "P2",
+   "title_fr": "Simulation du procédé de production d'oxyde d'éthylène sous Aspen HYSYS V14",
+   "title_en": "Ethylene Oxide Production Process Simulation using Aspen HYSYS",
+   "nature": "simulation",
+   "results": [
+    "96 % recovery",
+    "97.14 % purity"
+   ],
+   "keywords": [
+    "aspen hysys",
+    "ethylene oxide",
+    "catalytic reactor",
+    "fixed bed",
+    "langmuir-hinshelwood",
+    "nrtl",
+    "sensitivity analysis",
+    "equipment sizing"
+   ],
+   "domains": [
+    "process_simulation",
+    "catalysis"
+   ]
+  },
+  {
+   "id": "P3",
+   "title_fr": "Analyse techno-environnementale de la production d'éthylène : vapocraquage vs déshydratation du bioéthanol",
+   "title_en": "Techno-Environmental Analysis of Ethylene Production: Steam Cracking vs Bioethanol Dehydration",
+   "nature": "simulation+lca",
+   "results": [
+    "99.95 mol% ethylene",
+    "cradle-to-gate LCA, 5 impact categories",
+    "biomass origin & iLUC = main uncertainties"
+   ],
+   "keywords": [
+    "aspen plus",
+    "lca",
+    "openlca",
+    "iso 14040",
+    "bioethanol",
+    "steam cracking",
+    "hzsm-5",
+    "techno-economic",
+    "energy integration",
+    "pfd",
+    "decarbonisation",
+    "biomass"
+   ],
+   "domains": [
+    "process_simulation",
+    "lca",
+    "catalysis",
+    "energy_efficiency"
+   ]
+  },
+  {
+   "id": "P4",
+   "title_fr": "Prédiction des Équilibres Liquide–Liquide pour Systèmes Ternaires d'Extraction",
+   "title_en": "Prediction of Liquid–Liquid Equilibria and Cross-flow and Countercurrent Extraction for Ternary Systems",
+   "nature": "numerical",
+   "results": [
+    "7 Mathematica notebooks: Hunter-Nash ≡ McCabe-Thiele",
+    "Python/MATLAB/Mathematica implementations"
+   ],
+   "keywords": [
+    "thermodynamics",
+    "liquid-liquid extraction",
+    "rachford-rice",
+    "arc-length continuation",
+    "python",
+    "matlab",
+    "mathematica",
+    "separation"
+   ],
+   "domains": [
+    "process_simulation"
+   ]
+  },
+  {
+   "id": "P5",
+   "title_fr": "Traitement Électrochimique d'un Rejet Industriel par Électro-floculation",
+   "title_en": "Electrochemical Treatment of an Industrial Effluent by Electroflocculation",
+   "nature": "lab",
+   "results": [
+    "Cd2+ 85 % and Zn2+ 57 % removed in 20 min",
+    "faradaic yield via Faraday's law"
+   ],
+   "keywords": [
+    "electrocoagulation",
+    "electroflocculation",
+    "polarography",
+    "faradaic yield",
+    "heavy metals",
+    "aluminium electrodes",
+    "wastewater"
+   ],
+   "domains": [
+    "electrochemistry",
+    "water_waste"
+   ]
+  },
+  {
+   "id": "P6",
+   "title_fr": "Polymères à Impression Moléculaire (MIPs) en Applications Pharmaceutiques",
+   "title_en": "Molecularly Imprinted Polymers (MIPs) for Pharmaceutical Applications",
+   "nature": "conflict: lab vs literature (Q-01)",
+   "results": [
+    "85 % encapsulation (doxorubicin, core-shell MOF/polymer MIP)",
+    "240 min controlled release",
+    "bi-Langmuir/Freundlich R2 = 0.9877"
+   ],
+   "keywords": [
+    "polymers",
+    "mip",
+    "drug delivery",
+    "adsorption isotherms",
+    "mof",
+    "functional materials"
+   ],
+   "domains": [
+    "materials"
+   ]
+  },
+  {
+   "id": "P7",
+   "title_fr": "Étude Bibliographique : Synthèse et Caractérisation de Matériaux Supraconducteurs",
+   "title_en": "Literature Review: Synthesis and Characterization of Superconducting Materials",
+   "nature": "literature review",
+   "results": [],
+   "keywords": [
+    "superconductors",
+    "solid-state synthesis",
+    "crystal growth",
+    "ald",
+    "raman",
+    "xrd",
+    "sem",
+    "tem"
+   ],
+   "domains": [
+    "materials"
+   ]
+  },
+  {
+   "id": "P8",
+   "title_fr": "Validation de Méthodes de Dosage du Sodium et du Potassium par Spectrométrie d'Émission de Flamme",
+   "title_en": "Validation of Sodium and Potassium Assay Methods by Flame Emission Spectrometry",
+   "nature": "lab (assumed)",
+   "results": [
+    "3 protocols validated per NT ISO 9964-3"
+   ],
+   "keywords": [
+    "method validation",
+    "flame emission",
+    "calibration",
+    "matrix effect",
+    "analytical chemistry"
+   ],
+   "domains": [
+    "analytical"
+   ]
+  },
+  {
+   "id": "P9",
+   "title_fr": "Traitement d'un Effluent par Coagulation-Floculation",
+   "title_en": "Effluent Treatment by Coagulation-Flocculation",
+   "nature": "lab",
+   "results": [
+    "optimum pH 8 among 5 values on real effluent"
+   ],
+   "keywords": [
+    "coagulation",
+    "flocculation",
+    "water treatment",
+    "pourbaix",
+    "aluminium"
+   ],
+   "domains": [
+    "water_waste"
+   ]
+  },
+  {
+   "id": "P10",
+   "title_fr": "Valorisation énergétique des déchets organiques par méthanisation (ASBR)",
+   "title_en": "Energy Recovery from Organic Waste by Anaerobic Digestion (ASBR)",
+   "nature": "experimental follow-up (assumed hands-on)",
+   "results": [
+    "5 configurations, HRT 20 d",
+    "up to 0.50 L/d biogas at 64.52 % CH4"
+   ],
+   "keywords": [
+    "anaerobic digestion",
+    "biogas",
+    "methanisation",
+    "sludge",
+    "co-digestion",
+    "circular economy",
+    "waste valorisation"
+   ],
+   "domains": [
+    "water_waste",
+    "energy_efficiency"
+   ]
+  },
+  {
+   "id": "P11",
+   "title_fr": "Gestion et traitement des déchets radioactifs : stratégies de confinement, de stabilisation et de valorisation",
+   "title_en": "Radioactive Waste Management and Treatment: Containment, Stabilisation and Valorisation Strategies",
+   "nature": "study",
+   "results": [],
+   "keywords": [
+    "nuclear",
+    "radioactive waste",
+    "vitrification",
+    "geological disposal",
+    "transmutation",
+    "gen iv"
+   ],
+   "domains": [
+    "nuclear"
+   ]
+  }
+ ],
+ "experience": [
+  {
+   "org": "SEGULA Technologies",
+   "role_fr": "Stage en modélisation électrochimique des batteries",
+   "role_en": "Electrochemical Battery Modeling Internship",
+   "dates": "06/2026-08/2026",
+   "results": [
+    "RMSE 202.13 mV -> 40.5 mV (-80 %)"
+   ],
+   "keywords": [
+    "li-ion",
+    "battery modelling",
+    "matlab",
+    "comsol",
+    "spm",
+    "fvm",
+    "nmc811"
+   ],
+   "domains": [
+    "batteries",
+    "electrochemistry",
+    "simulation"
+   ]
+  },
+  {
+   "org": "Control Union",
+   "role_fr": "Stage en contrôle qualité des carburants et lubrifiants",
+   "role_en": "Quality Control Internship",
+   "dates": "08/2025-09/2025",
+   "results": [],
+   "keywords": [
+    "icp-oes",
+    "viscosity",
+    "astm d5185",
+    "iso 17025",
+    "lubricants",
+    "quality control"
+   ],
+   "domains": [
+    "analytical"
+   ]
+  },
+  {
+   "org": "AGIL",
+   "role_fr": "Stage en contrôle qualité des carburants",
+   "role_en": "Fuel Quality Control Internship",
+   "dates": "07/2025-08/2025",
+   "results": [],
+   "keywords": [
+    "flash point",
+    "distillation",
+    "diesel",
+    "jet a-1",
+    "fuels"
+   ],
+   "domains": [
+    "analytical"
+   ]
+  },
+  {
+   "org": "ETAP",
+   "role_fr": "Stage en caractérisation des hydrocarbures et traitement des eaux industrielles",
+   "role_en": "Water Treatment and Petrochemistry Internship",
+   "dates": "07/2024-08/2024",
+   "results": [],
+   "keywords": [
+    "ion chromatography",
+    "icp-aes",
+    "water treatment",
+    "gc-ms",
+    "rock-eval",
+    "hydrocarbons",
+    "ion exchange",
+    "coagulation"
+   ],
+   "domains": [
+    "analytical",
+    "water_waste"
+   ]
+  },
+  {
+   "org": "Cascade",
+   "role_fr": "Enseignante de Chimie en Ligne (Temps partiel)",
+   "role_en": "Online Chemistry Teacher (Part-time)",
+   "dates": "2024-present",
+   "results": [],
+   "keywords": [
+    "teaching"
+   ],
+   "domains": [],
+   "kind": "additional"
+  }
+ ],
+ "domains": {
+  "batteries": {
+   "label": "Li-ion batteries / battery modelling & safety",
+   "evidence": [
+    "SEGULA"
+   ],
+   "strength": 0.9
+  },
+  "electrochemistry": {
+   "label": "Electrochemistry (measurements, electrochemical processes)",
+   "evidence": [
+    "SEGULA",
+    "P1",
+    "P5"
+   ],
+   "strength": 0.85
+  },
+  "hydrogen": {
+   "label": "Hydrogen: PEM fuel cells and electrolysers",
+   "evidence": [
+    "P1"
+   ],
+   "strength": 0.75
+  },
+  "process_simulation": {
+   "label": "Process engineering & simulation (Aspen Plus/HYSYS)",
+   "evidence": [
+    "P2",
+    "P3",
+    "P4"
+   ],
+   "strength": 0.9
+  },
+  "lca": {
+   "label": "LCA / eco-design / techno-economics",
+   "evidence": [
+    "P3"
+   ],
+   "strength": 0.7
+  },
+  "catalysis": {
+   "label": "Catalysis / catalytic reactors",
+   "evidence": [
+    "P2",
+    "P3"
+   ],
+   "strength": 0.55
+  },
+  "materials": {
+   "label": "Materials synthesis & characterisation",
+   "evidence": [
+    "P6",
+    "P7"
+   ],
+   "strength": 0.45
+  },
+  "analytical": {
+   "label": "Analytical chemistry & QC",
+   "evidence": [
+    "Control Union",
+    "AGIL",
+    "ETAP",
+    "P8"
+   ],
+   "strength": 0.8
+  },
+  "water_waste": {
+   "label": "Water & waste treatment, biogas, circular economy",
+   "evidence": [
+    "ETAP",
+    "P5",
+    "P9",
+    "P10"
+   ],
+   "strength": 0.75
+  },
+  "energy_efficiency": {
+   "label": "Energy efficiency / industrial decarbonisation",
+   "evidence": [
+    "P3",
+    "P10"
+   ],
+   "strength": 0.55
+  },
+  "nuclear": {
+   "label": "Nuclear fuel cycle / radioactive waste",
+   "evidence": [
+    "P11"
+   ],
+   "strength": 0.3
+  }
+ },
+ "standards": {
+  "applied": [
+   "ISO 17025",
+   "ASTM D5185",
+   "NT ISO 9964-3",
+   "ISO 14040/14044"
+  ],
+  "known": [
+   "ISO 9001",
+   "ISO 14001",
+   "ISO 45001"
+  ]
+ },
+ "gaps_named_in_letters": [
+  "Cantera",
+  "combustion",
+  "Flame Spray Pyrolysis",
+  "half-cell galvanostatic cycling",
+  "Fischer-Tropsch catalysis",
+  "waste-flow simulation tools"
+ ]
+}

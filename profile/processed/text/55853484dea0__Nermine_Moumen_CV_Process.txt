@@ -1,0 +1,62 @@
+                                     Nermine Moumen
+                                   Industrial Chemical Engineering Student
+         • nermine.moumen@insat.ucar.tn              • +21627040414       • linkedin.com/in/nermine − moumen
+EDUCATION
+
+National Institute of Applied Sciences and Technology (INSAT)                                                  2022–Present
+• Final-year Industrial Chemical Engineering student, specialized in Process and Environment, with a broad foundation span-
+  ning Thermodynamics, Fluid Mechanics, Energy & Mass Balances, Renewable energy and Materials Science. Seeking a
+  final-year internship focused on process simulation and techno-economic evaluation of sustainable energy conversion routes.
+PROFESSIONAL EXPERIENCE
+
+SEGULA Technologies – Electrochemical Battery Modeling Internship                                   06/2026–08/2026
+• Modeled a Li-ion cell (NMC811/Graphite-SiOx) using the Single Particle Model (SPM) implemented in MATLAB.
+• Solved the governing PDEs using the Finite Volume Method (FVM) with Crank–Nicolson time integration.
+• Optimized the mesh and diffusion coefficient values, reducing the RMSE error from 202.13 mV to 40.5 mV.
+• Extracted and processed experimental discharge data from a database to validate MATLAB and COMSOL results.
+Control Union – Quality Control Internship                                                     08/2025–09/2025
+• Analyzed lubricants for viscosity and heavy metals (ICP-OES).
+• Prepared and interpreted analytical reports to verify compliance with ASTM D5185 and ISO 17025 standards.
+ETAP – Water Treatment and Petrochemistry Internship                                               07/2024–08/2024
+• Studied water treatment methods (coagulation-flocculation, ion exchange) for contaminant and corrosion control.
+• Performed organic geochemistry techniques (GC, GC-MS, Rock-Eval pyrolysis) for hydrocarbon characterization.
+ADDITIONAL EXPERIENCE
+
+Cascade – Online Chemistry Teacher (Part-time)                                                                  2024–Present
+• Provide individualized online chemistry tutoring for French Terminale students, covering exam-level concepts.
+ACADEMIC PROJECTS
+
+Techno-Environmental Analysis of Ethylene Production: Steam Cracking vs. Bioethanol Dehydration
+• Simulated both routes in Aspen Plus V14, comparing reactor design, separation train, and energy integration, achieving a
+  purified ethylene stream at 99.95 mol% purity.
+• Conducted a cradle-to-gate Life Cycle Assessment in OpenLCA using Aspen Plus outputs as inventory data.
+Prediction of Liquid–Liquid Equilibria and Cross-flow and Countercurrent Extraction for Ternary Systems
+• Formulated the LLE thermodynamic system and solved it via Rachford-Rice and arc-length continuation.
+• Reproduced 7 Mathematica notebooks proving equivalence of the Hunter-Nash and McCabe-Thiele methods.
+• Reimplemented workflow in Python, MATLAB, and Mathematica (spline/fsolve, SciPy/mpltern, Interpolation/FindRoot).
+Ethylene Oxide Production Process Simulation using Aspen HYSYS
+• Simulated the ethylene oxide production process using NRTL-RK thermodynamics and Langmuir-Hinshelwood kinetics.
+• Optimized operating conditions via sensitivity analysis, achieving 96% recovery and 97.14% final purity.
+Hydrogen Energy Cycle Modeling: PEM Fuel Cells and Electrolysis
+• Simulated isothermal and nonisothermal PEMFC behavior in COMSOL Multiphysics, achieving a cell voltage of 0.584 V.
+• Modeled a 3D PEM electrolyzer in Ansys Fluent, achieving 1.40 L/h H2 production and identifying the oxygen evolution
+  reaction as the dominant kinetic bottleneck.
+TECHNICAL SKILLS
+
+• Simulation: Aspen Plus, Aspen HYSYS, COMSOL Multiphysics            •   Programming:     M AT LAB, M athematica, P ython
+
+• Data & Office: Pack Microsoft Office, OpenLCA      •   Standards:       ISO9001, ISO14001, ISO45001, ISO17025, ISO14040
+
+• Lab Techniques: Chromatography (HPLC, GC, TLC), Spectrometry (MS, ICP-OES), Spectroscopy (NMR, FTIR, UV-
+  Vis), Diffraction (XRD), Microscopy (SEM, TEM), Electrochemistry (Cyclic voltammetry, Polarography).
+EXTRACURRICULAR ACTIVITIES
+
+• IEEE INSAT – Chair of EMBS; Organization team leader of TRSYP 3.0; Social activities manger of MENASYP
+• THEATRO INSAT – Member of the dancing team
+LANGUAGES
+
+ English (Advanced)                        French (Advanced)                         Arabic (Native)
+CERTIFICATES
+
+Aspen HYSYS – MATLAB
+
