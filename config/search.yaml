@@ -4,20 +4,22 @@ defaults:
   find_contacts: {companies: 20, language: auto}
   find_offers: {max_offers: 30}
 
-# Ordered by priority. Visa/language notes are working assumptions (see profile/open-questions.md).
+# Focus set by Nermine on 2026-11-12: France and Germany only. Other countries are kept below, commented out,
+# to re-enable later (previous version: _archive/2026-11-12/config/search.yaml).
 countries:
-  - {name: France, lang: fr, note: "French PFE culture, convention de stage standard, gratification legally required >2 months"}
-  - {name: Belgium, lang: fr, note: "Wallonia/Brussels in FR; Flanders in EN"}
-  - {name: Switzerland, lang: fr, note: "Romandie in FR; EPFL/PSI/Empa labs take master-thesis interns"}
-  - {name: Luxembourg, lang: fr}
-  - {name: Germany, lang: en, note: "Max Planck, Fraunhofer, DLR, KIT, Helmholtz take English-speaking interns"}
-  - {name: Netherlands, lang: en}
-  - {name: Canada, lang: fr, note: "Québec in FR; visa lead time is longer"}
-  - {name: Spain, lang: en}
-  - {name: Italy, lang: en}
-  - {name: Sweden, lang: en}
-  - {name: Norway, lang: en}
-  - {name: Tunisia, lang: fr, note: "fallback / local R&D; no visa"}
+  - {name: France, lang: fr, note: "French PFE culture, convention de stage standard, gratification legally required >2 months; letters in FR unless the posting is in EN"}
+  - {name: Germany, lang: en, note: "Fraunhofer, DLR, KIT, Helmholtz (HZB, FZJ, HZDR), Max Planck, BASF/Evonik/Covestro/Linde/Siemens Energy/thyssenkrupp nucera; postings 'Masterarbeit' / 'Praktikum' — write in EN unless the posting is in German-only (then EN + note)"}
+# Disabled (re-enable by uncommenting):
+#  - {name: Belgium, lang: fr}
+#  - {name: Switzerland, lang: fr}
+#  - {name: Luxembourg, lang: fr}
+#  - {name: Netherlands, lang: en}
+#  - {name: Canada, lang: fr}
+#  - {name: Spain, lang: en}
+#  - {name: Italy, lang: en}
+#  - {name: Sweden, lang: en}
+#  - {name: Norway, lang: en}
+#  - {name: Tunisia, lang: fr}
 
 sectors:
   - battery cell / materials / battery safety & recycling
@@ -58,7 +60,12 @@ offer_sources:
   - {name: LinkedIn Jobs, url: "https://www.linkedin.com/jobs", enabled: true, note: "via_search only; record URL, never log in or scrape"}
   - {name: EURAXESS, url: "https://euraxess.ec.europa.eu/jobs/search", enabled: true}
   - {name: ABG (Association Bernard Gregory), url: "https://www.abg.asso.fr", enabled: true}
-  - {name: Lab / university pages, url: "", enabled: true, note: "CNRS, INSA, EPFL, KIT, Fraunhofer, DLR, Helmholtz, PSI internship pages"}
+  - {name: Lab / university pages, url: "", enabled: true, note: "CNRS, INSA, KIT, Fraunhofer, DLR, Helmholtz internship pages"}
+  - {name: Fraunhofer jobs, url: "https://jobs.fraunhofer.de", enabled: true, note: "filter: Abschlussarbeit / Praktikum; Fraunhofer ISE, ICT, IKTS, UMSICHT, IGB"}
+  - {name: DLR careers, url: "https://www.dlr.de/de/karriere", enabled: true}
+  - {name: KIT jobs, url: "https://www.kit.edu/stellenangebote", enabled: true}
+  - {name: Helmholtz jobs, url: "https://www.helmholtz.de/karriere/stellenangebote", enabled: true}
+  - {name: StepStone (DE), url: "https://www.stepstone.de", enabled: true, note: "via_search"}
 
 # Company discovery sources for /find-contacts
 company_sources: [company websites (team/contact/careers/press), press releases, scientific publications and patents (corresponding authors), conference speaker lists, public job postings, web search results pointing to LinkedIn profiles (URL only)]

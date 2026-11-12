@@ -44,7 +44,7 @@ def check(url: str) -> dict:
             with fetch(url, method) as r:
                 return {"status": r.status, "ok": r.status < 400, "final_url": r.geturl(), "note": method}
         except urllib.error.HTTPError as e:
-            if method == "HEAD" and e.code in (400, 403, 405, 429, 501):
+            if method == "HEAD":  # many sites answer HEAD differently: always confirm with GET
                 continue
             if e.code in (401, 403, 429):
                 return {"status": e.code, "ok": True, "final_url": url, "note": "exists, blocks bots"}

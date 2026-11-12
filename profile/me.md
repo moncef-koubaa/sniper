@@ -294,7 +294,7 @@ Certificates: **Aspen HYSYS – MATLAB** [src: all CVs]; issuer and date unknown
   six-month internship starting February 1, 2027 (flexible between 3 and 9 months)"].
 - Earlier letters gave other windows ("5 à 6 mois", "janvier/février 2027", "February/March 2027") → the standing
   rule now overrides them.
-- Mobility: Europe or elsewhere [src: seed context]; preferred countries **[assumed]** France > Belgium/Switzerland/
+- Mobility: Europe or elsewhere [src: seed context]; **target countries: France and Germany** [src: Nermine, 2026-11-12]; previous default France > Belgium/Switzerland/
   Luxembourg > Germany/Netherlands > rest of Europe > Canada (Q-04).
 - Visa: non-EU student; needs a convention de stage signed by INSAT and a long-stay/intern visa for most targets
   **[assumed]** (Q-05).

@@ -38,3 +38,7 @@ Every default I picked without asking. Format: **what** · why · how to change 
   fill dates/outcomes in the CSV (Q-17).
 - **D-11 Source IDs in `me.md` are short codes (CV01, CL04 …) with a legend table** instead of full file names in
   every tag. · Why: readability; the legend maps each code to its file. · Change: none needed.
+- **D-12 Search focus: France and Germany only** (your instruction during the run, 2026-11-12). `config/search.yaml`
+  now lists only these two countries (others commented out, previous file archived in
+  `_archive/2026-11-12/config/search.yaml`) and adds German sources (Fraunhofer, DLR, KIT, Helmholtz, StepStone).
+  Germany defaults to English letters/emails. · Change: uncomment countries in `config/search.yaml`.

@@ -28,8 +28,8 @@ marked `[assumed]` in `me.md` and never stated as fact in an application. To fix
 - **Q-03 Domain priorities.** → default: batteries/electrochemistry ≈ hydrogen/PtX ≈ process simulation+TEA/LCA >
   materials/catalysis > water/waste > analytical > nuclear (used in `strategic_value`). → order of your CV
   versions and of your 8 applications (5 of 8 are battery/energy). → Edit `config/scoring.yaml: strategic_sectors`.
-- **Q-04 Preferred countries.** → default: France first, then BE/CH/LU, DE/NL, rest of Europe, Canada; Tunisia as
-  fallback. → all 8 applications are France (7) or Germany (1). → Edit `config/search.yaml: countries`.
+- **Q-04 Preferred countries.** → **RESOLVED 2026-11-12 by Nermine: France and Germany.** (Earlier default was
+  France > BE/CH/LU > DE/NL > rest of Europe > Canada.) → Edit `config/search.yaml: countries` to widen it later.
 - **Q-05 Nationality / visa.** → default: Tunisian, non-EU, needs a visa and an INSAT convention; no existing
   EU residence permit. → Tunisian phone, studies in Tunisia. → Write your nationality and any permit you hold.
 - **Q-06 Grades / rank.** → default: never mention grades. → no transcript provided. → Drop your relevés de notes
