@@ -39,6 +39,13 @@ def page(url: str) -> str:
 
 
 def resolves(domain: str) -> bool:
+    """True if the domain has an MX record (preferred) or an A/AAAA record."""
+    import shutil
+    import subprocess
+    if shutil.which("host"):
+        out = subprocess.run(["host", "-t", "mx", domain], capture_output=True, text=True, timeout=15).stdout
+        if "mail is handled by" in out:
+            return True
     for d in (domain, "mail." + domain):
         try:
             socket.getaddrinfo(d, None)

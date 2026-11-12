@@ -61,7 +61,9 @@ def check(p: Path) -> dict:
             continue
         if norm_num(n + u) not in ME_NUMS and norm_num(n) not in ME_NUMS:
             unknown.append(f"{n} {u}")
-    terms = sorted({v for v in VOCAB if v.lower() in t.lower() and v.lower() not in ME_LOWER})
+    def present(term: str, hay: str) -> bool:  # word-boundary match ("TGA" must not match "Stuttgart")
+        return re.search(r"(?<![a-z0-9])" + re.escape(term.lower()), hay.lower()) is not None
+    terms = sorted({v for v in VOCAB if present(v, t) and not present(v, ME)})
     over = []
     for m in re.finditer(OVERCLAIM, t, re.I):
         window = t[max(0, m.start() - 160): m.end() + 160]

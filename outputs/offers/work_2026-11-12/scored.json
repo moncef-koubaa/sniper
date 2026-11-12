@@ -1,0 +1,233 @@
+[
+ {
+  "key": "CEA-NIMBE-LEDNA",
+  "subscores": {
+   "domain_fit": 0.7,
+   "skills_match": 0.7,
+   "feasibility": 1.0,
+   "hiring_signal": 1.0,
+   "contact_quality": 1.0,
+   "strategic_value": 0.9
+  },
+  "notes": {
+   "domain_fit": "electrochemical detection of water pollutants: P5 electrochem + ETAP water analysis",
+   "skills_match": "simple electrochem methods hands-on (P5); nano-object characterisation studied; potentiostat software unknown",
+   "feasibility": "start 1 Feb 2027, 6 months, Saclay FR, EN posting",
+   "hiring_signal": "live M2 posting, PhD continuation possible",
+   "contact_quality": "named supervisor C. Cannizzo, email printed on offer",
+   "strategic_value": "electrochemistry sensors at CEA, thesis pipeline"
+  },
+  "points": {
+   "domain_fit": 21.0,
+   "skills_match": 14.0,
+   "feasibility": 15.0,
+   "hiring_signal": 15.0,
+   "contact_quality": 10.0,
+   "strategic_value": 9.0
+  },
+  "score": 84.0,
+  "breakdown": "Domain 21/30 · Skills 14/20 · Feasibility 15/15 · Hiring 15/15 · Contact 10/10 · Strategic 9/10",
+  "band": "green",
+  "letter_due": true,
+  "rank": 1,
+  "cv_decision": "Custom"
+ },
+ {
+  "key": "IFPEN-347116",
+  "subscores": {
+   "domain_fit": 0.8,
+   "skills_match": 1.0,
+   "feasibility": 1.0,
+   "hiring_signal": 0.9,
+   "contact_quality": 0.2,
+   "strategic_value": 0.9
+  },
+  "notes": {
+   "domain_fit": "LLE extraction modelling = P4 topic; population balances new",
+   "skills_match": "chem eng, modelling, scientific programming, Python: all hands-on (P4, SEGULA)",
+   "feasibility": "Jan-Apr 2027, 6 months, Solaize FR, EN posting",
+   "hiring_signal": "live dated 2027 posting, apply button; publication date not shown",
+   "contact_quality": "portal only, no named person",
+   "strategic_value": "process modelling at IFPEN, research pipeline"
+  },
+  "points": {
+   "domain_fit": 24.0,
+   "skills_match": 20.0,
+   "feasibility": 15.0,
+   "hiring_signal": 13.5,
+   "contact_quality": 2.0,
+   "strategic_value": 9.0
+  },
+  "score": 83.5,
+  "breakdown": "Domain 24/30 · Skills 20/20 · Feasibility 15/15 · Hiring 13.5/15 · Contact 2/10 · Strategic 9/10",
+  "band": "green",
+  "letter_due": true,
+  "rank": 2,
+  "cv_decision": "Custom"
+ },
+ {
+  "key": "IFPEN-347114",
+  "subscores": {
+   "domain_fit": 0.8,
+   "skills_match": 0.9,
+   "feasibility": 1.0,
+   "hiring_signal": 0.9,
+   "contact_quality": 0.2,
+   "strategic_value": 0.9
+  },
+  "notes": {
+   "domain_fit": "reactor kinetics: P2 Langmuir-Hinshelwood reactor model; FT is new",
+   "skills_match": "chem eng + kinetic modelling hands-on; Fortran missing, MATLAB/Python as 'similar language'",
+   "feasibility": "Jan-May 2027, 6 months, Solaize FR, EN posting",
+   "hiring_signal": "live dated 2027 posting",
+   "contact_quality": "portal only, no named person",
+   "strategic_value": "e-fuels / Power-to-X, IFPEN pipeline"
+  },
+  "points": {
+   "domain_fit": 24.0,
+   "skills_match": 18.0,
+   "feasibility": 15.0,
+   "hiring_signal": 13.5,
+   "contact_quality": 2.0,
+   "strategic_value": 9.0
+  },
+  "score": 81.5,
+  "breakdown": "Domain 24/30 · Skills 18/20 · Feasibility 15/15 · Hiring 13.5/15 · Contact 2/10 · Strategic 9/10",
+  "band": "green",
+  "letter_due": true,
+  "rank": 3,
+  "cv_decision": "Custom"
+ },
+ {
+  "key": "IFPEN-347118",
+  "subscores": {
+   "domain_fit": 0.7,
+   "skills_match": 0.9,
+   "feasibility": 1.0,
+   "hiring_signal": 0.9,
+   "contact_quality": 0.2,
+   "strategic_value": 0.8
+  },
+  "notes": {
+   "domain_fit": "process modelling of DLE unit ops (sorption, membranes, crystallisation): adjacent",
+   "skills_match": "Python/MATLAB hands-on; process modelling hands-on; surrogate modelling not required",
+   "feasibility": "Jan-May 2027, 6 months, Solaize FR, EN posting",
+   "hiring_signal": "live dated 2027 posting",
+   "contact_quality": "portal only, no named person",
+   "strategic_value": "battery raw materials + process simulation"
+  },
+  "points": {
+   "domain_fit": 21.0,
+   "skills_match": 18.0,
+   "feasibility": 15.0,
+   "hiring_signal": 13.5,
+   "contact_quality": 2.0,
+   "strategic_value": 8.0
+  },
+  "score": 77.5,
+  "breakdown": "Domain 21/30 · Skills 18/20 · Feasibility 15/15 · Hiring 13.5/15 · Contact 2/10 · Strategic 8/10",
+  "band": "green",
+  "letter_due": true,
+  "rank": 4,
+  "cv_decision": "Custom"
+ },
+ {
+  "key": "Fraunhofer-IGB-52683",
+  "subscores": {
+   "domain_fit": 0.7,
+   "skills_match": 0.9,
+   "feasibility": 0.6,
+   "hiring_signal": 1.0,
+   "contact_quality": 0.6,
+   "strategic_value": 0.6
+  },
+  "notes": {
+   "domain_fit": "lab-scale wastewater reactor: P5, P9, ETAP water treatment",
+   "skills_match": "process/env eng + chemical lab experience hands-on; no reactor build experience",
+   "feasibility": "Stuttgart DE, EN possible; start/duration not stated; unpaid thesis",
+   "hiring_signal": "published 12 Nov 2026, apply online",
+   "contact_quality": "named admin contact Britta Munz + verified application address",
+   "strategic_value": "water treatment: adjacent sector"
+  },
+  "points": {
+   "domain_fit": 21.0,
+   "skills_match": 18.0,
+   "feasibility": 9.0,
+   "hiring_signal": 15.0,
+   "contact_quality": 6.0,
+   "strategic_value": 6.0
+  },
+  "score": 75.0,
+  "breakdown": "Domain 21/30 · Skills 18/20 · Feasibility 9/15 · Hiring 15/15 · Contact 6/10 · Strategic 6/10",
+  "band": "green",
+  "letter_due": true,
+  "rank": 5,
+  "cv_decision": "Custom"
+ },
+ {
+  "key": "Fraunhofer-UMSICHT-86107",
+  "subscores": {
+   "domain_fit": 0.6,
+   "skills_match": 0.4,
+   "feasibility": 0.6,
+   "hiring_signal": 1.0,
+   "contact_quality": 1.0,
+   "strategic_value": 0.8
+  },
+  "notes": {
+   "domain_fit": "heterogeneous catalysis: P2/P3 catalytic routes, but synthesis-focused",
+   "skills_match": "heterogeneous catalysis studied; XRD studied; TPD and pilot gas-phase testing missing",
+   "feasibility": "Oberhausen DE, EN; start/duration not stated",
+   "hiring_signal": "published 4 Nov 2026, apply online",
+   "contact_quality": "named contact S. Rollka, email printed on offer",
+   "strategic_value": "syngas/H2 catalysis, green chemistry"
+  },
+  "points": {
+   "domain_fit": 18.0,
+   "skills_match": 8.0,
+   "feasibility": 9.0,
+   "hiring_signal": 15.0,
+   "contact_quality": 10.0,
+   "strategic_value": 8.0
+  },
+  "score": 68.0,
+  "breakdown": "Domain 18/30 · Skills 8/20 · Feasibility 9/15 · Hiring 15/15 · Contact 10/10 · Strategic 8/10",
+  "band": "amber",
+  "letter_due": true,
+  "rank": 6,
+  "cv_decision": "Library"
+ },
+ {
+  "key": "AirLiquide-R10102713",
+  "subscores": {
+   "domain_fit": 0.6,
+   "skills_match": 0.6,
+   "feasibility": 1.0,
+   "hiring_signal": 1.0,
+   "contact_quality": 0.2,
+   "strategic_value": 0.4
+  },
+  "notes": {
+   "domain_fit": "industrial process improvement, specialty-gas packaging",
+   "skills_match": "chem eng + PFD hands-on; instrumentation missing; P&ID studied",
+   "feasibility": "début 2027, 6 months, Chalon-sur-Saône FR, FR posting",
+   "hiring_signal": "posted 6 days ago (aggregator), Workday link live",
+   "contact_quality": "portal only",
+   "strategic_value": "production support, not a strategic sector"
+  },
+  "points": {
+   "domain_fit": 18.0,
+   "skills_match": 12.0,
+   "feasibility": 15.0,
+   "hiring_signal": 15.0,
+   "contact_quality": 2.0,
+   "strategic_value": 4.0
+  },
+  "score": 66.0,
+  "breakdown": "Domain 18/30 · Skills 12/20 · Feasibility 15/15 · Hiring 15/15 · Contact 2/10 · Strategic 4/10",
+  "band": "amber",
+  "letter_due": true,
+  "rank": 7,
+  "cv_decision": "Library"
+ }
+]
