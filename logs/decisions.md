@@ -54,3 +54,7 @@ Every default I picked without asking. Format: **what** · why · how to change 
   the Notes. · Change: replace the primary contact in the sheet.
 - **D-17 Test run size:** /find-offers kept the top 5 of 7 live offers (max = 5), all ≥ 75 → 5 custom CVs (= the
   per-run cap). /find-contacts researched exactly 3 companies. · Change: the arguments of each command.
+- **D-18 Gaps are never mentioned** (your instruction, 2026-11-12, overrides the original "honesty about gaps" rule):
+  CL-10 removed, NV-L6 added and enforced by check_claims.py; the 5 drafted letters were edited (previous versions in
+  `_archive/2026-11-12/outputs/letters/`). Honesty is unchanged: nothing is claimed that me.md doesn't support; missing
+  requirements are simply left out. The offers sheet keeps its internal "Gaps (honest)" column for you.

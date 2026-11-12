@@ -48,8 +48,8 @@ Write `outputs/letters/<Company>_<Short-title>_<lang>.md` in the offer's languag
 `cover-letter-rules.md` (CL-01…CL-15) and the examples: exact offer title in the Objet/Subject; salutation to the
 named contact on the offer (all named supervisors, like CL03) — otherwise generic + Notes `GENERIC SALUTATION`;
 ¶1 request + availability (offer dates if stated); ¶2 one proof mapped to the requirements; ¶3 the team's concrete
-strength (from the offer or the team page, cite the URL in Notes); gap sentence for each must-have she lacks
-(CL-10); ¶4 one line; closing CL-12. Then:
+strength (from the offer or the team page, cite the URL in Notes); **no gap sentence** — never mention a missing
+requirement (NV-L6); ¶4 one line; closing CL-12. Then:
 - `python3 scripts/build_letter.py outputs/letters/<file>.md` → ok (250–390 words, 1 page; .docx + .pdf created).
 - `python3 scripts/check_claims.py outputs/letters/<file>.md` → ok.
 - `checklist.md` (letter part).
@@ -57,7 +57,7 @@ strength (from the offer or the team page, cite the URL in Notes); gap sentence 
 ## 8. Excel
 `work_<date>/run.json` with `kind: "offers"` and one object per offer with the Offers columns of
 `scripts/build_xlsx.py`: Score breakdown (`breakdown` + " | " + notes), Key requirements, My matching evidence
-(me.md facts with project/internship IDs), Gaps (honest), CV decision, CV file, Cover letter file, Contact on offer,
+(me.md facts with project/internship IDs), Gaps (honest) — internal note for Nermine only, never copied into a letter, CV decision, CV file, Cover letter file, Contact on offer,
 Application method, Link to post, Date found (today), Status "To send", Deadline as YYYY-MM-DD when known. Run
 `python3 scripts/build_xlsx.py work_<date>/run.json outputs/offers/offers_<date>.xlsx` (sorted by score, row 2 = top
 priority, deadlines ≤ 7 days highlighted). Reopen with openpyxl: sorted, ranks 1..n, every letter_due row has a

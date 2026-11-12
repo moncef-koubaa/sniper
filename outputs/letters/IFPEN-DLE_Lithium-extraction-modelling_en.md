@@ -9,7 +9,7 @@ I am a final-year Industrial Chemical Engineering student at INSAT (Université 
 
 My coursework in thermodynamics, unit operations and mass and energy balances has given me the basis for physical modelling of separation steps. In an academic project on liquid-liquid equilibria and cross-flow and countercurrent extraction, I formulated the thermodynamic system, solved it with Rachford-Rice and arc-length continuation, and reimplemented the workflow in Python, MATLAB and Mathematica. In another project, I compared two ethylene production routes in Aspen Plus V14, with mass and energy balances and process flow diagrams for each route. This habit of structuring a process into unit operations and modelling each one is directly analogous to the mapping and model review your internship describes.
 
-The project interests me because it connects process modelling to the lithium supply chain of the batteries I modelled at SEGULA Technologies, where I built a Li-ion cell model in MATLAB and validated it against experimental data. Sorption, membrane and crystallisation models and surrogate modelling are new to me specifically, but my track record across thermodynamic, electrochemical and process projects shows that I learn new models quickly and work independently.
+The project interests me because it connects process modelling to the lithium supply chain of the batteries I modelled at SEGULA Technologies, where I built a Li-ion cell model in MATLAB and validated it against experimental data.
 
 I am drawn to this internship because it sits precisely at the intersection of process modelling and battery materials.
 

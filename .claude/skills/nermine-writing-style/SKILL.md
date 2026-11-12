@@ -28,10 +28,10 @@ Priority: **hard rules** (CLAUDE.md) > rules marked *always* > *usually* > *vari
 4. **Tailor by swapping projects and promoting matching bullets**, never by adding unsupported keywords (TL-01…TL-05).
 5. **Letters: 4 paragraphs** — request (INSAT, specialty, availability, exact offer) → one quantified proof mapped
    explicitly to the offer → the company's concrete strength tied to her profile → one-line motivation; then the
-   closing (CL-06…CL-12).
+   closing (CL-06…CL-12). No gap sentence (NV-L6).
 6. **Real-name salutation** whenever a name exists; generic only with a `GENERIC SALUTATION` flag (CL-04, EM-03).
 7. **Availability**: « à partir du 1er février 2027, pour une durée de 6 mois (3 à 9 mois possibles) » (CL-07).
-8. **Gaps**: name it in one clause, then the evidence that she learns fast (CL-10).
+8. **Never mention gaps** in a letter or email: no "new to me", no missing skills; only what she has (NV-L6).
 9. **Emails: 120–180 words**, hook + one proof + clear request + CV attached (EM-01…EM-08).
 10. **Language** follows the offer/company; FR in feminine forms and French number format (CL-15, CL-05, CV-12).
 

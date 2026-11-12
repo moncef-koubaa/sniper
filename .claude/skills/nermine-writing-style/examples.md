@@ -30,20 +30,19 @@ Copy the *pattern*, never the facts of another target. IDs = `profile/me.md` leg
 2. Proof + mapping (CL05): « Cette double compétence en modélisation physique et en analyse critique de résultats
    expérimentaux, associée à ma pratique de Python, correspond directement à la démarche itérative modèle-expérience
    que demande votre stage. »
-3. Company strength + gap (CL06, CL05): « Votre service Process Solutions, acteur central de la cohérence technique entre
+3. Company strength (CL06): « Votre service Process Solutions, acteur central de la cohérence technique entre
    les différents métiers de GTT, représente pour moi une opportunité stimulante d'appliquer mes compétences en génie
-   des procédés … » · « Je suis consciente que Cantera et la combustion à proprement parler sont des domaines nouveaux
-   pour moi, mais je suis convaincue que ma solide expérience de modélisation numérique et ma capacité d'adaptation me
-   permettront de m'investir rapidement dans ce projet. »
+   des procédés … »
 
 ## Cover letter — English
 1. Opening with availability (CL01): "I am a final-year Industrial Chemical Engineering student at INSAT (Université de
    Carthage, Tunisia), specializing in Process and Environment, and I am writing to apply for the internship on
    techno-economic assessment of the CO2-active Fischer-Tropsch route within the Solar Production Process Assessment
    department. I am available for a six-month internship starting February 1, 2027 (flexible between 3 and 9 months)."
-2. Gap handling (CL01): "I don't yet have hands-on experience with Fischer-Tropsch catalysis specifically, but I have
-   solved reaction-kinetics problems in Aspen (Langmuir-Hinshelwood kinetics for an ethylene oxide reactor) and
-   numerically solved coupled PDEs for an electrochemical model …"
+2. Proof mapped to the role (CL01): "… a comparative Aspen Plus study of two ethylene production routes (steam cracking vs.
+   bioethanol dehydration), combining reactor and separation-train design with a cradle-to-gate Life Cycle Assessment in
+   OpenLCA …, an evaluation workflow directly analogous to the reference-case benchmarking and techno-economic assessment
+   this role requires."
 3. Motivation line (CL01): "I am drawn to this internship because it sits precisely at the intersection I want to
    specialize in: renewable-energy-driven process simulation and its techno-economic viability."
 

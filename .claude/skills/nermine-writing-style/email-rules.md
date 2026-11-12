@@ -28,4 +28,4 @@ letter style. Strength: **hard** unless stated. `/learn-style` will refine them 
   nermine.moumen@insat.ucar.tn · +216 27 040 414 · linkedin.com/in/nermine-moumen.
 - **EM-10 Plain text, no bullet lists, no bold, ≤ 5 short paragraphs.**
 - **EM-11 Language** = company's working language (CLAUDE.md), feminine forms in FR.
-- **EM-12 Never** a §5c item presented as hands-on; never a fact not in me.md; never "I hope this email finds you well".
+- **EM-12 Never** mention a gap or a missing skill (NV-L6); never a §5c item presented as hands-on; never a fact not in me.md; never "I hope this email finds you well".

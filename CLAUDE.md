@@ -52,7 +52,8 @@ Commands: `/get-to-know-me`, `/find-contacts`, `/find-offers`, `/tailor-cv`, `/l
   (Notes column: `GENERIC SALUTATION`).
 - **Language**: the language of the posting; for spontaneous applications, the company's working language
   (France/Belgium/Switzerland-romande/Luxembourg/Québec → FR; elsewhere → EN unless the site is FR-only).
-- **Gaps**: name a domain gap briefly and honestly, and pair it with evidence that I learn fast and independently.
+- **No gaps**: never mention a domain gap, a missing skill or something "new to me" in a letter or email; write only
+  about what I have (NV-L6). Honesty still applies: never claim what I don't have.
 - **Spontaneous emails**: 120–180 words, specific hook about the company, one proof point, clear request
   (PFE from Feb 2027, or a referral to the right person), CV attached.
 - **CV decision**: score ≥ `custom_cv_threshold` (config/scoring.yaml, default 75) → `/tailor-cv`, at most

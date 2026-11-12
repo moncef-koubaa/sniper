@@ -42,13 +42,8 @@ Base: 8 letters (CL01–CL08). Strength as in `cv-rules.md`. **hard** = Nermine'
   … » — must cite something concrete from their site or the offer (a programme, a technology, a site, a team), then
   tie it to her profile. EN: "<Org>'s work on <specific> is exactly the kind of … I want to build my final-year
   project around." *always* (8/8).
-- **CL-10 Gap, then evidence of learning fast** (*hard*; 5/8 samples): name the gap in one clause and pair it with
-  proof: « Je suis consciente que Cantera et la combustion à proprement parler sont des domaines nouveaux pour moi,
-  mais je suis convaincue que ma solide expérience de modélisation numérique et ma capacité d'adaptation me
-  permettront de m'investir rapidement … » (CL05) · "Flame Spray Pyrolysis and half-cell galvanostatic cycling are
-  new to me specifically, but my track record across … shows I adapt quickly" (CL03). Best proof of fast learning in
-  me.md: the SEGULA model built in MATLAB and recalibrated (RMSE −80 %), the LLE workflow re-implemented in 3
-  languages (P4).
+- **CL-10 (removed 2026-11-12 at Nermine's request)** — was "name the gap, then evidence of learning fast". Replaced
+  by NV-L6. The ID stays retired.
 - **CL-11 ¶4 One-line motivation & fit.** FR: qualities triplet + conviction « Rigoureuse, organisée et à l'aise dans
   …, je suis convaincue que … » (*usually*, 4/5). EN: "I am drawn to this internship because it sits precisely at the
   intersection …" (*usually*, 2/3).
@@ -77,3 +72,6 @@ Base: 8 letters (CL01–CL08). Strength as in `cv-rules.md`. **hard** = Nermine'
 - **NV-L3** No exclamation marks, no emojis, no em-dash chains, no clichés she never uses ("passionnée depuis toujours").
 - **NV-L4** No salary, visa or personal circumstances in the letter.
 - **NV-L5** Never more than one page; never two proofs that say the same thing.
+- **NV-L6** Never mention a gap (*hard*, Nermine 2026-11-12): no "new to me", « nouveau pour moi », « je suis
+  consciente que … », "I don't yet have", no list of what is missing. Write only about what she has; leave missing
+  requirements out (they stay visible to her in the sheet's internal Gaps column).

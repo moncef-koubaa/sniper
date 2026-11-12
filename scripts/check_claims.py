@@ -7,7 +7,8 @@ Checks (heuristic, conservative):
      (decimal comma/point and spacing normalised);
   2. every tool/technique from a known vocabulary that appears in the document appears in me.md;
   3. forbidden overclaims: "hands-on"/"expérience pratique"/"maîtrise" near a technique of me.md §5c;
-  4. "[assumed]" facts (nationality wording etc.) are not stated.
+  4. gap mentions ("new to me", « nouveau pour moi », « je suis consciente que » …) — forbidden by NV-L6;
+  5. "[assumed]" facts (nationality wording etc.) are not stated.
 Prints JSON {file: {numbers_checked, unknown_numbers, unknown_terms, overclaims, ok}}; exit 1 if any problem.
 """
 from __future__ import annotations
@@ -29,6 +30,8 @@ VOCAB = ["Aspen Plus", "Aspen HYSYS", "COMSOL", "Ansys Fluent", "ANSYS Fluent", 
          "ProSim", "DWSIM", "gPROMS", "Simulink", "LabVIEW", "SolidWorks", "AutoCAD"]
 STUDIED = ["HPLC", "NMR", "RMN", "FTIR", "XRD", "SEM", "TEM", "MEB", "MET", "Raman", "RAMAN", "sol-gel",
            "voltamétrie cyclique", "cyclic voltammetry", "UV-Vis", "Soxhlet", "TLC", "CCM"]
+GAP = (r"(new to me|nouveaux? pour moi|nouvelles? pour moi|je suis consciente que|i don't yet have|i do not yet have|"
+       r"i have not yet|je n'ai pas encore|lack of experience|manque d'expérience|domaines? que je découvrirais)")
 OVERCLAIM = r"(hands-on|expérience pratique|pratique solide|maîtrise|maîtrise de|solid practice|extensive experience)"
 
 
@@ -70,8 +73,10 @@ def check(p: Path) -> dict:
         hit = [s for s in STUDIED if s.lower() in window.lower()]
         if hit:
             over.append(f"'{m.group(0)}' near {', '.join(hit)}")
-    res = {"numbers_checked": len(nums), "unknown_numbers": unknown, "unknown_terms": terms, "overclaims": over}
-    res["ok"] = not (unknown or terms or over)
+    gaps = [m.group(0) for m in re.finditer(GAP, t, re.I)]  # NV-L6: never mention gaps
+    res = {"numbers_checked": len(nums), "unknown_numbers": unknown, "unknown_terms": terms, "overclaims": over,
+           "gap_mentions": gaps}
+    res["ok"] = not (unknown or terms or over or gaps)
     return res
 
 

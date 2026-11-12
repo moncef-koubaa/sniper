@@ -24,10 +24,10 @@ Tick every line; a failed line is fixed, not ignored. Record in the run log: `ch
 - [ ] ¶1 request with INSAT, specialty, availability, exact offer (CL-06, CL-07).
 - [ ] ¶2 one proof with tool + number + explicit mapping to the offer (CL-08).
 - [ ] ¶3 a concrete, verifiable strength of the company, cited from their page (CL-09, NV-L2).
-- [ ] Each real gap named once and paired with fast-learning evidence (CL-10).
+- [ ] No sentence mentions a gap, a missing skill or something "new to me" (NV-L6); check_claims reports 0 gap_mentions.
 - [ ] ¶4 one line (CL-11); closing formula (CL-12); no salary/visa talk (NV-L4).
 
 ## Email
 - [ ] 120–180 words body (EM-01); subject pattern ≤ 90 chars (EM-02).
 - [ ] Real-name salutation or flag (EM-03); specific hook (EM-05); one proof (EM-06); clear request (EM-07);
-      CV attached line (EM-08); closing + signature (EM-09); plain text (EM-10).
+      CV attached line (EM-08); closing + signature (EM-09); plain text (EM-10); no gap mentioned (NV-L6).
