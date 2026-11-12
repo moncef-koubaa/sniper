@@ -1,0 +1,9 @@
+# Python and Node build output
+__pycache__/
+*.pyc
+node_modules/
+
+# machine settings and personal answers: never pushed
+.env
+.venv/
+02_setup_prompt/answers.json

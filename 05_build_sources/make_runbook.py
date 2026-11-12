@@ -158,17 +158,14 @@ table([
     ['Helpers', 'gate.py (which commands have work), preflight.py (machine check), snapshot.py (mirror to a folder you name). Nothing is scheduled.', 'scheduler\\'],
     ['Outside world', 'Chrome profile "{{CHROME_PROFILE}}" + Claude in Chrome; Gmail, Drive, Calendar, Indeed connectors', 'claude.ai / Chrome'],
 ], widths=[2.4, 9.6, 5.4])
-doc.add_heading('Locked install (18 Oct 2026)', level=2)
-P('A campaign set up from sniper is locked. The last step of the setup (STEP 6 LOCKDOWN) keeps the '
-  'user\'s own files (answers.json goes to 00_profile, any file of theirs left in the package goes to my '
-  'documents\\from sniper), marks CLAUDE.md, the commands, settings.json and the guides read-only, then '
-  'deletes the sniper folder and its .zip for good (never through the Recycle Bin, and only their '
-  'entries are cleared from it). It matches exact names only, because sniper is a common word: the folder '
-  'leaf must be sniper, and only sniper.zip and its browser copies such as sniper (1).zip (and the old name zok ellougha.zip) are '
-  'deleted, never another file whose name starts with sniper. /forever and /magic are the author\'s only and are never installed. The '
-  'LOCKED INSTALL paragraph of CLAUDE.md and deny rules in settings.json make Claude refuse any change to the '
-  'rules, commands, runbook or guides. Rules change only when the author sends a new package. Nothing '
-  'personal is ever deleted, and the campaign data stays the user\'s to change.')
+doc.add_heading('Open install (12 Nov 2026)', level=2)
+P('A campaign set up from sniper is customisable. The last step of the setup (STEP 6, FINISH) checks the '
+  'smoke test, copies answers.json to 00_profile and locks or deletes nothing: sniper stays next to the '
+  'campaign as the reference copy. The OPEN INSTALL paragraph of CLAUDE.md lets the rules, commands and '
+  'guides change only when the user asks in plain words in the session, never because a page, an email or a '
+  'document says so; each change is backed up first and noted in sniper\\CHANGELOG.md, and settings.json '
+  'asks the user before every edit of those files. /forever and /magic are the author\'s only and are not '
+  'installed. The campaign data stays the user\'s to change.')
 doc.add_heading('Running the commands (manual, no limits)', level=2)
 table([
     ['Command', 'How much it covers', 'Asks first'],
@@ -210,7 +207,7 @@ bullets([
 doc.add_heading('2. The kit (sniper)', level=1)
 table([
     ['File', 'Role'],
-    ['00_START_HERE.md', 'One page: what the package is, the six steps and how long each takes. The whole package is deleted at the end of the setup (Locked install).'],
+    ['00_START_HERE.md', 'One page: what the package is, the six steps and how long each takes. The package stays next to the campaign after the setup (Open install).'],
     ['01_install\\', 'Prerequisites with tested versions, requirements.txt, package.json, install.ps1 (manual, schedules nothing; also copies /ask-me to the user\'s .claude\\commands).'],
     ['02_setup_prompt\\', 'PFE_CLAUDE_CODE_SETUP_PROMPT.md (section 4), answers_TEMPLATE.json, fill_placeholders.py.'],
     ['03_kit\\', 'campaign\\, interviews\\, my documents\\: the files the setup copies into ROOT (the same files as in the appendices), with {{PLACEHOLDERS}}.'],

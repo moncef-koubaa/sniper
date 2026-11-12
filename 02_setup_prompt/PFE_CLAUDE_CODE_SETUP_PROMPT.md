@@ -7,8 +7,8 @@ HOW TO USE (version 28, 22 October 2026)
    Accept "trust this folder", type /chrome and choose "Enabled by default" and your campaign profile.
 3. Paste everything below the line. If you already filled 02_setup_prompt\answers.json, say so at the end.
    Stuck on any step? Type /ask-me, a space, then paste the step: Claude does it or explains it simpler.
-4. The setup ends by deleting the "sniper" folder and its .zip for good (STEP 6). Keep nothing of
-   yours inside it; anything you left there is moved to "my documents\from sniper" first.
+4. The setup locks nothing and deletes nothing: "sniper" stays next to your campaign as its reference copy,
+   and you can change the rules and commands later by asking Claude (OPEN INSTALL).
 -----------------------------------------------------------------------------------------------------------
 
 PFE CAMPAIGN: SET UP (OR RESTORE) MY INTERNSHIP CAMPAIGN IN CLAUDE CODE, RULES VERSION 24.
@@ -20,7 +20,7 @@ lives in one ROOT folder (default: the folder that holds "sniper"):
   ROOT\interviews\      one folder per interview
   ROOT\my documents\    my CV exports, internship agreement templates, recommendations, reports
   ROOT\guides\          the runbook and guides
-  ROOT\sniper\    this package, deleted for good at the end of the setup (STEP 6 LOCKDOWN)
+  ROOT\sniper\    this package, kept as the reference copy (setup prompt, kit, build sources)
 The memory of the campaign is campaign\02_tracker\tracker.csv. Each job is a slash command in
 campaign\.claude\commands\ that I start by hand. Nothing is scheduled: never create, install or enable a
 scheduled task, cron job, routine or automated runner. The rules for every session are campaign\CLAUDE.md.
@@ -38,9 +38,9 @@ SOURCE OF THE FILES
   {{PLACEHOLDERS}} in place of personal details. ZOK\PERSONALISE.md explains every placeholder.
 - ZOK\02_setup_prompt\fill_placeholders.py fills them from an answers file (answers_TEMPLATE.json shows
   the format) and saves the answers as campaign\00_profile\personalisation_map.json.
-- Only during this setup, before STEP 6 LOCKDOWN: if a kit file is missing, recreate it from the shared
+- If a kit file is missing, recreate it from the shared
   runbook ZOK\04_runbook_and_guides\PFE2027_Runbook_Claude_Code.docx, never from my own copy in
-  ROOT\guides (a locked copy holds no files) and never after LOCKDOWN: with python-docx, every file sits between a
+  ROOT\guides (that copy holds no files): with python-docx, every file sits between a
   paragraph "BEGIN FILE <relative path>" and a paragraph "END FILE"; join the paragraphs in between with
   "\n" and write them as UTF-8 with LF line endings.
 
@@ -165,66 +165,19 @@ STEP 5. SMOKE TEST (read only, or on temporary copies)
    campaign\.claude\commands\ or ~\.claude\commands\ (%USERPROFILE% on Windows), delete those two files there. Tell me
    to type / in a new session opened in ROOT\campaign and check the nine appear.
 
-STEP 6. LOCKDOWN (PATH B, and PATH A on a received package; last step, done once, in this order)
-A campaign set up from sniper is a locked install: the package is deleted for good, /forever and /magic
-are not installed, and the rules, commands, runbook and guides are read-only (CLAUDE.md, LOCKED INSTALL).
-Nothing personal is ever deleted or changed by this step.
-1. Author guard: if ROOT\archive\rule snapshots exists, this is the author's own machine: skip STEP 6
-   entirely, delete and lock nothing, and say so.
-2. Gate: delete nothing unless every STEP 5 check passed (placeholders left 0), ROOT\guides holds my runbook
-   as <CAMPAIGN_FILE_STEM>_Runbook_Claude_Code.pdf (a locked copy: no "BEGIN FILE" and no "BEGIN PROMPT setup"
-   in its text, and no .docx runbook next to it) and both guide PDFs, campaign\.claude\commands holds exactly the 9 command files, and
-   campaign\00_profile\personalisation_map.json exists. Anything missing: list it, skip the rest of STEP 6
+STEP 6. FINISH: OPEN INSTALL (PATH B, and PATH A; last step)
+This is a customisable install (changed 12 Nov 2026): nothing is locked and nothing is deleted. ROOT\sniper
+stays next to the campaign as the reference copy; ROOT\.env and ROOT\.venv stay as they are.
+1. Gate: every STEP 5 check passed (placeholders left 0), ROOT\guides holds my runbook
+   <CAMPAIGN_FILE_STEM>_Runbook_Claude_Code.pdf and both guide PDFs, campaign\.claude\commands holds exactly
+   the 9 command files, and campaign\00_profile\personalisation_map.json exists. Anything missing: list it
    and tell me to run the setup again once it is fixed.
-3. Keep my data first: copy ZOK\02_setup_prompt\answers.json to campaign\00_profile\answers.json. Every file
-   inside ZOK that is not listed in ZOK\MANIFEST.txt is mine: move it (never delete it) to
-   ROOT\my documents\from sniper\, same relative path, and list each one.
-4. Lock (Windows: attrib +R; Linux/macOS: chmod a-w): campaign\CLAUDE.md, campaign\AGENTS.md if it exists,
-   campaign\.claude\settings.json, campaign\.claude\commands\*.md, every file in ROOT\guides, and
-   ~\.claude\commands\ask-me.md.
-   Never lock anything else (tracker files, 00_profile, 01_sources, 03_documents, 04_outbound, 05_reports,
-   my documents and interviews stay writable).
-5. Verify the target before deleting, in PowerShell:
-     $zok = (Resolve-Path -LiteralPath '<ROOT>\sniper').Path
-   All must be true, otherwise stop and delete nothing: (Split-Path $zok -Leaf) -eq 'sniper';
-   VERSION, MANIFEST.txt and 02_setup_prompt\PFE_CLAUDE_CODE_SETUP_PROMPT.md exist inside it; $zok is not a
-   drive root, not $env:USERPROFILE, not ROOT, and ROOT\campaign is not inside it.
-6. Delete permanently (Remove-Item never goes through the Recycle Bin):
-     attrib -R "$zok\*" /S /D
-     Remove-Item -LiteralPath $zok -Recurse -Force
-   Then the package archive, exact names only ("sniper" is a common word: never a sniper* wildcard).
-   Directly in $env:USERPROFILE\Downloads, $env:USERPROFILE\Desktop, $env:OneDrive\Desktop,
-   $env:OneDrive\Bureau and ROOT only (no -Recurse), delete each file whose whole name matches the
-   package zip or its browser duplicates (zok ellougha.zip is the old download name):
-     $zipName = '^(sniper( \(\d+\))?|zok ellougha( \(\d+\))?)\.zip$'
-     Get-ChildItem -LiteralPath <folder> -Filter '*.zip' -File | Where-Object { $_.Name -match $zipName } |
-       ForEach-Object { Remove-Item -LiteralPath $_.FullName -Force }
-   So sniper.zip, sniper (1).zip and zok ellougha.zip go, sniper_game.zip or any other file stays.
-   Then the Recycle Bin, only its entries named exactly sniper, sniper.zip, sniper (n).zip or zok ellougha*,
-   or whose original location is inside $zok (each entry is a $R file with its $I record next to it):
-     $bin = (New-Object -ComObject Shell.Application).Namespace(10)
-     foreach ($i in @($bin.Items())) {
-       $n = $i.Name
-       if ($n -match $zipName -or $n -match '^(sniper( \(\d+\))?)$' -or $n -like 'zok ellougha*' -or
-           $bin.GetDetailsOf($i, 1) -like "$zok*") {
-         $r = $i.Path; $leaf = Split-Path $r -Leaf
-         Remove-Item -LiteralPath $r -Recurse -Force
-         Remove-Item -LiteralPath (Join-Path (Split-Path $r) ('$I' + $leaf.Substring(2))) -Force -ErrorAction SilentlyContinue } }
-   Check Test-Path is False for $zok and each archive deleted. Never delete any other path, never empty the
-   whole Recycle Bin, never touch another file of mine.
-   Linux/macOS, same checks and same exact names, in bash:
-     zok="$(cd '<ROOT>/sniper' && pwd -P)"   # leaf must be sniper; VERSION, MANIFEST.txt and the setup
-                                               # prompt inside; not /, not $HOME, not ROOT; campaign not inside
-     chmod -R u+w "$zok" && rm -rf -- "$zok"
-     for d in "$HOME/Downloads" "$HOME/Desktop" "<ROOT>"; do
-       find "$d" -maxdepth 1 -type f -regextype posix-extended \
-         -regex '.*/(sniper( \([0-9]+\))?|zok ellougha( \([0-9]+\))?)\.zip' -delete; done
-   (macOS find has no -regextype: use find -E "$d" -maxdepth 1 ... instead.) Trash (Linux
-   ~/.local/share/Trash, macOS ~/.Trash): remove only entries named exactly as above, with their .trashinfo
-   on Linux. Check `test -e "$zok"` fails afterwards.
-7. Say what was deleted, what was moved to my documents, and that the locked files are read-only on purpose.
-   If ROOT is under OneDrive, add that OneDrive keeps deleted files in its web recycle bin for a while
-   (onedrive.live.com, Recycle bin), which a local step cannot empty.
+2. Keep my answers with the campaign: copy ZOK\02_setup_prompt\answers.json to campaign\00_profile\answers.json.
+3. Lock nothing (no attrib +R, no chmod a-w) and delete nothing (not sniper, not its .zip, not the Recycle
+   Bin or Trash).
+4. Tell me that the rules (CLAUDE.md) and the commands (.claude\commands) are mine to change: I ask for a
+   change in plain words in a session opened in ROOT\campaign, and settings.json makes Claude Code ask me
+   before each edit of those files (CLAUDE.md, OPEN INSTALL).
 
 STEP 7. FIRST RUN (by me)
 Do not run any command yourself and do not schedule anything. Tell me to open a new session in
@@ -236,7 +189,7 @@ END WITH
 - the STATE line before and after, and which path (A or B) ran;
 - files installed, files kept, backup folder path, placeholders left (must be 0);
 - smoke test results, one line each;
-- the LOCKDOWN result: skipped (author machine or gate failed, with why) or done (deleted, moved, locked);
+- the STEP 6 result: gate passed or what is missing; answers.json copied;
 - what I still have to do, as clicks and commands (extension: "On all sites" and "Act without asking";
   /chrome: Enabled by default and the campaign profile; any refused step; missing source documents);
 - which command to run first.

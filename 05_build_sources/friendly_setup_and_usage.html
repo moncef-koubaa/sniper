@@ -174,7 +174,7 @@ Open <b>sniper\02_setup_prompt\PFE_CLAUDE_CODE_SETUP_PROMPT.md</b> in Notepad. C
 <div class="see">Claude asks its questions in one message.</div><div class="ask">Copy this whole step (select its box, right-click, Copy). In Claude Code type <b>/ask-me</b>, a space, then paste it (right-click) and press Enter. Claude does the step for you if it can, or explains it again in simpler words.</div></div></div>
 
 <div class="step"><div class="num">16</div><div class="c"><b class="t">Let it work</b>
-Now wait. Claude works for about an hour: it checks the computer, creates <b>campaign</b>, <b>interviews</b>, <b>my documents</b> and <b>guides</b> next to sniper, and puts your details into every file. It asks you once to put your CV, reports and letters in <b>my documents</b>: do it, then tell it they are there. Then it builds your profile and tests everything. It does not set any alarm. Last, it locks your campaign and deletes the sniper folder and its .zip for good. Keep nothing of yours in sniper: anything left there is moved to <b>my documents\from sniper</b> first.
+Now wait. Claude works for about an hour: it checks the computer, creates <b>campaign</b>, <b>interviews</b>, <b>my documents</b> and <b>guides</b> next to sniper, and puts your details into every file. It asks you once to put your CV, reports and letters in <b>my documents</b>: do it, then tell it they are there. Then it builds your profile and tests everything. It does not set any alarm. It locks nothing and deletes nothing: sniper stays next to your campaign, and you can change the rules later by asking Claude.
 <div class="see">Claude ends with a summary: "placeholders left: 0", the test results, and the first command to run.</div><div class="ask">Copy this whole step (select its box, right-click, Copy). In Claude Code type <b>/ask-me</b>, a space, then paste it (right-click) and press Enter. Claude does the step for you if it can, or explains it again in simpler words.</div></div></div>
 
 <div class="step"><div class="num">17</div><div class="c"><b class="t">Do what Claude could not do alone (only if it asks)</b>
@@ -213,7 +213,7 @@ Then type the command the setup names (usually <b>/pfe-hunter</b> on a new campa
 <tr><td>🔗 The <b>claude.ai connectors</b> (Gmail, Drive, Calendar, Indeed)</td><td>It reads your mail, saves the tracker to Drive and puts interviews in your calendar.</td></tr>
 <tr><td>🤖 Your <b>Claude account</b> logged in, with usage left</td><td>Every run uses your Claude plan, and runs have no size limit, so a big one can use it all. Then the run stops; run the same command again when the plan resets and it continues.</td></tr>
 <tr><td>📝 <b>Word</b> installed</td><td>It turns your CV and letters into PDF files.</td></tr>
-<tr><td>📁 The folder <b>campaign</b></td><td>campaign is where it works. sniper, the toolbox, was deleted at the end of the setup on purpose.</td></tr>
+<tr><td>📁 The folder <b>campaign</b></td><td>campaign is where it works. sniper, the toolbox, stays next to it as the reference copy.</td></tr>
 <tr><td>🙋 <b>Only one</b> Claude window using Chrome at a time</td><td>Chrome can be driven by one Claude at a time. Close the others with <code>/exit</code>.</td></tr>
 </table>
 <div class="careful">Do not open <code>tracker.csv</code> in Excel while the helper is working. Open <code>tracker.xlsx</code> instead: it is a copy made for reading.</div>
@@ -231,7 +231,7 @@ claude --chrome</div>
 <table>
 <tr><th style="width:42%">You want to</th><th>Type</th></tr>
 <tr><td>Answer interview, offer, salary or visa emails</td><td><code>/pfe-send</code></td></tr>
-<tr><td>Change a rule or a command</td><td>You cannot: your campaign is locked (rules, commands and guides are read-only). Ask the author for an updated package.</td></tr>
+<tr><td>Change a rule or a command</td><td>Open Claude Code in <code>campaign</code> and ask for the change in plain words. Claude says what it will change, keeps a backup, and Claude Code asks you before it edits the file.</td></tr>
 <tr><td>Get help on a step you are stuck on (Claude does it, or explains it simpler)</td><td><code>/ask-me</code> then paste the step</td></tr>
 <tr><td>Prepare for an interview</td><td><code>/pfe-interview-prep their@email.com</code></td></tr>
 <tr><td>Read your mail now</td><td><code>/pfe-inbox</code></td></tr>
@@ -294,8 +294,8 @@ claude --chrome</div>
 <h2>Where to learn more 📚</h2>
 <ul>
 <li><b>{{CAMPAIGN_FILE_STEM}}_Build_Guide.pdf</b> (in guides): the long version of this guide, with every detail.</li>
-<li><b>{{CAMPAIGN_FILE_STEM}}_Runbook_Claude_Code.pdf</b> (in guides): the book that explains how the whole system works (a locked copy, read-only).</li>
-<li><b>PFE_CLAUDE_CODE_SETUP_PROMPT.md</b> (in sniper\02_setup_prompt, deleted after the setup): the magic message's full text. Your own runbook explains the system but does not hold it.</li>
+<li><b>{{CAMPAIGN_FILE_STEM}}_Runbook_Claude_Code.pdf</b> (in guides): the book that explains how the whole system works.</li>
+<li><b>PFE_CLAUDE_CODE_SETUP_PROMPT.md</b> (in sniper\02_setup_prompt): the magic message's full text. Your own runbook explains the system but does not hold it.</li>
 </ul>
 <p class="small">Friendly Setup and Usage · rules version 30 · 31 October 2026 · {{FULL_NAME}}, {{SCHOOL}}</p>
 </body></html>

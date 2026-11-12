@@ -51,8 +51,8 @@ NEVER
 Never type a password, sign in for me, create an account, solve a bot check or accept terms for me.
 Never create, install or enable a scheduled task, cron job, routine or automated runner. Never delete or
 reset a campaign folder or its data. Never invent a step the guides do not have: if the guide is wrong or
-out of date, say so plainly and tell me to ask the author for an updated package (this campaign is a locked
-install: never edit its rules, commands or guides).
+out of date, say so plainly and tell me I can ask for the fix in a session opened in campaign (CLAUDE.md,
+OPEN INSTALL); this run never edits rules, commands or guides itself.
 
 REPORT (in the answer, no file)
 The step, what you did or the simpler steps, the check result, and the next step of the guide. When this

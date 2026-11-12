@@ -22,9 +22,7 @@
       "mcp__claude_ai_Gmail__reply"
     ],
     "ask": [
-      "mcp__claude_ai_Gmail__forward"
-    ],
-    "deny": [
+      "mcp__claude_ai_Gmail__forward",
       "Edit(CLAUDE.md)",
       "Write(CLAUDE.md)",
       "Edit(AGENTS.md)",
@@ -32,7 +30,9 @@
       "Edit(.claude/**)",
       "Write(.claude/**)",
       "Edit(../guides/**)",
-      "Write(../guides/**)",
+      "Write(../guides/**)"
+    ],
+    "deny": [
       "mcp__claude_ai_Gmail__trash_message",
       "mcp__claude_ai_Gmail__trash_thread",
       "mcp__claude_ai_Gmail__delete_label",
