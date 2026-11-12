@@ -5,7 +5,7 @@ process engineering, electrochemistry/batteries, hydrogen, LCA and related field
 your documents, writes in your style, finds offers and companies, scores them with one rubric, tailors LaTeX CVs and
 drafts letters and emails. **It never sends anything**: you send.
 
-Rules for every session: [CLAUDE.md](CLAUDE.md). What changed in the refactor: [logs/audit.md](logs/audit.md),
+Full user manual and onboarding guide: [MANUAL.md](MANUAL.md). Rules for every session: [CLAUDE.md](CLAUDE.md). What changed in the refactor: [logs/audit.md](logs/audit.md),
 [logs/decisions.md](logs/decisions.md). The old generic "sniper" kit is still here, untouched, in `01_install/` …
 `05_build_sources/` and `03_kit/` (reference only); the previous README is in `_archive/2026-11-12/README.md`.
 
