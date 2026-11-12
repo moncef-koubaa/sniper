@@ -1,0 +1,6 @@
+{
+  "name": "interview-deck",
+  "private": true,
+  "description": "Self-presentation deck for /pfe-interview-prep. node build_deck.js specs/<spec>.json <out.pptx>",
+  "dependencies": { "pptxgenjs": "3.12.0" }
+}

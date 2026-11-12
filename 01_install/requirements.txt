@@ -1,0 +1,4 @@
+python-docx==1.2.0
+openpyxl==3.1.5
+docx2pdf==0.1.8; sys_platform == "win32" or sys_platform == "darwin"
+pypdf==6.19.0

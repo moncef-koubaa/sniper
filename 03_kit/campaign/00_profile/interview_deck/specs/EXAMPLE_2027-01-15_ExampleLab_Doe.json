@@ -1,0 +1,84 @@
+{
+ "_comment": "EXAMPLE deck spec, fake host. Copy it per interview. order = keys of profile_deck.json projects.",
+ "lang": "en",
+ "title": "Example Lab\ninterview",
+ "host_line": "Example Lab  ·  Dr Jane Doe",
+ "agenda_title": "What I will cover",
+ "agenda": [
+  "Who I am",
+  "Two projects",
+  "Your research",
+  "Practical"
+ ],
+ "order": [
+  "projectA",
+  "projectB"
+ ],
+ "projectA_label": "Lab project",
+ "projectB_label": "Internship project",
+ "ftir_take": "EXAMPLE take-away line of the method slide.",
+ "not_yet": [
+  "Not yet",
+  "the host's main instrument, read about only"
+ ],
+ "understand": {
+  "title": "How I read your work",
+  "caption": "EXAMPLE caption.",
+  "steps": [
+   [
+    "Question",
+    "EXAMPLE"
+   ],
+   [
+    "Method",
+    "EXAMPLE"
+   ],
+   [
+    "Next step",
+    "EXAMPLE"
+   ]
+  ]
+ },
+ "group": {
+  "title": "What I read about your group",
+  "cards": [
+   {
+    "head": "EXAMPLE card",
+    "body": "EXAMPLE"
+   },
+   {
+    "head": "EXAMPLE card",
+    "body": "EXAMPLE"
+   },
+   {
+    "head": "EXAMPLE card",
+    "body": "EXAMPLE"
+   },
+   {
+    "head": "EXAMPLE card",
+    "body": "EXAMPLE"
+   }
+  ]
+ },
+ "contribute": {
+  "title": "Where I could help",
+  "take": "EXAMPLE.",
+  "items": [
+   [
+    "EXAMPLE",
+    "EXAMPLE"
+   ],
+   [
+    "EXAMPLE",
+    "EXAMPLE"
+   ],
+   [
+    "EXAMPLE",
+    "EXAMPLE"
+   ]
+  ]
+ },
+ "notes": {
+  "title": "EXAMPLE note for the title slide."
+ }
+}

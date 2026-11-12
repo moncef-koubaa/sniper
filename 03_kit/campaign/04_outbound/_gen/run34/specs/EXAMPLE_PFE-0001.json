@@ -1,0 +1,38 @@
+{
+ "_comment": "Format example with a fake host; never built as is (the smoke test copies it to a test ID). instruments omitted = the master order; coursework only from COURSES in personalisation_map.json.",
+ "source": "https://example.org/team (read 2027-01-10): EXAMPLE source of the organisation-specific sentence",
+ "cv": {
+  "summary": "Final-year engineering student (EXAMPLE summary, one or two lines).",
+  "coursework": [],
+  "exp_order": [
+   0,
+   1,
+   2
+  ],
+  "proj_order": [
+   0,
+   1,
+   2
+  ]
+ },
+ "letter": {
+  "to": [
+   "Dr Jane Doe",
+   "Example Lab",
+   "Example City"
+  ],
+  "subject": "Internship application, EXAMPLE project",
+  "salutation": "Dear Dr Doe,",
+  "paras": [
+   "EXAMPLE paragraph about the host.",
+   "EXAMPLE paragraph with one result.",
+   "I am available {{PFE_WINDOW}}, for 26 weeks. {{SCHOOL}} provides a signed internship agreement, and I handle the visa with your supporting letter."
+  ],
+  "close": "Kind regards,"
+ },
+ "email": {
+  "to": "jane.doe@example.org",
+  "subject": "Internship, EXAMPLE project",
+  "body": "Dear Dr Doe,\n\nEXAMPLE email body.\n\nKind regards,\n{{FULL_NAME}}"
+ }
+}

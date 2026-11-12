@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Friendly Setup and Usage</title>
+<style>
+@page { size: A4; margin: 14mm 15mm; }
+body { font-family: "Segoe UI", Calibri, Arial, sans-serif; font-size: 12pt; line-height: 1.45; color: #222; }
+h1 { font-size: 30pt; margin: 0; color: #1d4e89; }
+h2 { font-size: 19pt; color: #fff; background: #1d4e89; border-radius: 8pt; padding: 5pt 12pt; margin: 18pt 0 8pt; page-break-after: avoid; }
+h2.np { page-break-before: always; margin-top: 0; }
+p { margin: 4pt 0 8pt; }
+.hero { border: 3pt solid #1d4e89; border-radius: 14pt; padding: 10pt 16pt; background: #f1f6fc; margin-bottom: 12pt; }
+.hero .big { font-size: 15pt; }
+.step { display: flex; gap: 12pt; border: 1.5pt solid #c9d8ea; border-radius: 12pt; padding: 9pt 12pt; margin: 9pt 0; page-break-inside: avoid; background: #fff; }
+.num { flex: 0 0 34pt; height: 34pt; border-radius: 17pt; background: #f4a300; color: #fff; font-weight: bold; font-size: 17pt; text-align: center; line-height: 34pt; }
+.c { flex: 1; }
+.c b.t { font-size: 14pt; color: #1d4e89; display: block; margin-bottom: 2pt; }
+.see { background: #eaf7ee; border-left: 5pt solid #2e8b57; padding: 5pt 9pt; border-radius: 6pt; margin-top: 5pt; font-size: 11.5pt; }
+.see::before { content: "✔ You know it worked when: "; font-weight: bold; color: #2e8b57; }
+.careful { background: #fff4e5; border-left: 5pt solid #e07b00; padding: 5pt 9pt; border-radius: 6pt; margin: 6pt 0; font-size: 11.5pt; page-break-inside: avoid; }
+.careful::before { content: "⚠ Careful: "; font-weight: bold; color: #c46a00; }
+.ask { background: #eef3fb; border: 1.5pt dashed #1d4e89; padding: 5pt 9pt; border-radius: 6pt; margin-top: 6pt; font-size: 11pt; }
+.ask::before { content: "🙋 Stuck on this step? "; font-weight: bold; color: #1d4e89; }
+.type { font-family: Consolas, monospace; font-size: 10.5pt; background: #1e1e1e; color: #f5f5f5; padding: 7pt 10pt; border-radius: 7pt; white-space: pre-wrap; margin: 5pt 0; page-break-inside: avoid; }
+.type .lbl { color: #9cdcfe; font-family: "Segoe UI", sans-serif; font-size: 9.5pt; display: block; margin-bottom: 2pt; }
+table { border-collapse: collapse; width: 100%; font-size: 11.5pt; margin: 6pt 0 10pt; }
+td, th { border: 1pt solid #c9d8ea; padding: 5pt 7pt; vertical-align: top; text-align: left; }
+th { background: #e6eef8; }
+tr { page-break-inside: avoid; }
+.row { display: flex; gap: 10pt; margin: 8pt 0; page-break-inside: avoid; }
+.card { flex: 1; border: 2pt solid #c9d8ea; border-radius: 12pt; padding: 8pt 10pt; background: #fbfdff; }
+.card b.t { color: #1d4e89; font-size: 13pt; display: block; }
+.icon { font-size: 22pt; }
+.small { font-size: 10pt; color: #666; }
+ul { margin: 3pt 0 8pt 18pt; padding: 0; } li { margin: 3pt 0; }
+</style></head><body>
+
+<div class="hero">
+<h1>Friendly Setup and Usage 🧸</h1>
+<p class="big"><b>How to set up your internship helper on any computer, what it needs to work, and the commands you use, in easy steps.</b></p>
+<p>Your helper is <b>Claude</b>, a computer assistant. Each time you start it with a command, it looks for internships, writes your letters, sends applications and reads your emails. You only answer the important questions.</p>
+<p>This guide is for setting it up on a <b>new or different computer</b>. Take your time. Do one step, check it worked, then do the next one. About <b>1 to 2 hours</b> in total, mostly waiting.</p>
+</div>
+
+<h2>The magic folder 📁</h2>
+<p>Everything comes in one folder, <b>sniper</b>. Copy it to the new computer (for example into <b>Desktop\pfe workflow</b>) and open <b>00_START_HERE.md</b>. The setup then builds, next to it:</p>
+<div class="row">
+<div class="card"><span class="icon">🏠</span><b class="t">campaign</b>The <b>house</b> where the helper lives and works: your list of internships, your letters, your reports. You always open Claude here.</div>
+<div class="card"><span class="icon">📦</span><b class="t">sniper</b>The <b>toolbox</b>: the instructions for Claude, the setup message, the guides. It holds nothing personal. It is used once: at the end of the setup it deletes itself for good.</div>
+</div>
+<p>Also next to them: <b>interviews</b> (one folder per interview), <b>my documents</b> (your CV, reports, letters) and <b>guides</b>.</p>
+<table>
+<tr><th>What you have on the new computer</th><th>What Claude does</th></tr>
+<tr><td>📦 a new sniper <b>and</b> 🏠 campaign</td><td>Moves in and carries on exactly where you were.</td></tr>
+<tr><td>📦 sniper <b>only</b></td><td>Builds a brand-new campaign. It asks you a few questions about yourself, then for your CV, reports and letters.</td></tr>
+</table>
+<div class="careful">Never delete the campaign folder: it is your whole campaign. Keep a copy of it (OneDrive or a USB stick) when you change computers.</div>
+
+<h2 class="np">Claude Code in simple words 💬</h2>
+<p>🤖 <b>Claude Code</b> is Claude inside a window on your computer called <b>PowerShell</b>. You type in normal words, press Enter, and Claude does the work: it reads and writes files, opens Chrome, prepares emails. Before anything big, it asks you first. You install it in step 5 of Part 1.</p>
+
+<h3 style="font-size:14pt;color:#1d4e89;margin:8pt 0 4pt">1️⃣ Open PowerShell 🪟</h3>
+<p>Click the <b>Start</b> menu, type <b>PowerShell</b>, press Enter. A blue or black window opens with a blinking line: that is where you type.</p>
+<p>💡 Shortcut: open the folder you want in File Explorer, click the address bar at the top, type <b>powershell</b> and press Enter. PowerShell opens already inside that folder.</p>
+
+<h3 style="font-size:14pt;color:#1d4e89;margin:12pt 0 4pt">2️⃣ Go to the right folder 📂</h3>
+<p>Claude works in the folder where you start it. To go into a folder, type <b>cd</b>, a space, then the folder path <b>between quotes</b> (the quotes are needed because the names have spaces):</p>
+<div class="type"><span class="lbl">type in PowerShell</span>cd "{{WORKSPACE}}"</div>
+<p>🔄 The paths in this guide are examples. When Claude sets up the campaign on a computer, it makes your own copy of this guide in the <b>guides</b> folder, with the real paths of that computer and that user.</p>
+<p>💡 To get a folder's path: in File Explorer, hold <b>Shift</b>, right-click the folder, choose <b>Copy as path</b>, then paste it after <b>cd</b> and a space (right-click pastes in PowerShell).</p>
+<div class="see">the line in PowerShell now starts with the folder's path, for example <code>PS C:\...\campaign&gt;</code>.</div>
+
+<h3 style="font-size:14pt;color:#1d4e89;margin:12pt 0 4pt">3️⃣ Start Claude ▶️</h3>
+<table>
+<tr><th style="width:42%">You want to</th><th>Type in PowerShell</th></tr>
+<tr><td>🚀 Start Claude connected to Chrome (what you use for the campaign)</td><td><code>claude --chrome</code></td></tr>
+<tr><td>💬 Start Claude without Chrome</td><td><code>claude</code></td></tr>
+<tr><td>🔁 Carry on the last chat you had in this folder</td><td><code>claude --continue</code></td></tr>
+<tr><td>📜 Pick an older chat from a list</td><td><code>claude --resume</code></td></tr>
+<tr><td>🔢 See which version you have</td><td><code>claude --version</code></td></tr>
+</table>
+
+<h3 style="font-size:14pt;color:#1d4e89;margin:12pt 0 4pt">4️⃣ Inside Claude ⌨️</h3>
+<table>
+<tr><th style="width:42%">You want to</th><th>Do this</th></tr>
+<tr><td>✍️ Ask for something</td><td>Type it in your own words and press <b>Enter</b></td></tr>
+<tr><td>📋 See every command</td><td>Type <code>/</code> and a list appears (your campaign ones start with <code>/pfe-</code>)</td></tr>
+<tr><td>✅ Answer a question Claude asks (Yes / No, or a list)</td><td>Move with the <b>arrow keys</b> ⬆️⬇️, press <b>Enter</b></td></tr>
+<tr><td>✋ Stop Claude in the middle of something</td><td>Press <b>Esc</b></td></tr>
+<tr><td>⬆️ Bring back your last message</td><td>Press the <b>up arrow</b></td></tr>
+<tr><td>📎 Paste text or a step</td><td><b>Right-click</b> (or Ctrl+V)</td></tr>
+<tr><td>🙋 Get help on a step of this guide</td><td><code>/ask-me</code>, a space, then paste the step</td></tr>
+<tr><td>❓ See Claude's own help</td><td><code>/help</code></td></tr>
+<tr><td>🧹 Start a fresh chat</td><td><code>/clear</code></td></tr>
+<tr><td>🧭 Check the Chrome connection</td><td><code>/chrome</code></td></tr>
+<tr><td>🔑 Log in again to your claude.ai account</td><td><code>/login</code></td></tr>
+<tr><td>🚪 Leave Claude</td><td><code>/exit</code> (you are back in PowerShell)</td></tr>
+</table>
+<div class="careful">Close PowerShell only after <b>/exit</b>, or when Claude has finished. Closing it in the middle stops the job (run the same command again later: it carries on).</div>
+<p class="small">Your campaign commands (/pfe-inbox, /pfe-applier and the others) are in Part 5.</p>
+
+<h2 class="np">Part 1: get the computer ready 🛠️</h2>
+<p>Every step sits in its own box. Under each one, a blue <b>🙋 Stuck on this step?</b> line tells you what to do if you do not understand it or it does not work: copy the whole box and paste it into Claude after <b>/ask-me</b>. Claude then does the step for you if it can, or explains it again in simpler words.</p>
+
+<div class="step"><div class="num">1</div><div class="c"><b class="t">Copy the sniper folder</b>
+Turn on the computer and log in to Windows. Copy the whole <b>sniper</b> folder to the computer, for example to <b>Desktop\pfe workflow\sniper</b>. A USB stick works; OneDrive is optional, not required. If you already have a <b>campaign</b> folder, copy it next to sniper too.
+<div class="see">you can open sniper\00_START_HERE.md.</div><div class="ask">Copy this whole step (select its box, right-click, Copy). Claude Code is not working yet, so open <b>claude.ai</b> in your browser, paste it there and ask for simpler steps.</div></div></div>
+
+<div class="step"><div class="num">2</div><div class="c"><b class="t">Install Google Chrome</b>
+Go to <b>google.com/chrome</b>, click <b>Download Chrome</b>, open the file, and follow the screens.
+<div class="see">Chrome opens.</div><div class="ask">Copy this whole step (select its box, right-click, Copy). Claude Code is not working yet, so open <b>claude.ai</b> in your browser, paste it there and ask for simpler steps.</div></div></div>
+
+<div class="step"><div class="num">3</div><div class="c"><b class="t">Install Microsoft Word</b>
+The helper uses Word to turn your CV and letters into PDF files. Install Microsoft Office with your Microsoft or school account, open Word once and close it.
+<div class="see">Word opens without asking any questions.</div><div class="ask">Copy this whole step (select its box, right-click, Copy). Claude Code is not working yet, so open <b>claude.ai</b> in your browser, paste it there and ask for simpler steps.</div></div></div>
+
+<div class="step"><div class="num">4</div><div class="c"><b class="t">Install Node.js</b>
+The helper needs Node.js to make your interview slides. Go to <b>nodejs.org</b>, download the <b>LTS</b> version, open the file, and follow the screens with the normal choices.
+<div class="see">in a new PowerShell, <code>node --version</code> shows a number.</div><div class="ask">Copy this whole step (select its box, right-click, Copy). Claude Code is not working yet, so open <b>claude.ai</b> in your browser, paste it there and ask for simpler steps.</div></div></div>
+
+<div class="step"><div class="num">5</div><div class="c"><b class="t">Install Claude Code</b>
+Click the Start menu, type <b>PowerShell</b>, open it. Copy this line, paste it (right-click), press Enter:
+<div class="type"><span class="lbl">type in PowerShell</span>irm https://claude.ai/install.ps1 | iex</div>
+When it finishes, type <b>claude</b> and press Enter, then log in with your <b>claude.ai</b> account when it asks.
+<div class="see">you see the Claude prompt waiting for you to type.</div><div class="ask">Copy this whole step (select its box, right-click, Copy). Claude Code is not working yet, so open <b>claude.ai</b> in your browser, paste it there and ask for simpler steps.</div></div></div>
+
+<div class="step"><div class="num">6</div><div class="c"><b class="t">Run the install check</b>
+Open a new PowerShell in <b>sniper\01_install</b>. Copy these two lines one at a time and press Enter after each:
+<div class="type"><span class="lbl">type in PowerShell</span>cd "$env:USERPROFILE\Desktop\pfe workflow\sniper\01_install"
+powershell -ExecutionPolicy Bypass -File .\install.ps1</div>
+It installs Python 3.12 if it is missing, then the Python libraries, and checks Claude Code, Node.js, Chrome and Word. It schedules nothing. The tested versions are in <b>sniper\01_install\README.md</b>.
+<div class="see">the last line says "all checks passed".</div>
+<div class="careful">If it lists something under "TO FIX", install that, then run the second line again.</div><div class="ask">Copy this whole step (select its box, right-click, Copy). This step is the one that adds <b>/ask-me</b>, so here open Claude Code (type <b>claude</b> in PowerShell), type <b>help me with this step:</b>, paste it (right-click) and press Enter. From step 7 on, use <b>/ask-me</b>.</div></div></div>
+
+<div class="step"><div class="num">7</div><div class="c"><b class="t">Sign in to Chrome with your school account</b>
+In Chrome, click the round picture at the top right → <b>Add</b> or <b>Sign in</b> → use <b>{{GMAIL_ACCOUNT}}</b>. Always use this Chrome profile for the internship work.
+<div class="see">the round picture at the top right shows your {{SCHOOL}} account.</div><div class="ask">Copy this whole step (select its box, right-click, Copy). In Claude Code type <b>/ask-me</b>, a space, then paste it (right-click) and press Enter. Claude does the step for you if it can, or explains it again in simpler words.</div></div></div>
+
+<div class="step"><div class="num">8</div><div class="c"><b class="t">Add the Claude helper to Chrome</b>
+In that same Chrome, go to the Chrome Web Store, search <b>Claude in Chrome</b>, click <b>Add to Chrome</b>. Then click the puzzle piece 🧩 at the top right → Claude → settings, and choose:
+<ul><li>Site access: <b>On all sites</b></li><li>Permission mode: <b>Act without asking</b></li></ul>
+<div class="see">the Claude icon is next to the address bar.</div><div class="ask">Copy this whole step (select its box, right-click, Copy). In Claude Code type <b>/ask-me</b>, a space, then paste it (right-click) and press Enter. Claude does the step for you if it can, or explains it again in simpler words.</div></div></div>
+
+<div class="step"><div class="num">9</div><div class="c"><b class="t">Log in to your websites in Chrome</b>
+Open each one in that Chrome, log in, and tick "stay signed in":
+<b>Gmail</b> ({{SCHOOL}}), <b>LinkedIn</b>, <b>Indeed</b>, <b>JobTeaser</b>, <b>Welcome to the Jungle</b>, <b>Studyrama</b>, <b>StudentJob</b>, <b>EURAXESS</b>, and any company websites where you have an account.
+<div class="careful">Claude is never allowed to type your passwords. If a website logs you out later, the helper tells you, and you log in again yourself.</div><div class="ask">Copy this whole step (select its box, right-click, Copy). In Claude Code type <b>/ask-me</b>, a space, then paste it (right-click) and press Enter. Claude does the step for you if it can, or explains it again in simpler words.</div></div></div>
+
+<div class="step"><div class="num">10</div><div class="c"><b class="t">Connect your Google account to Claude</b>
+In Chrome go to <b>claude.ai</b> → your name → <b>Settings</b> → <b>Connectors</b>. Connect <b>Gmail</b>, <b>Google Drive</b>, <b>Google Calendar</b> (with the {{SCHOOL}} account) and <b>Indeed</b>.
+<div class="see">all four say "Connected".</div><div class="ask">Copy this whole step (select its box, right-click, Copy). In Claude Code type <b>/ask-me</b>, a space, then paste it (right-click) and press Enter. Claude does the step for you if it can, or explains it again in simpler words.</div></div></div>
+
+<div class="step"><div class="num">11</div><div class="c"><b class="t">Create your Gmail label</b>
+Open Gmail in that Chrome. On the left, next to <b>Labels</b>, click <b>+</b> and create one label for your campaign mail, for example <b>pfe-campaign</b>. Claude asks for its name during the setup.
+<div class="see">the new label shows in the list on the left of Gmail.</div><div class="ask">Copy this whole step (select its box, right-click, Copy). In Claude Code type <b>/ask-me</b>, a space, then paste it (right-click) and press Enter. Claude does the step for you if it can, or explains it again in simpler words.</div></div></div>
+
+<div class="step"><div class="num">12</div><div class="c"><b class="t">Nothing runs by itself</b>
+The helper never starts on its own: you start each job yourself by typing a command in Claude (Part 3). There is no alarm to set.<div class="ask">Copy this whole step (select its box, right-click, Copy). In Claude Code type <b>/ask-me</b>, a space, then paste it (right-click) and press Enter. Claude does the step for you if it can, or explains it again in simpler words.</div></div></div>
+
+<h2 class="np">Part 2: the magic message ✨</h2>
+
+<div class="step"><div class="num">13</div><div class="c"><b class="t">Open Claude in the right place</b>
+In PowerShell, copy these two lines one at a time and press Enter after each:
+<div class="type"><span class="lbl">type in PowerShell</span>cd "the folder that holds sniper"
+claude --chrome</div>
+<p class="small">For example <code>cd "$env:USERPROFILE\Desktop\pfe workflow"</code>.</p>
+If Claude asks <b>"Do you trust this folder?"</b>, answer <b>Yes</b>.<div class="ask">Copy this whole step (select its box, right-click, Copy). In Claude Code type <b>/ask-me</b>, a space, then paste it (right-click) and press Enter. Claude does the step for you if it can, or explains it again in simpler words.</div></div></div>
+
+<div class="step"><div class="num">14</div><div class="c"><b class="t">Point Claude at your Chrome</b>
+Type <b>/chrome</b> and press Enter. Choose <b>Enabled by default</b>, and pick the Chrome where you are signed in with your {{SCHOOL}} account.<div class="ask">Copy this whole step (select its box, right-click, Copy). In Claude Code type <b>/ask-me</b>, a space, then paste it (right-click) and press Enter. Claude does the step for you if it can, or explains it again in simpler words.</div></div></div>
+
+<div class="step"><div class="num">15</div><div class="c"><b class="t">Send the magic message</b>
+Open <b>sniper\02_setup_prompt\PFE_CLAUDE_CODE_SETUP_PROMPT.md</b> in Notepad. Copy everything below the long line of dashes, paste it into Claude, press Enter.
+<p class="small">Claude then asks you, in one message, about you: name, school, degree, dates, languages, email, phone, which Chrome, your Gmail label, countries, the kind of internship you want, your skills, and a few form answers. Answer them all in one reply.</p>
+<p class="small">If you prefer, fill <b>02_setup_prompt\answers.json</b> from <b>answers_TEMPLATE.json</b> before you paste, and say so at the end of the message. <b>PERSONALISE.md</b> explains each value.</p>
+<div class="see">Claude asks its questions in one message.</div><div class="ask">Copy this whole step (select its box, right-click, Copy). In Claude Code type <b>/ask-me</b>, a space, then paste it (right-click) and press Enter. Claude does the step for you if it can, or explains it again in simpler words.</div></div></div>
+
+<div class="step"><div class="num">16</div><div class="c"><b class="t">Let it work</b>
+Now wait. Claude works for about an hour: it checks the computer, creates <b>campaign</b>, <b>interviews</b>, <b>my documents</b> and <b>guides</b> next to sniper, and puts your details into every file. It asks you once to put your CV, reports and letters in <b>my documents</b>: do it, then tell it they are there. Then it builds your profile and tests everything. It does not set any alarm. Last, it locks your campaign and deletes the sniper folder and its .zip for good. Keep nothing of yours in sniper: anything left there is moved to <b>my documents\from sniper</b> first.
+<div class="see">Claude ends with a summary: "placeholders left: 0", the test results, and the first command to run.</div><div class="ask">Copy this whole step (select its box, right-click, Copy). In Claude Code type <b>/ask-me</b>, a space, then paste it (right-click) and press Enter. Claude does the step for you if it can, or explains it again in simpler words.</div></div></div>
+
+<div class="step"><div class="num">17</div><div class="c"><b class="t">Do what Claude could not do alone (only if it asks)</b>
+Claude has a safety lock that sometimes stops it from changing its own settings during the setup. Then it gives you a line to copy. Lines that start with <b>!</b> are typed into Claude itself:
+<div class="type"><span class="lbl">example it may give you</span>! notepad ".claude/settings.json"</div>
+<div class="careful">In lines that start with <b>!</b>, always use forward slashes <b>/</b>, never backslashes <b>\</b>.</div><div class="ask">Copy this whole step (select its box, right-click, Copy). In Claude Code type <b>/ask-me</b>, a space, then paste it (right-click) and press Enter. Claude does the step for you if it can, or explains it again in simpler words.</div></div></div>
+
+<div class="step"><div class="num">18</div><div class="c"><b class="t">Do your first run</b>
+Leave Claude with <b>/exit</b>. Open a new Claude in the campaign folder:
+<div class="type"><span class="lbl">type in PowerShell</span>cd "{{WORKSPACE}}"
+claude --chrome</div>
+Then type the command the setup names (usually <b>/pfe-hunter</b> on a new campaign; <b>/pfe-inbox</b> on a campaign you brought with you).
+<div class="see">a report appears in 05_reports. 🎉 You are done!</div><div class="ask">Copy this whole step (select its box, right-click, Copy). In Claude Code type <b>/ask-me</b>, a space, then paste it (right-click) and press Enter. Claude does the step for you if it can, or explains it again in simpler words.</div></div></div>
+
+<h2 class="np">Part 3: every day after that ☀️</h2>
+<div class="row">
+<div class="card"><span class="icon">☀️</span><b class="t">Every day</b>Open Claude in the campaign folder and type <b>/pfe-inbox</b>, then <b>/pfe-send-held</b>, <b>/pfe-checker</b> and <b>/pfe-applier</b>. The Checker asks how many rows to do: pick a number or <b>ALL</b>, there is no maximum. The Applier first asks how to apply: tick <b>Email</b>, <b>Portal</b> or both. If you tick Portal, it stops and shows how many opportunities wait on each portal, and you pick one, several or all of them. Then say how many of each (a number or <b>ALL</b>). Only applications really sent or submitted count, so it keeps going until it reaches your number. <b>/pfe-hunter</b> finds every opportunity in a country when you need more. It looks at companies and startups first, and still checks labs and universities. After every row the helper updates your tracker, so if it stops halfway (Claude usage used up), just run the same command again later.</div>
+<div class="card"><span class="icon">📬</span><b class="t">When a report says "Decisions waiting"</b>A company wrote about an interview, an offer, money or a visa. Open PowerShell, type <code>cd "{{WORKSPACE}}"</code>, then <code>claude</code>, then <b>/pfe-send</b>, and choose A, B or C.</div>
+</div>
+<div class="row">
+<div class="card"><span class="icon">📋</span><b class="t">Once a week (30 minutes)</b>Open <code>campaign\02_tracker\blocked.csv</code>. These are applications the helper cannot do alone (LinkedIn Easy Apply, websites with passwords, a question only you can answer). Do them yourself, then tell Claude "PFE-0123 submitted".</div>
+<div class="card"><span class="icon">🎤</span><b class="t">You got an interview!</b>Type <b>/pfe-interview-prep</b> followed by the email address of the person, and Claude prepares everything you need to know: full answers to say out loud, and a page for every technique (yours and the company's) with a little drawing of its graph and what is on each axis. Each interview gets its own folder inside the <b>interviews</b> folder next to campaign, named with the date, the organisation and the person. In it: the prep PDF, a short slide deck to present yourself (the same slides as the model deck you edited; in the notes, first what the slide shows in simple words, and the extra details between // and //, only for questions), and a NotebookLM prompt saved as a simple text note (NOTEBOOKLM_PROMPT.txt, it opens in Notepad). Upload the PDF and the slides to NotebookLM, paste the prompt, and it coaches you in the language of the interview, then asks you practice questions one at a time. A result you chose to leave out is never in the prep or the slides: you talk about your own results instead.</div>
+</div>
+<p>The helper sends at most <b>50 emails a day</b>, never sends anything about interviews, offers, money or visas without you, and never applies twice to the same person.</p>
+<p>If a lab says "we can host you but we cannot pay", or offers very little, the helper never says no for you and never says you will pay for yourself. It looks up what interns in that job usually earn, then writes polite drafts that ask for a fair monthly amount, for example by saying the visa needs proof of about 600 euros a month, and suggests other help such as housing or a grant.</p>
+
+<h2 class="np">Part 4: what the helper needs to work 🔌</h2>
+<p>The helper can only work when these things are true. If one is missing, the run stops halfway; nothing done so far is lost.</p>
+<table>
+<tr><th style="width:40%">It needs</th><th>Why</th></tr>
+<tr><td>💻 The computer <b>on</b> while a run works</td><td>A run works only while Claude is open. If you close it, run the same command again later: it continues.</td></tr>
+<tr><td>🔑 You <b>logged in to Windows</b></td><td>The helper works inside your Windows account.</td></tr>
+<tr><td>🌐 <b>Internet</b></td><td>It searches websites and sends emails.</td></tr>
+<tr><td>🧭 <b>Chrome</b> with your {{SCHOOL}} profile and the Claude extension</td><td>It uses Chrome to fill company forms and prepare emails. Chrome must be open on that profile and signed in.</td></tr>
+<tr><td>✉️ <b>Gmail signed in</b> in that Chrome</td><td>It prepares emails with your CV attached in Gmail.</td></tr>
+<tr><td>🔗 The <b>claude.ai connectors</b> (Gmail, Drive, Calendar, Indeed)</td><td>It reads your mail, saves the tracker to Drive and puts interviews in your calendar.</td></tr>
+<tr><td>🤖 Your <b>Claude account</b> logged in, with usage left</td><td>Every run uses your Claude plan, and runs have no size limit, so a big one can use it all. Then the run stops; run the same command again when the plan resets and it continues.</td></tr>
+<tr><td>📝 <b>Word</b> installed</td><td>It turns your CV and letters into PDF files.</td></tr>
+<tr><td>📁 The folder <b>campaign</b></td><td>campaign is where it works. sniper, the toolbox, was deleted at the end of the setup on purpose.</td></tr>
+<tr><td>🙋 <b>Only one</b> Claude window using Chrome at a time</td><td>Chrome can be driven by one Claude at a time. Close the others with <code>/exit</code>.</td></tr>
+</table>
+<div class="careful">Do not open <code>tracker.csv</code> in Excel while the helper is working. Open <code>tracker.xlsx</code> instead: it is a copy made for reading.</div>
+
+<h2 class="np">Part 5: your basic commands ⌨️</h2>
+
+<h3 style="font-size:14pt;color:#1d4e89;margin:8pt 0 4pt">Every time you open PowerShell</h3>
+<p>Start menu → type <b>PowerShell</b> → open it. Then paste these two lines, pressing Enter after each:</p>
+<div class="type"><span class="lbl">type in PowerShell</span>cd "{{WORKSPACE}}"
+claude --chrome</div>
+<p>The first line goes into your campaign folder, so Claude loads your rules. The second starts Claude connected to Chrome. The first time, or if Chrome seems disconnected, type <b>/chrome</b> and pick your {{SCHOOL}} Chrome.</p>
+<div class="see">the top of the Claude window shows <code>...\campaign</code>, and typing <b>/pfe-</b> shows the list of commands.</div>
+
+<h3 style="font-size:14pt;color:#1d4e89;margin:12pt 0 4pt">Commands you type in Claude</h3>
+<table>
+<tr><th style="width:42%">You want to</th><th>Type</th></tr>
+<tr><td>Answer interview, offer, salary or visa emails</td><td><code>/pfe-send</code></td></tr>
+<tr><td>Change a rule or a command</td><td>You cannot: your campaign is locked (rules, commands and guides are read-only). Ask the author for an updated package.</td></tr>
+<tr><td>Get help on a step you are stuck on (Claude does it, or explains it simpler)</td><td><code>/ask-me</code> then paste the step</td></tr>
+<tr><td>Prepare for an interview</td><td><code>/pfe-interview-prep their@email.com</code></td></tr>
+<tr><td>Read your mail now</td><td><code>/pfe-inbox</code></td></tr>
+<tr><td>Find every internship in one country</td><td><code>/pfe-hunter Portugal</code></td></tr>
+<tr><td>Apply (before doing anything it asks email, portal or both, then how many of each: a number or ALL; it asks every time, even after a run that stopped half way)</td><td><code>/pfe-applier</code></td></tr>
+<tr><td>Apply without the questions</td><td><code>/pfe-applier 20 email</code>, <code>/pfe-applier ALL portal</code> or <code>/pfe-applier 15 email 10 portal</code></td></tr>
+<tr><td>Make email drafts, send nothing yet</td><td><code>/pfe-applier 20 email draft</code>, then later <code>/pfe-send</code> and answer <code>send H all</code> or <code>send H 1-5</code></td></tr>
+<tr><td>Check contacts (it asks how many rows: a number or ALL)</td><td><code>/pfe-checker</code></td></tr>
+<tr><td>Check that Claude is ready</td><td><code>Are you ready to work on my PFE campaign?</code></td></tr>
+</table>
+
+<h3 style="font-size:14pt;color:#1d4e89;margin:12pt 0 4pt">Sentences you can just say</h3>
+<table>
+<tr><th style="width:42%">You want to</th><th>Type</th></tr>
+<tr><td>Tell it you applied to one yourself</td><td><code>PFE-0123 submitted</code></td></tr>
+<tr><td>Pause a company</td><td><code>hold PFE-0123</code></td></tr>
+<tr><td>Un-pause it</td><td><code>release PFE-0123</code></td></tr>
+<tr><td>See which jobs have work</td><td><code>which commands have work?</code></td></tr>
+<tr><td>Check the last run</td><td><code>check the last run</code></td></tr>
+<tr><td>Fix a problem</td><td>describe it in your own words</td></tr>
+</table>
+
+<h3 style="font-size:14pt;color:#1d4e89;margin:12pt 0 4pt">Control buttons (typed in Claude, start with ! and use / slashes)</h3>
+<table>
+<tr><th style="width:30%">You want to</th><th>Type</th></tr>
+<tr><td>See which jobs have work</td><td><code>! "%LOCALAPPDATA%/Programs/Python/Python312/python.exe" scheduler/gate.py</code> (true = there is work)</td></tr>
+<tr><td>Do every row in one go</td><td><code>/pfe-checker ALL</code> or <code>/pfe-applier ALL email ALL portal</code></td></tr>
+<tr><td><b>Stop everything</b></td><td>Just do not start a command. Nothing runs by itself.</td></tr>
+</table>
+
+<h3 style="font-size:14pt;color:#1d4e89;margin:12pt 0 4pt">Claude's own buttons</h3>
+<table>
+<tr><th style="width:42%">You want to</th><th>Type</th></tr>
+<tr><td>Leave Claude</td><td><code>/exit</code></td></tr>
+<tr><td>Start a fresh chat (forget this one)</td><td><code>/clear</code></td></tr>
+<tr><td>Check or change the Chrome connection</td><td><code>/chrome</code></td></tr>
+</table>
+
+<h3 style="font-size:14pt;color:#1d4e89;margin:12pt 0 4pt">Where to look without typing anything</h3>
+<ul>
+<li><b>campaign → 05_reports</b>: one report per job. The email report is <code>inbox_&lt;date&gt;.md</code>.</li>
+<li><b>campaign → 02_tracker → tracker.xlsx</b>: all your internships in Excel. The first sheet, next_actions, is your to-do list: every thing only you can do (pick a reply, prepare a paper, ask your school for the internship agreement, prepare an interview, a visa step), with its due date. Each run adds new ones and ticks off the ones that are done. The waiting_list sheet shows every application with no reply yet: waiting, follow_up when a reminder is due, or followed_up once it is sent. /pfe-inbox sends the reminders from there. If you applied on a website and there is no email address, nothing is sent and it goes on your to-do list. If someone answers and gives you the name and email of another person to write to, /pfe-inbox adds that person, and /pfe-applier writes to them first and says who suggested it. The next sheet, dashboard, shows pie charts for all rows and for each of the last three weeks. The interviews sheet lists every interview, with the language it will be held in next to the interviewer's name. The offers sheet lists every internship offered to you: who, where, what, the dates, the money, the visa help, where you are now (for example questions asked, accepted) and what happens next. It is updated every time you run /pfe-inbox.</li>
+<li><b>campaign → 02_tracker → blocked.csv</b>: the ones you do yourself.</li>
+</ul>
+
+<h2 class="np">Part 6: if something goes wrong 🩹</h2>
+<table>
+<tr><th style="width:38%">What you see</th><th>What to do</th></tr>
+<tr><td>A run stopped halfway</td><td>Claude usage ran out or the window was closed. Run the same command again later: it continues where it stopped.</td></tr>
+<tr><td><code>preflight.py</code> says <b>CHECK THE PC</b></td><td>Something from Part 1 is missing (a program, the Chrome helper). Read what it names and fix that step.</td></tr>
+<tr><td>A run ends with an error</td><td>Open Claude in the campaign folder and type: <i>"look at the last report and fix what failed"</i>.</td></tr>
+<tr><td>A report says <b>SESSION EXPIRED</b> or <b>LOGIN_WALL</b></td><td>A website logged you out. Open it in your {{SCHOOL}} Chrome and log in again.</td></tr>
+<tr><td>A report says <b>SESSION EXPIRED: GMAIL</b></td><td>Open Gmail in your {{SCHOOL}} Chrome and sign in again.</td></tr>
+<tr><td>You want to stop everything</td><td>Do not start any command. Nothing runs by itself.</td></tr>
+<tr><td>You want to pause one company</td><td>Tell Claude: <i>"hold PFE-0123"</i>.</td></tr>
+<tr><td>You are stuck on a step of this guide</td><td>Copy the step, type <code>/ask-me</code> in Claude, a space, paste it and press Enter.</td></tr>
+<tr><td>Anything else</td><td>Open Claude in the campaign folder and describe the problem in your own words. Claude reads the rules and the reports and helps you.</td></tr>
+</table>
+
+<h2>Where to learn more 📚</h2>
+<ul>
+<li><b>{{CAMPAIGN_FILE_STEM}}_Build_Guide.pdf</b> (in guides): the long version of this guide, with every detail.</li>
+<li><b>{{CAMPAIGN_FILE_STEM}}_Runbook_Claude_Code.pdf</b> (in guides): the book that explains how the whole system works (a locked copy, read-only).</li>
+<li><b>PFE_CLAUDE_CODE_SETUP_PROMPT.md</b> (in sniper\02_setup_prompt, deleted after the setup): the magic message's full text. Your own runbook explains the system but does not hold it.</li>
+</ul>
+<p class="small">Friendly Setup and Usage · rules version 30 · 31 October 2026 · {{FULL_NAME}}, {{SCHOOL}}</p>
+</body></html>

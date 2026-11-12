@@ -1,0 +1,48 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash",
+      "PowerShell",
+      "Read",
+      "Write",
+      "Edit",
+      "Glob",
+      "Grep",
+      "WebSearch",
+      "WebFetch",
+      "Skill",
+      "Agent",
+      "Task",
+      "mcp__claude-in-chrome",
+      "mcp__claude_ai_Gmail",
+      "mcp__claude_ai_Google_Drive",
+      "mcp__claude_ai_Google_Calendar",
+      "mcp__claude_ai_Indeed",
+      "mcp__claude_ai_Gmail__send_message",
+      "mcp__claude_ai_Gmail__reply"
+    ],
+    "ask": [
+      "mcp__claude_ai_Gmail__forward"
+    ],
+    "deny": [
+      "Edit(CLAUDE.md)",
+      "Write(CLAUDE.md)",
+      "Edit(AGENTS.md)",
+      "Write(AGENTS.md)",
+      "Edit(.claude/**)",
+      "Write(.claude/**)",
+      "Edit(../guides/**)",
+      "Write(../guides/**)",
+      "mcp__claude_ai_Gmail__trash_message",
+      "mcp__claude_ai_Gmail__trash_thread",
+      "mcp__claude_ai_Gmail__delete_label",
+      "mcp__claude_ai_Gmail__mark_message_spam",
+      "mcp__claude_ai_Gmail__mark_thread_spam",
+      "mcp__claude_ai_Google_Drive__trash_file",
+      "mcp__claude_ai_Google_Drive__share_file"
+    ]
+  },
+  "env": {
+    "PYTHONUTF8": "1"
+  }
+}

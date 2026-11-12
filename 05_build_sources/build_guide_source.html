@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>{{CAMPAIGN_NAME}} Build Guide</title>
+<style>
+@page { size: A4; margin: 15mm 15mm 16mm 15mm; }
+:root { --navy:#12355b; --blue:#1f4e78; --pale:#eef3f8; --line:#b8c4d0; --green:#1e6b3a; --pgreen:#eef7f1; --red:#9b2c2c; --pred:#fbf1f1; --amber:#8a5a00; --pamber:#fdf6e7; }
+body { font-family: Calibri, "Segoe UI", Arial, sans-serif; font-size: 10.5pt; line-height: 1.42; color: #1a1a1a; }
+h1 { font-size: 24pt; margin: 0; color: var(--navy); }
+h2 { font-size: 15pt; color: #fff; background: var(--navy); padding: 4pt 8pt; margin: 0 0 8pt; page-break-after: avoid; }
+h2.newpage { page-break-before: always; }
+h3 { font-size: 12pt; margin: 12pt 0 4pt; color: var(--blue); page-break-after: avoid; border-bottom: 0.8pt solid var(--line); padding-bottom: 1pt; }
+p { margin: 3pt 0 6pt; }
+table { border-collapse: collapse; width: 100%; margin: 4pt 0 9pt; font-size: 9.6pt; }
+tr { page-break-inside: avoid; }
+th, td { border: 0.6pt solid var(--line); padding: 3.5pt 5pt; vertical-align: top; text-align: left; }
+th { background: #e2eaf2; }
+code { font-family: Consolas, monospace; font-size: 9pt; background: #f1f3f5; padding: 0 2pt; border-radius: 2pt; }
+pre { font-family: Consolas, monospace; font-size: 8.9pt; background: #f1f3f5; padding: 5pt 8pt; border-left: 3pt solid var(--navy); white-space: pre-wrap; margin: 3pt 0 8pt; page-break-inside: avoid; }
+.box { border: 1pt solid var(--navy); background: var(--pale); padding: 6pt 9pt; margin: 6pt 0 10pt; page-break-inside: avoid; }
+.ok { border-color: var(--green); background: var(--pgreen); }
+.warn { border-color: var(--red); background: var(--pred); }
+.tip { border-color: var(--amber); background: var(--pamber); }
+.label { font-weight: bold; text-transform: uppercase; font-size: 8.5pt; letter-spacing: .5pt; display: block; margin-bottom: 2pt; }
+.ok .label { color: var(--green); } .warn .label { color: var(--red); } .tip .label { color: var(--amber); }
+ul, ol { margin: 2pt 0 6pt 16pt; padding: 0; } li { margin: 2pt 0; }
+.cover { border: 2pt solid var(--navy); padding: 14pt 16pt; margin-bottom: 12pt; }
+.cover .sub { color: #444; font-size: 11.5pt; margin-top: 4pt; }
+.toc td { border: none; padding: 1.5pt 4pt; } .toc td:first-child { width: 22pt; color: var(--navy); font-weight: bold; }
+.flow { display: flex; align-items: stretch; gap: 0; margin: 6pt 0 10pt; page-break-inside: avoid; }
+.flow .st { flex: 1; border: 1pt solid var(--navy); background: var(--pale); text-align: center; padding: 5pt 3pt; font-size: 9pt; }
+.flow .st b { display: block; color: var(--navy); font-size: 9.8pt; }
+.flow .ar { width: 12pt; display: flex; align-items: center; justify-content: center; color: var(--navy); font-weight: bold; }
+.grid { display: grid; grid-template-columns: 1fr 1fr; gap: 7pt; margin: 6pt 0 10pt; page-break-inside: avoid; }
+.card { border: 1pt solid var(--line); padding: 6pt 8pt; background: #fafbfc; }
+.card b.t { color: var(--navy); display: block; margin-bottom: 2pt; }
+.step { display: flex; gap: 8pt; margin: 7pt 0; page-break-inside: avoid; }
+.step .n { flex: 0 0 20pt; height: 20pt; border-radius: 10pt; background: var(--navy); color: #fff; font-weight: bold; text-align: center; line-height: 20pt; font-size: 10pt; }
+.step .c { flex: 1; }
+.check { color: var(--green); font-weight: bold; }
+.small { font-size: 9pt; color: #555; }
+.chain { width: 100%; border-collapse: collapse; }
+.chain td { border: 0.6pt solid var(--line); }
+</style></head><body>
+
+<div class="cover">
+<h1>{{CAMPAIGN_NAME}} Internship Campaign</h1>
+<div class="sub"><b>Build guide and user manual for Claude Code</b><br>
+How the whole system works, how to build it from nothing on a Windows PC, how to use it every day, and how to fix it when something breaks.</div>
+<div class="small" style="margin-top:6pt">{{FULL_NAME}} · {{SCHOOL}}, {{UNIVERSITY}} · rules version 30, 31 October 2026 · if this guide and <code>CLAUDE.md</code> ever disagree, <code>CLAUDE.md</code> wins.</div>
+</div>
+
+<table class="toc">
+<tr><td>1</td><td>What this system is, in one page</td></tr>
+<tr><td>2</td><td>How it works: the five ideas that explain everything</td></tr>
+<tr><td>3</td><td>Build it from scratch: the kit and the complete path</td></tr>
+<tr><td>4</td><td>The setup prompt: what it does and what it asks</td></tr>
+<tr><td>5</td><td>Check that it works</td></tr>
+<tr><td>6</td><td>Using it every day</td></tr>
+<tr><td>7</td><td>Every command</td></tr>
+<tr><td>8</td><td>The safety rules: sending, forms, holds</td></tr>
+<tr><td>9</td><td>What can go wrong, and how to fix it</td></tr>
+<tr><td>10</td><td>Reference: files, paths, control commands</td></tr>
+</table>
+
+<div class="box ok"><span class="label">Changed on 4 and 6 Oct 2026</span>
+Nothing is scheduled any more (4 Oct): you start every command yourself. Runs have no row, search, helper or spending limit (6 Oct): the Checker asks how many rows (any number or ALL), the Applier asks which method (email, portal or both), for Portal which portal(s) from a list with eligible rows per portal (17 Oct), and how many applications of each (14 Oct), the Hunter covers every available opportunity in a country. Every command updates the tracker after every row. Only email stays capped.</div>
+
+<h2>1. What this system is, in one page</h2>
+<p>An internship search for one final-year engineering student, run by Claude Code on the PC. Each command is started by hand and, once started, Claude:</p>
+<ul>
+<li><b>finds</b> internship opportunities in one country at a time (companies and startups first, then labs, universities and job boards),</li>
+<li><b>checks</b> each one: is it still open, who is the right contact, will they take a non-EU student and sign {{SCHOOL}}'s internship agreement,</li>
+<li><b>applies</b>: writes a tailored CV and cover letter for each one, submits company portal forms, and sends application emails,</li>
+<li>and <b>reads the mailbox</b>: files every reply, updates each application's status, answers the simple emails, sends due follow-ups, and prepares options for the important ones.</li>
+</ul>
+<p>The student only does what a machine should not: answers interview invitations and offers, clicks LinkedIn "Easy Apply", logs in where a password is needed, and answers the rare form question the system cannot answer truthfully.</p>
+
+<div class="grid">
+<div class="card"><b class="t">What runs it</b>Claude Code (the command-line Claude) on the Windows PC. You type a command; nothing runs on a schedule.</div>
+<div class="card"><b class="t">What it remembers with</b>One spreadsheet file, <code>tracker.csv</code>. Every opportunity is one row. No chat history is needed.</div>
+<div class="card"><b class="t">What it works through</b>Your Chrome (already logged in to your sites), your Gmail, Google Drive and Calendar, the web, and Python scripts.</div>
+<div class="card"><b class="t">What keeps it safe</b>Hard rules in <code>CLAUDE.md</code>, a 50-email daily cap, a "holds" list, a saved answers file for forms, and checks before every email.</div>
+</div>
+
+<h2 class="newpage">2. How it works: the five ideas that explain everything</h2>
+
+<h3>Idea 1. The memory is a file, not a conversation</h3>
+<p>Every run is a <b>fresh</b> Claude session that knows nothing. It reads <code>02_tracker\tracker.csv</code>, works on some rows, writes the results back, writes a report, and ends. Closing a session loses nothing. Every command writes the tracker right after each row it works on, so a run cut short loses nothing.</p>
+<p>Each opportunity row moves through a fixed set of statuses:</p>
+<div class="flow">
+<div class="st"><b>discovered</b>found by Hunter</div><div class="ar">→</div>
+<div class="st"><b>enriched</b>checked + scored by Checker</div><div class="ar">→</div>
+<div class="st"><b>queued</b>documents + draft ready</div><div class="ar">→</div>
+<div class="st"><b>applied</b>sent or submitted</div><div class="ar">→</div>
+<div class="st"><b>replies</b>acknowledged · interview · offer · rejected · no_response</div>
+</div>
+<p>Side exits: <b>screened_out</b> / <b>expired</b> (dead: moved to <code>seen.csv</code> so it is never found again) and <b>blocked</b> (needs a human: moved to <code>blocked.csv</code>, your manual queue).</p>
+
+<h3>Idea 2. One job per run</h3>
+<p>Each kind of work is a separate "run" with its own instructions, a slash command. A Hunter never applies, an Applier never hunts. This keeps every run small and predictable.</p>
+<table>
+<tr><th>Run</th><th>Its one job</th><th>Reads</th><th>Writes</th></tr>
+<tr><td><b>Hunter</b></td><td>Find every opportunity in one country, then the next (country_priority.csv); companies and startups first, labs and universities still covered</td><td>the web, job boards, {{SCHOOL}} registers</td><td>new rows: discovered / screened_out</td></tr>
+<tr><td><b>Checker</b></td><td>Verify contacts, visa, agreement; score; set priority A/B/C</td><td>organisation sites</td><td>discovered → enriched</td></tr>
+<tr><td><b>Applier</b></td><td>Write CV + letter, submit portals, send emails</td><td>enriched and blocked rows</td><td>→ applied, or → blocked</td></tr>
+<tr><td><b>Inbox</b></td><td>File and answer mail, send due follow-ups, expire dead rows</td><td>Gmail, tracker</td><td>statuses, responses.csv, waiting_list.csv, drafts, follow-ups, Calendar</td></tr>
+<tr><td><b>Cleanup</b></td><td>Monthly archive of dead rows</td><td>tracker</td><td>seen.csv</td></tr>
+</table>
+
+<h3>Idea 3. You start each run; no run has a limit</h3>
+<p>Nothing is scheduled. You open Claude Code in the folder and type the command you want. <code>gate.py</code> can tell you which commands have work. No run has a row, search, helper or spending cap; only email is capped.</p>
+<table class="chain">
+<tr><th>Command</th><th>How much it covers</th><th>Asks first</th></tr>
+<tr><td>/pfe-inbox</td><td>All PFE mail; follow-ups max 15 and simple replies max 10 per run</td><td>no</td></tr>
+<tr><td>/pfe-send-held</td><td>Drafts held back by yesterday's 50-email cap</td><td>no</td></tr>
+<tr><td>/pfe-checker [n or ALL]</td><td>As many rows as you choose, no maximum</td><td>how many rows (10, 25, 50, ALL or any number)</td></tr>
+<tr><td>/pfe-applier [n email] [n portal]</td><td>As many applications as you choose, by email, portal or both, no maximum; started without a method or number it asks first, before anything else, even when an unfinished run left a PROGRESS file (that file then only skips the IDs already done)</td><td>which method(s); for Portal, which portal(s); then how many applications of each (10, 25, 50, ALL or any number)</td></tr>
+<tr><td>/pfe-cleanup</td><td>Monthly archive of dead rows</td><td>no</td></tr>
+<tr><td>/pfe-hunter [country]</td><td>Every available opportunity in the country, every source and track, until it is exhausted</td><td>no</td></tr>
+</table>
+<p><b>The tracker is updated after every row.</b> Every command writes each row (and each action on it: status, enrichment, documents, submission, send, reply, block) through tracker_tools the moment it is done, never at the end. Big runs can reach your Claude plan's 5-hour usage limit or fill the session: the run then stops, everything done so far is saved, and running the same command again continues (the Applier from its PROGRESS file). Every report says how many rows were covered and how many remain.</p>
+
+<h3>How the Hunter chooses countries</h3>
+<p>You never choose. <code>01_sources\country_priority.csv</code> ranks the countries you gave the setup (at least 10) by fit with your profile (language, visa for a {{NATIONALITY}} student, match with your tracks, realistic chance). The Hunter stays on one country, run after run, going through all its offers and organisations, every source and every track (track ALL), with no row or search limit, until the country is exhausted (every source and track done and its last 20 searches found no new row). Then it marks it exhausted and moves to the next. After the last one, it researches the next 15 most compatible countries itself, adds them to the file, and carries on. Each row of the file shows the status (pending, active, exhausted), runs, rows added and last run.</p>
+
+<h3>Idea 4. Instructions live in text files</h3>
+<ul>
+<li><code>CLAUDE.md</code> holds the <b>rules</b> that apply to every run: who the student is, what the internship must be, what may never be invented, how to write, how to use the browser. Claude Code loads it automatically in this folder.</li>
+<li><code>.claude\commands\pfe-*.md</code> hold each run's <b>job</b>: one Claude Code prompt per command (version 3 merged the original Cowork prompts and their Claude Code adaptations into one text). <code>$ARGUMENTS</code> is whatever you type after the command.</li>
+<li><code>00_profile\</code> holds the <b>facts</b>: verified profile, defensible claims, tracks, keywords, and the saved form answers.</li>
+</ul>
+
+<h3>Idea 5. Machines do volume, people do decisions</h3>
+<p>Portals and emails go out automatically, but only after checks (section 8). Anything with consequences, such as an interview, an offer, salary, a visa question or a password, stops and waits for you, either in <code>/pfe-send</code> or in <code>blocked.csv</code>.</p>
+
+<h2 class="newpage">3. Build it from scratch: the complete path</h2>
+<p>Everything comes in one folder, <b>sniper</b>, the transfer package. Copy it to the new PC (for example to <code>Desktop\pfe workflow\sniper</code>) and open <code>00_START_HERE.md</code>. It holds:</p>
+<table>
+<tr><th style="width:36%">Folder or file</th><th>Role</th></tr>
+<tr><td><code>01_install\</code></td><td>Prerequisites with tested versions, <code>requirements.txt</code>, <code>package.json</code> and <code>install.ps1</code> (installs the Python libraries and checks the tools; it schedules nothing).</td></tr>
+<tr><td><code>02_setup_prompt\</code></td><td>The one prompt a new Claude Code session runs to build or restore everything, <code>answers_TEMPLATE.json</code> and <code>fill_placeholders.py</code>.</td></tr>
+<tr><td><code>03_kit\</code></td><td>The ready-to-install files: <code>campaign\</code>, <code>interviews\</code>, <code>my documents\</code>, with placeholders such as <code>{{FULL_NAME}}</code> instead of personal details (<code>PERSONALISE.md</code> lists them).</td></tr>
+<tr><td><code>04_runbook_and_guides\</code></td><td>The runbook (architecture, every prompt, and the full text of every script and config file between "BEGIN FILE" and "END FILE"), this manual, and Friendly Setup and Usage.</td></tr>
+<tr><td><code>05_build_sources\</code></td><td>The sources that rebuild the kit, the runbook and the guides. The author's <code>/forever</code> keeps everything in step.</td></tr>
+</table>
+<p>The setup builds one ROOT folder: <code>campaign\</code> (the workspace, where Claude Code is opened), <code>interviews\</code>, <code>my documents\</code>, <code>guides\</code>, next to <code>sniper\</code>. It decides the path by itself:</p>
+<div class="grid">
+<div class="card"><b class="t">Path A: restore (the campaign exists)</b><code>ROOT\campaign</code> with tracker.csv, documents and reports is already there (new PC with a synced folder, reinstall, broken config). The setup installs the kit and keeps every piece of campaign data and every decision file.</div>
+<div class="card"><b class="t">Path B: brand-new campaign</b>No tracker yet. The setup interviews you once, creates the folders, fills every placeholder, asks for your source documents, then runs the three one-time prompts from the runbook: S0 PROFILE, CAMPAIGN INIT, SEED IMPORT (only if you have registers of past placements).</div>
+</div>
+<p>Follow the steps in order. Each ends with a <span class="check">✓ check</span>: do not continue until it passes.</p>
+
+<h3>Part 1. Install the tools (both paths, about 45 minutes)</h3>
+
+<div class="step"><div class="n">1</div><div class="c"><b>The folder.</b> Copy <code>sniper</code> where your campaign will live. If it is in OneDrive, sign in and let it sync (OneDrive can lock a file for a few seconds; the tools retry).<br><span class="check">✓</span> <code>00_START_HERE.md</code> opens.</div></div>
+
+<div class="step"><div class="n">2</div><div class="c"><b>Claude Code.</b> Install it (claude.com/claude-code), open PowerShell, type <code>claude</code>, and log in with the claude.ai account that holds your connectors (<code>/login</code>). It installs to <code>C:\Users\&lt;you&gt;\.local\bin\claude.exe</code>.<br><span class="check">✓</span> <code>claude --version</code> prints a version.</div></div>
+
+<div class="step"><div class="n">3</div><div class="c"><b>Python 3.12 and Node.js.</b> Python from python.org, "install for me only" (goes to <code>C:\Users\&lt;you&gt;\AppData\Local\Programs\Python\Python312\</code>); Node.js LTS from nodejs.org (for the interview decks). Then, in PowerShell in <code>sniper\01_install</code>:
+<pre>powershell -ExecutionPolicy Bypass -File .\install.ps1</pre>
+It installs the libraries of <code>requirements.txt</code> with the full Python path and checks Word, Chrome and Node. Always call Python by that full path: typing <code>python</code> alone opens the Microsoft Store.<br><span class="check">✓</span> It ends with "all checks passed".</div></div>
+
+<div class="step"><div class="n">4</div><div class="c"><b>Microsoft Word.</b> The document generator turns each CV and letter into PDF through Word. Open Word once to finish its first-run screens.<br><span class="check">✓</span> Word opens with no dialog.</div></div>
+
+<div class="step"><div class="n">5</div><div class="c"><b>Chrome and Claude in Chrome.</b> In the Chrome profile you will use for the campaign, install the <b>Claude in Chrome</b> extension and set: site access <b>On all sites</b>, permission mode <b>Act without asking</b>. Log in to Gmail, LinkedIn, Indeed, JobTeaser, Welcome to the Jungle, EURAXESS, and every portal where you have a candidate account. Tick "stay signed in".<br><span class="check">✓</span> Each site shows you logged in.</div></div>
+
+<div class="step"><div class="n">6</div><div class="c"><b>Connectors.</b> claude.ai → Settings → Connectors: <b>Gmail</b>, <b>Google Drive</b>, <b>Google Calendar</b> (the Google account you apply from) and <b>Indeed</b>. In Gmail create the label you want campaign mail filed under.<br><span class="check">✓</span> The four show "Connected".</div></div>
+
+<div class="step"><div class="n">7</div><div class="c"><b>Path B only: your source documents.</b> Have ready: master CV (.docx and .pdf), research and internship reports, recommendation letters, your school's internship agreement templates, and any register of past placements. The setup tells you where to put them (<code>ROOT\my documents\</code>). These are the only files Claude cannot create.</div></div>
+
+<h3>Part 2. Run the setup prompt (both paths, about an hour)</h3>
+<div class="step"><div class="n">1</div><div class="c">Open PowerShell in the folder that holds <code>sniper</code> and start Claude Code with Chrome enabled:
+<pre>claude --chrome</pre>
+Accept "trust this folder". Type <code>/chrome</code> → <b>Enabled by default</b>, and choose the browser of your campaign profile.</div></div>
+<div class="step"><div class="n">2</div><div class="c">Open <code>sniper\02_setup_prompt\PFE_CLAUDE_CODE_SETUP_PROMPT.md</code>, copy everything <b>below the line</b> and paste it. It asks you once, in one message, for everything it cannot read itself (name, school, degree, dates, languages, contact, Chrome profile, Gmail label, countries, tracks, instruments and skills, form answers), or reads <code>answers.json</code> if you filled it from <code>answers_TEMPLATE.json</code>.</div></div>
+<div class="step"><div class="n">3</div><div class="c">Let it work. It reads the state, picks Path A or B, creates the folders, fills every placeholder (<code>fill_placeholders.py</code> must say "placeholders left: 0"), runs the one-time prompts on Path B, runs a smoke test and tells you which command to run first. It schedules nothing. Path B stops once to ask for your source documents.</div></div>
+<div class="step"><div class="n">4</div><div class="c"><b>Finish what Claude Code refuses to do itself.</b> Its safety check may refuse to change Claude's own permissions. The setup then gives you the exact command:
+<ol>
+<li><b>Permissions:</b> <code>! notepad ".claude/settings.json"</code>, paste the version it prints (also in section 10), save, and ask "check settings.json is valid".</li>
+<li><b>First run:</b> open a new session in <code>ROOT\campaign</code> and type the command it names (<code>/pfe-inbox</code>, or <code>/pfe-hunter</code> on a brand-new campaign).</li>
+</ol></div></div>
+<div class="box tip"><span class="label">Tip: the ! prefix</span>Inside Claude Code, <code>! command</code> runs a command in Git Bash, which eats backslashes. Always write paths with <b>forward slashes</b>: <code>scheduler/gate.py</code>.</div>
+<h3>What no file can carry: check these on every new machine</h3>
+<table>
+<tr><th style="width:24%">Item</th><th style="width:38%">How to set it</th><th>How the system tells you when it is wrong</th></tr>
+<tr><td>Claude Code login</td><td><code>claude</code>, then <code>/login</code> with the account that holds the connectors</td><td>The first command fails to start</td></tr>
+<tr><td>Connectors (Gmail, Drive, Calendar, Indeed)</td><td>claude.ai → Settings → Connectors, the Google account you apply from</td><td>The run report names the failing connector. Indeed falls back to indeed.* in Chrome.</td></tr>
+<tr><td>Chrome profile and extension</td><td>Extension in the campaign profile, "On all sites", "Act without asking"; <code>/chrome</code> → Enabled by default</td><td><code>scheduler/preflight.py</code> (machine check, run by hand)</td></tr>
+<tr><td>Gmail session in Chrome</td><td>Sign in to Gmail in that profile whenever Google asks</td><td>Email rows BLOCKED "SESSION EXPIRED: GMAIL" in the Applier report</td></tr>
+<tr><td>Job-site and portal logins</td><td>Sign in once in that profile, tick "stay signed in"</td><td>Rows BLOCKED "SESSION EXPIRED" or "LOGIN_WALL"</td></tr>
+<tr><td>Python libraries, Node, Word</td><td>Part 1 steps 3 and 4</td><td><code>scheduler/preflight.py</code></td></tr>
+<tr><td>Gmail label {{GMAIL_LABEL}}</td><td>Create it once in Gmail</td><td>The Inbox report</td></tr>
+</table>
+<div class="box warn"><span class="label">Never on an existing campaign</span>The one-time prompts S0 PROFILE, CAMPAIGN INIT and SEED IMPORT build a new tracker. The setup runs them only on Path B. Never paste them yourself into a session of an existing campaign.</div>
+
+<h2 class="newpage">4. The setup prompt: what it does and what it asks</h2>
+<p>File: <code>sniper\02_setup_prompt\PFE_CLAUDE_CODE_SETUP_PROMPT.md</code> (rules version 24). The same text is in the shared runbook in sniper, section 4 (not in your own locked copy).</p>
+<table>
+<tr><th style="width:24%">Step</th><th>What it does</th><th style="width:22%">You see</th></tr>
+<tr><td><b>Source of the files</b></td><td>Copies from <code>sniper\03_kit\</code>. If a kit file is missing, extracts it from the shared runbook in sniper (between "BEGIN FILE" and "END FILE"), only before LOCKDOWN. Your own runbook in guides is a locked copy without file contents.</td><td></td></tr>
+<tr><td><b>Rule zero</b> Data is sacred</td><td>Never resets tracker.csv, responses, seen, blocked, backups, profile files, documents, reports or interview folders. Keeps your holds.csv, country_priority.csv, FORM_ANSWERS.md, personalisation_map.json and profile_deck.json if they exist. Backs up every config file before replacing it. Sends and submits nothing.</td><td></td></tr>
+<tr><td><b>0</b> Read the state</td><td>Checks ROOT, the tracker, the tools (Claude Code, Python libraries, Node, Word, Chrome); lists the Chrome profiles with the extension; one read test per connector; lists any scheduled task for you to remove.</td><td>A STATE line, Path A or B</td></tr>
+<tr><td><b>1</b> Interview</td><td>Asks once, all together, for every value it cannot read itself; writes <code>answers.json</code>.</td><td>One message of questions</td></tr>
+<tr><td><b>2</b> Create the folders (B)</td><td>Copies the kit to ROOT, fills the placeholders, writes country_priority.csv, installs the deck builder, asks for your source documents.</td><td>"placeholders left: 0"</td></tr>
+<tr><td><b>3</b> Install or update the kit</td><td>Path A: copies the kit over the workspace following rule zero and fills it from your personalisation_map.json.</td><td>Files installed / kept</td></tr>
+<tr><td><b>4</b> One-time prompts (B)</td><td>S0 PROFILE, CAMPAIGN INIT, SEED IMPORT (if you have registers); then the profile-based answers and the deck's shared slides.</td><td>One report per prompt</td></tr>
+<tr><td><b>5</b> Smoke test</td><td>tracker summary and Excel export, gate.py and preflight.py, build.py on a temporary copy (one-page CV and letter), one test deck, no placeholder left, 9 commands present.</td><td>One line per check</td></tr>
+<tr><td><b>6</b> Lockdown</td><td>Keeps your answers.json and any file of yours left in the package (moved to my documents\from sniper), marks CLAUDE.md, the commands, settings.json and your guides read-only, then deletes sniper and its .zip for good (not through the Recycle Bin). Nothing personal is deleted.</td><td>What was kept, locked and deleted</td></tr>
+<tr><td><b>7</b> First run</td><td>Schedules nothing. Tells you which command to type in a new session.</td><td>What to run first</td></tr>
+</table>
+
+<h3>The one-time prompts (Path B)</h3>
+<table>
+<tr><th style="width:22%">Prompt</th><th>Creates</th></tr>
+<tr><td><b>S0 PROFILE</b></td><td>From your documents: PROFILE.md (team work and your own work kept apart), DEFENSIBLE_CLAIMS.md, TRACKS.md (ranked by realistic chance), KEYWORDS.md (per track, several languages), SOURCES.md (60+ places to search).</td></tr>
+<tr><td><b>CAMPAIGN INIT</b></td><td>The empty tracker files with their headers, a tested tracker_tools, CV_MASTER_V2.md and .docx (following the build.py paragraph contract), LETTER_MASTER.md, source_registry.csv, the contact line, instruments and course list in personalisation_map.json.</td></tr>
+<tr><td><b>SEED IMPORT</b></td><td>Optional (EXAMPLE: only if your school gives registers of past placements): tracker rows from them (hosts that already signed an agreement with {{SCHOOL}}) and insat_host_patterns.md.</td></tr>
+</table>
+
+<h2>5. Check that it works</h2>
+<table>
+<tr><th style="width:5%"></th><th style="width:27%">Check</th><th>How</th></tr>
+<tr><td>☐</td><td>Kit installed</td><td>The setup's smoke test says "placeholders left: 0" and lists the 9 command files.</td></tr>
+<tr><td>☐</td><td>Commands appear</td><td>Type <code>/</code> in Claude Code: 9 commands listed (eight <code>/pfe-</code> and <code>/ask-me</code>). The sniper folder is gone: the setup deleted it on purpose.</td></tr>
+<tr><td>☐</td><td>Gate works</td><td><code>! "%LOCALAPPDATA%/Programs/Python/Python312/python.exe" scheduler/gate.py</code> prints one JSON line.</td></tr>
+<tr><td>☐</td><td>Inbox test passed</td><td><code>05_reports\inbox_&lt;date&gt;.md</code> exists; no "permission denied"; new files in <code>02_tracker\backups\</code>; row count did not drop.</td></tr>
+<tr><td>☐</td><td>Nothing scheduled</td><td><code>! powershell -c "Get-ScheduledTask -TaskPath '\PFE2027\'"</code> shows nothing.</td></tr>
+<tr><td>☐</td><td>Chrome is the right profile</td><td><code>/chrome</code> shows the browser whose profile is logged in to your sites.</td></tr>
+<tr><td>☐</td><td>Gmail account in Chrome</td><td>In Chrome, which <code>mail.google.com/mail/u/N/</code> shows the {{SCHOOL}} account? If not u/0, tell Claude "Gmail compose is u/N".</td></tr>
+</table>
+
+<h2 class="newpage">6. Using it every day</h2>
+<div class="grid">
+<div class="card"><b class="t">Every day</b>Open Claude Code in the folder and run <code>/pfe-inbox</code>, then <code>/pfe-send-held</code>, <code>/pfe-checker</code> (answer how many rows, or type ALL) and <code>/pfe-applier</code> (tick email, portal or both, then how many of each), and <code>/pfe-hunter</code> when few rows wait at discovered. A run that stops on the usage limit continues when you run it again.</div>
+<div class="card"><b class="t">When a report says "Decisions waiting"</b>Open Claude Code in the folder, type <code>/pfe-send</code>, answer e.g. <code>D: PFE-0042 option B</code>. 5 minutes.</div>
+<div class="card"><b class="t">Once a week</b>Your manual queue, <code>02_tracker\blocked.csv</code>: Easy Apply links, NEEDS_ANSWER questions, login walls. Apply by hand, then tell Claude "PFE-xxxx submitted". 30 minutes.</div>
+<div class="card"><b class="t">Interview booked</b><code>/pfe-interview-prep &lt;their email&gt;</code>. Then settle its "CHECK BEFORE THE INTERVIEW" list yourself.</div>
+<div class="card"><b class="t">Any time</b>Open <code>02_tracker\tracker.xlsx</code> (not the .csv). Its first sheet, <b>dashboard</b>, has four pie charts refreshed after every run: all rows by status, and what was sent this week, last week and two weeks ago, with reply rates. The <b>interviews</b> sheet has one row per interview, with an interview_language column (the language it is held in) between interviewer and interviewer_email. The <b>offers</b> sheet (new 8 Oct 2026) has one row per opportunity offered to you: supervisor and email, project, country, dates, stipend, visa support, convention status, thread link, the stage you are in (offer_received, reply_drafted, questions_asked, accepted, convention_in_progress, convention_signed, declined, withdrawn) and the next step. <code>/pfe-inbox</code> updates it every run.</div>
+</div>
+
+<h3>Opening Claude Code on the project</h3>
+<pre>cd "{{WORKSPACE}}"
+claude --chrome</pre>
+
+<h3>Things you can simply say</h3>
+<table>
+<tr><th>You say</th><th>Claude does</th></tr>
+<tr><td><code>PFE-0123 submitted</code></td><td>Moves a blocked row you applied to by hand back to applied, with a follow-up date.</td></tr>
+<tr><td><code>hold PFE-0500 until the LIST interview</code> / <code>release PFE-0393</code></td><td>Adds or removes a line in holds.csv.</td></tr>
+<tr><td><code>PFE-0123 salary: say negotiable, submit it</code></td><td>Answers a NEEDS_ANSWER question and submits.</td></tr>
+<tr><td><code>add to FORM_ANSWERS: postal code 1003</code></td><td>Saves a standing answer for all future forms.</td></tr>
+<tr><td><code>/pfe-hunter Italy</code></td><td>Hunts that country now instead of the next one in the rotation.</td></tr>
+</table>
+
+<h2>7. Every command</h2>
+<table>
+<tr><th>Command</th><th>Use</th><th>Email</th></tr>
+<tr><td><code>/pfe-hunter [Country] [TRACK or ALL]</code></td><td>No argument: continues the current country of country_priority.csv until it is exhausted, then the next, track ALL. Covers every available opportunity in the country, no row or search limit, companies and startups first (incubators, accelerators, startup lists and registries, careers pages), then labs and universities; the report counts company and academic rows. With a country: hunts that one without changing the order.</td><td>none (tools disabled)</td></tr>
+<tr><td><code>/pfe-checker [n or ALL]</code></td><td>Asks how many rows (any number or ALL, no maximum), then verifies them: bounced addresses first, then probable contacts, then discovered rows.</td><td>none</td></tr>
+<tr><td><code>/pfe-applier [n email] [n portal]</code></td><td>Asks first, before reading anything, whenever the method or number is missing, even when a PROGRESS file exists: which method (email, portal or both; eligible rows per method and emails left under today's cap are shown in the later questions), then, for Portal, stops and lists every portal (the site of the application link) with its eligible rows and asks which portal(s) to apply through, one, several or all (17 Oct 2026), then how many applications of each (any number or ALL, no maximum). Only emails sent and forms submitted count; it keeps going to the next row of that method until the number is reached. Portal: blocked "no browser" rows, then web form rows; email: queued rows, then enriched A/B, then C with score ≥ 50. Rows of a method not chosen are left alone; an unfinished run resumes next time with the same choice. Emails go in batches of up to 10: the PDFs are copied once into <code>02_tracker\_upload\</code>, every draft is composed first (recorded as queued, draft composed), then one read of the Gmail Drafts list confirms the attachments and each draft that passes the checks is sent.</td><td>sends, after checks</td></tr>
+<tr><td><code>/pfe-inbox [FULL SWEEP]</code></td><td>File and answer mail from the last 36 hours (FULL SWEEP: since 1 Sep), refresh the waiting list, send due follow-ups from it (max 15), add a row for each person a reply refers you to, expire dead rows.</td><td>simple replies and follow-ups</td></tr>
+<tr><td><code>/pfe-cleanup</code></td><td>Monthly: dead rows to seen.csv.</td><td>none</td></tr>
+<tr><td><code>/pfe-send</code></td><td>Interactive: decisions, held-back drafts and the drafts of <code>/pfe-applier ... draft</code>. Waits for your answer (<code>send H 1-20</code>, <code>send H all</code>).</td><td>only what you approve</td></tr>
+<tr><td><code>/pfe-send-held</code></td><td>Sends yesterday's cap-held application drafts.</td><td>sends, after checks</td></tr>
+<tr><td><code>/pfe-interview-prep &lt;email&gt;</code></td><td>Full interview preparation (.md + .pdf): full written answers, and a techniques section (every technique on your CV and used by the host, each with a sketch of its typical graph and labelled axes). Each interview gets its own folder, <code>{{ROOT}}\interviews\&lt;YYYY-MM-DD&gt;_&lt;Organisation&gt;_&lt;Interviewer&gt;\</code> (date unknown: today and <code>_date-TBC</code>), with three files: the prep PDF, a short self-presentation deck (<code>&lt;date&gt;_&lt;Organisation&gt;_presentation.pptx</code>, modelled on your edited {{DECK_MODEL_SHORT}} deck: its slides only, and speaker notes that say the slide simply, then the result, with over-explanation between <code>//</code> and <code>//</code> for questions; since 17 Oct 2026) and <code>NOTEBOOKLM_PROMPT.txt</code>, a NotebookLM coaching prompt in the interview language that ends with a mock interview, one question at a time (since 13 Oct 2026). The prompt is always a plain-text note (.txt, no Markdown syntax), never .md (since 17 Oct 2026). The prep, the deck and the prompt never mention {{NEVER_MENTION}} or use it as an argument (version 12). Interactive.</td><td>none</td></tr>
+<tr><td><code>/forever &lt;change&gt;</code></td><td><b>Author only:</b> not installed in a campaign set up from sniper (locked install). Changes a rule permanently, in plain words: edits CLAUDE.md and the commands in campaign, then sniper (kit templates through make_kit.py and its privacy scan, setup prompt, runbook, guides, VERSION, CHANGELOG) and the copies in guides, backs up the old versions in archive\rule snapshots and checks nothing old is left.</td><td>none</td></tr>
+<tr><td><code>/magic [command]</code></td><td><b>Author only:</b> not installed in a campaign set up from sniper (locked install). Guided review of one command, task by task: shows the task map with line numbers, asks for each task keep, change, remove or explain more (type STOP to end early), checks the changes against CLAUDE.md, then applies the approved ones through <code>/forever</code>. Writes no tracker data, never touches Gmail, Chrome or portals.</td><td>none</td></tr>
+<tr><td><code>/ask-me &lt;step&gt;</code></td><td>Help on one step you are stuck on: paste the step after the command. Claude finds it in the guides, checks the computer, does the step if it only needs commands or files (install check, winget, opening a file), otherwise explains it again as tiny numbered steps in simple words, with the check that shows it worked. Works in any folder (install.ps1 copies it to your own .claude\commands). Never signs in, never types a password, writes no tracker data. Every step of Friendly Setup and Usage ends with a line saying how to use it.</td><td>none</td></tr>
+</table>
+
+<h2 class="newpage">8. The safety rules: sending, forms, holds</h2>
+<h3>When an email goes out by itself</h3>
+<p>Applications, follow-ups and simple inbox replies are sent with <code>send_message</code> on a finished Gmail draft (never by clicking Send in Chrome), and only if <b>all five</b> checks pass. Otherwise the draft waits and the report lists it. With the word <code>draft</code> (<code>/pfe-applier 20 email draft</code>) the Applier only makes the drafts and sends nothing: <code>/pfe-send</code> sends the ones you name, after the same checks.</p>
+<div class="flow">
+<div class="st"><b>1 Quality</b>swap test, no banned words, no em dash</div><div class="ar">→</div>
+<div class="st"><b>2 New address</b>verified, never emailed before</div><div class="ar">→</div>
+<div class="st"><b>3 Not held</b>holds.csv, interviews, decisions waiting</div><div class="ar">→</div>
+<div class="st"><b>4 Attached</b>CV + letter PDFs on the draft, read on the Gmail Drafts list</div><div class="ar">→</div>
+<div class="st"><b>5 Under cap</b>&lt; 50 cold emails today</div>
+</div>
+<div class="box warn"><span class="label">Never automatic</span>Replies about interviews, offers, salary, contracts, visa or legal questions are always A/B/C drafts for <code>/pfe-send</code>. And remember: <b>an email that went out cannot be unsent.</b></div>
+<div class="box"><span class="label">Unpaid or low-paid offers (10 Oct 2026)</span>You have no personal or {{SCHOOL}} funds. A host that would take you unpaid, or for a very low allowance, is negotiated, never declined, and no draft says you fund yourself. The drafts first look up what that position pays in that country (or Europe) and the anchors: the visa proof of means (Spain about 600 EUR a month), the legal intern minimum (France about 630 EUR a month in 2026), grants such as Erasmus+ KA171. Then they ask for one concrete monthly figure, up to the average plus 200 to 300 EUR when the host has the means, tied to an outside requirement ("The Spanish consulate asks for proof of about 600 euros per month..."), with alternatives: partial allowance, housing, a grant, a project contract. The report lists the figures and their sources.</div>
+
+<h3>Portal forms</h3>
+<p>Filled from <code>00_profile\FORM_ANSWERS.md</code> and submitted without asking. Saved choices (the setup asks them once): email always <b>{{GMAIL_ACCOUNT}}</b>; grades only as <b>{{GRADES_EN}}</b>; gender, date of birth, postal address, salary wording and diversity default as you answered (or NEEDS_ANSWER); {{NATIONALITY}}, needs a visa, handles it with the host's letter; {{SCHOOL}} signs the internship agreement; available {{PFE_WINDOW}}, 26 weeks.</p>
+<table>
+<tr><th>The form asks for</th><th>What happens</th></tr>
+<tr><td>Anything answerable truthfully from FORM_ANSWERS.md</td><td>Filled and submitted.</td></tr>
+<tr><td>Passport/ID number or upload, GPA, a numeric salary, postal code, a legal visa declaration, or anything else not in the file</td><td>Not submitted. Row goes to blocked.csv as <b>NEEDS_ANSWER</b> with the exact question.</td></tr>
+<tr><td>CAPTCHA, account creation, a login you are not signed in to, LinkedIn Easy Apply, Indeed Apply</td><td>Never attempted. Row goes to blocked.csv as <b>BLOCKED</b>.</td></tr>
+</table>
+
+<h3>Holds: stopping one company</h3>
+<p><code>02_tracker\holds.csv</code> lists rows nothing automatic may send to or submit. Only you remove lines. Two holds are automatic and need no line: every other row of a company where you have an interview or offer, and any address already emailed once. Never apply to {{EXCLUDED_ORGS}}.</p>
+
+<h3>Rules that never change</h3>
+<ul>
+<li>Never invent a contact, address, deadline or result; never build an email address from a pattern.</li>
+<li>Your own work stays separate from team work in every document.</li>
+<li>Grades only as {{GRADES_EN}}, nothing else: no other mark, average or exact rank.</li>
+<li>Maximum 50 cold emails a day; portals carry the volume.</li>
+</ul>
+
+<h2 class="newpage">9. What can go wrong, and how to fix it</h2>
+<table>
+<tr><th style="width:28%">You notice</th><th style="width:27%">Why</th><th>Fix</th></tr>
+<tr><td>A step of the setup or a guide is unclear or does not work</td><td>Each step assumes the one before it worked.</td><td>Copy the step, type <code>/ask-me</code> in Claude Code, a space, paste it. Claude does it if it can, or explains it again in simpler words. Before Claude Code works, paste it at claude.ai.</td></tr>
+<tr><td><code>preflight.py</code> lists problems</td><td>A missing tool, Chrome profile or extension.</td><td>Fix what it names (section 3, "What no file can carry").</td></tr>
+<tr><td>Applier report: "SESSION EXPIRED: GMAIL"</td><td>Google wants you to sign in again in Chrome.</td><td>Open Gmail in the {{SCHOOL}} Chrome profile and sign in. Claude never types passwords.</td></tr>
+<tr><td>Hunter keeps hunting the same country</td><td>Normal: it stays until the country is exhausted.</td><td>To move on now, tell Claude "mark &lt;country&gt; exhausted in country_priority.csv". To reorder, "put &lt;country&gt; before &lt;country&gt;".</td></tr>
+<tr><td>A run stopped part way</td><td>Plan usage limit reached, or the session filled up. Runs have no limit of their own, so big runs can reach it.</td><td>Run the same command again after the usage window resets. Rows are saved one by one; the Applier resumes from its PROGRESS file.</td></tr>
+<tr><td>Many rows BLOCKED "LOGIN_WALL" / "SESSION EXPIRED"</td><td>A site logged you out, or Claude uses another Chrome profile.</td><td>Log in again in Chrome. <code>/chrome</code> → pick your campaign profile. Ask Claude to retry those rows.</td></tr>
+<tr><td>Chrome actions fail, "extension not connected"</td><td>The extension is paused, or Claude Code is attached to another Chrome profile.</td><td>Check the extension in "{{CHROME_PROFILE}}": On all sites, Act without asking. In Claude Code: <code>/chrome</code> → Enabled by default, and pick the browser of {{CHROME_PROFILE}}.</td></tr>
+<tr><td>Drafts land in the wrong Gmail account</td><td>Wrong <code>/mail/u/N/</code>.</td><td>Find which u/N is the {{SCHOOL}} account; tell Claude "Gmail compose is u/N".</td></tr>
+<tr><td>"Leave site?" in Gmail, run stuck</td><td>Left a compose window while uploading.</td><td>Click it yourself; delete duplicate half-built drafts.</td></tr>
+<tr><td>"Permission denied" in a log</td><td>Tool missing from the allow list.</td><td>Add it to <code>"allow"</code> in settings.json (one allow block only, commas between lines).</td></tr>
+<tr><td>Someone refers you to a colleague</td><td>The reply gives a name and an address.</td><td>Nothing: Inbox adds a row, the Applier emails that person first and cites the referrer (not for auto-replies, or if they refused). A held company waits. A name with no address goes on your to-do list.</td></tr>
+<tr><td>An email bounced</td><td>Dead address.</td><td>Nothing: Inbox notes it, Checker finds a new address.</td></tr>
+<tr><td>A wrong or duplicate email went out</td><td>Rows under different domains, or a missing hold.</td><td>Add a hold now. Tell Claude; it notes it and can draft a short correction for <code>/pfe-send</code>.</td></tr>
+<tr><td>An interview invitation arrived</td><td>Good news.</td><td>Answer in <code>/pfe-send</code>, then <code>/pfe-interview-prep &lt;email&gt;</code>. Same-company rows are held automatically.</td></tr>
+<tr><td>Letters sound generic</td><td>Quality drift.</td><td>Read a few letters in <code>04_outbound</code>; tell Claude exactly what is wrong.</td></tr>
+<tr><td>build.py: BANNED, or pages=2</td><td>Banned word, em dash, too long.</td><td>Applier rewrites and rebuilds by itself; persistent failures appear in the report.</td></tr>
+<tr><td>PermissionError on tracker.csv</td><td>Excel or OneDrive locking it.</td><td>Close Excel. Never open tracker.csv during a run; read tracker.xlsx.</td></tr>
+<tr><td>Rows look wrong or vanished</td><td>A bad write.</td><td>Every write left a copy in <code>02_tracker\backups\</code>. Say "restore tracker from the backup before &lt;time&gt;". Never edit the CSV by hand.</td></tr>
+<tr><td><code>/pfe-</code> commands missing</td><td>Claude Code opened in another folder.</td><td><code>cd</code> into <code>{{WORKSPACE}}</code>, then <code>claude --chrome</code>.</td></tr>
+<tr><td><code>python</code> opens the Store</td><td>Python not on PATH.</td><td>Use the full path (section 10).</td></tr>
+<tr><td><code>!</code> command: "file does not exist"</td><td>Backslashes.</td><td>Use forward slashes.</td></tr>
+<tr><td>Indeed tools unavailable</td><td>Indeed connector failed.</td><td>Hunter falls back to indeed.* in Chrome. Reconnect on claude.ai → Connectors.</td></tr>
+<tr><td>Word dialog or frozen build</td><td>Word is stuck.</td><td>Close the dialog; end WINWORD.EXE in Task Manager.</td></tr>
+<tr><td>A disabled plugin is needed</td><td>Disabled on purpose.</td><td><code>claude plugin enable &lt;name&gt;@synced</code></td></tr>
+</table>
+
+<h2 class="newpage">10. Reference</h2>
+<h3>Folder map (<code>{{WORKSPACE}}\</code>)</h3>
+<table>
+<tr><th>Path</th><th>What it is</th></tr>
+<tr><td><code>CLAUDE.md</code></td><td>Rules for every session (one merged rule set, version 24; read-only in a locked install). AGENTS.md is the Codex copy.</td></tr>
+<tr><td><code>.claude\commands\</code></td><td>The 9 slash commands (eight /pfe-, /ask-me), read-only. The author's own campaign also has /forever and /magic.</td></tr>
+<tr><td><code>.claude\settings.json</code></td><td>Permissions.</td></tr>
+<tr><td><code>00_profile\</code></td><td>PROFILE, DEFENSIBLE_CLAIMS, TRACKS, KEYWORDS, FORM_ANSWERS, personalisation_map.json, interview_deck\ (build_deck.js, profile_deck.json, specs).</td></tr>
+<tr><td><code>01_sources\</code></td><td>Source registry, {{SCHOOL}} registers, host patterns.</td></tr>
+<tr><td><code>02_tracker\</code></td><td>tracker.csv (truth), next_actions.csv (what you must do yourself: type, due date, priority, open/done/dropped; first sheet of tracker.xlsx, since 22 Oct 2026), waiting_list.csv (applications with no reply yet: waiting, follow_up or followed_up; since 31 Oct 2026), interviews.csv, offers.csv, responses.csv, seen.csv, blocked.csv, holds.csv, tracker.xlsx (read-only view), tracker_tools.py, unblock_tools.py, backups\.</td></tr>
+<tr><td><code>03_documents\</code></td><td>CV_MASTER_V2 (source of every tailored CV), LETTER_MASTER.</td></tr>
+<tr><td><code>04_outbound\&lt;ID&gt;\</code></td><td>Each row's CV, letter, email.md, notes.md. Generator: <code>_gen\run34\build.py</code>.</td></tr>
+<tr><td><code>05_reports\</code></td><td>Every run's report.</td></tr>
+<tr><td><code>scheduler\</code></td><td>gate.py, preflight.py, snapshot.py (helpers you run by hand; nothing is scheduled).</td></tr>
+<tr><td><code>..\interviews\</code>, <code>..\my documents\</code>, <code>..\guides\</code></td><td>One folder per interview; your source documents; the runbook and guides.</td></tr>
+<tr><td><code>..\sniper\</code></td><td>The transfer package: setup prompt, kit, runbook, guides, build sources. Deleted for good at the end of the setup; only the author keeps it (and <code>/forever</code> keeps it in step).</td></tr>
+<tr><td><code>..\archive\</code></td><td>Rule snapshots and parked files, never edited.</td></tr>
+</table>
+
+<h3>Control commands (type in Claude Code)</h3>
+<table>
+<tr><th>To</th><th>Type</th></tr>
+<tr><td>Check a row count, then a run</td><td><code>/pfe-checker ALL</code>, <code>/pfe-applier 15 email 10 portal</code>, <code>/pfe-hunter Portugal</code></td></tr>
+<tr><td>Which commands have work</td><td><code>! "%LOCALAPPDATA%/Programs/Python/Python312/python.exe" scheduler/gate.py</code></td></tr>
+<tr><td>Tracker counts</td><td><code>! cd 02_tracker && "%LOCALAPPDATA%/Programs/Python/Python312/python.exe" tracker_tools.py summary</code></td></tr>
+<tr><td><b>Stop everything</b></td><td>Do not start a command. Nothing runs by itself.</td></tr>
+</table>
+
+<h3>The settings.json that works</h3>
+<pre>{
+  "permissions": {
+    "allow": [
+      "Bash", "PowerShell", "Read", "Write", "Edit", "Glob", "Grep",
+      "WebSearch", "WebFetch", "Skill", "Agent", "Task",
+      "mcp__claude-in-chrome", "mcp__claude_ai_Gmail",
+      "mcp__claude_ai_Google_Drive", "mcp__claude_ai_Google_Calendar",
+      "mcp__claude_ai_Indeed",
+      "mcp__claude_ai_Gmail__send_message", "mcp__claude_ai_Gmail__reply"
+    ],
+    "ask": [ "mcp__claude_ai_Gmail__forward" ],
+    "deny": [
+      "mcp__claude_ai_Gmail__trash_message", "mcp__claude_ai_Gmail__trash_thread",
+      "mcp__claude_ai_Gmail__delete_label", "mcp__claude_ai_Gmail__mark_message_spam",
+      "mcp__claude_ai_Gmail__mark_thread_spam", "mcp__claude_ai_Google_Drive__trash_file",
+      "mcp__claude_ai_Google_Drive__share_file"
+    ]
+  },
+  "env": { "PYTHONUTF8": "1" }
+}</pre>
+
+<h3>Key facts</h3>
+<table>
+<tr><td>Python</td><td><code>{{USER_HOME}}\AppData\Local\Programs\Python\Python312\python.exe</code> (set PYTHONUTF8=1)</td></tr>
+<tr><td>Claude Code</td><td><code>{{USER_HOME}}\.local\bin\claude.exe</code></td></tr>
+<tr><td>Gmail account used to send</td><td>{{GMAIL_ACCOUNT}} (label <code>{{GMAIL_LABEL}}</code>)</td></tr>
+<tr><td>Chrome profile</td><td><code>--profile-directory="{{CHROME_PROFILE}}"</code> ({{SCHOOL}} account, has the extension)</td></tr>
+<tr><td>Run size</td><td>No row, search, helper or spending limit; the tracker is updated after every row</td></tr>
+<tr><td>Country order</td><td><code>01_sources\country_priority.csv</code> (15 ranked countries, status per country)</td></tr>
+<tr><td>Email cap</td><td>50 cold emails per day; portals unlimited</td></tr>
+</table>
+<p class="small">The highest-value move is still manual: write to the {{SCHOOL}} classmates listed in the registers who did their PFE at your target hosts. An introduction beats a cold email.</p>
+</body></html>

@@ -1,0 +1,448 @@
+{
+ "_about": "EXAMPLE, replace: the shared slides of your interview deck (build_deck.js). Only facts from PROFILE.md and DEFENSIBLE_CLAIMS.md. Every text is {en, fr}. Layouts: two_states, signal_chart, process, three_numbers.",
+ "author": "{{FULL_NAME}}",
+ "title_sub": {
+  "en": "{{FULL_NAME}}\n{{DEGREE}}, {{SCHOOL}}, {{UNIVERSITY}}",
+  "fr": "{{FULL_NAME}}\n{{DEGREE}}, {{SCHOOL}}, {{UNIVERSITY}}"
+ },
+ "about": {
+  "title": {
+   "en": "EXAMPLE: one line about you",
+   "fr": "EXAMPLE: one line about you"
+  },
+  "stats": {
+   "en": [
+    [
+     "2",
+     "EXAMPLE projects"
+    ],
+    [
+     "3",
+     "EXAMPLE internships"
+    ],
+    [
+     "1",
+     "EXAMPLE result"
+    ]
+   ],
+   "fr": [
+    [
+     "2",
+     "EXAMPLE projects"
+    ],
+    [
+     "3",
+     "EXAMPLE internships"
+    ],
+    [
+     "1",
+     "EXAMPLE result"
+    ]
+   ]
+  },
+  "foot": {
+   "en": "{{SCHOOL}}, {{UNIVERSITY}}. Graduating {{GRADUATION}}.",
+   "fr": "{{SCHOOL}}, {{UNIVERSITY}}. Graduating {{GRADUATION}}."
+  },
+  "notes": {
+   "en": "EXAMPLE: what you say on the about slide.",
+   "fr": "EXAMPLE: what you say on the about slide."
+  }
+ },
+ "projects": {
+  "projectA": {
+   "slides": [
+    {
+     "layout": "process",
+     "note_key": "projectA1",
+     "highlight": 2,
+     "eyebrow": {
+      "en": "EXAMPLE place  ·  dates  ·  team",
+      "fr": "EXAMPLE place  ·  dates  ·  team"
+     },
+     "title": {
+      "en": "EXAMPLE: from raw material to result",
+      "fr": "EXAMPLE: from raw material to result"
+     },
+     "steps": {
+      "en": [
+       [
+        "Step 1",
+        "EXAMPLE"
+       ],
+       [
+        "Step 2",
+        "EXAMPLE"
+       ],
+       [
+        "Step 3",
+        "EXAMPLE"
+       ],
+       [
+        "Step 4",
+        "EXAMPLE"
+       ],
+       [
+        "Step 5",
+        "EXAMPLE"
+       ]
+      ],
+      "fr": [
+       [
+        "Step 1",
+        "EXAMPLE"
+       ],
+       [
+        "Step 2",
+        "EXAMPLE"
+       ],
+       [
+        "Step 3",
+        "EXAMPLE"
+       ],
+       [
+        "Step 4",
+        "EXAMPLE"
+       ],
+       [
+        "Step 5",
+        "EXAMPLE"
+       ]
+      ]
+     },
+     "results": {
+      "en": [
+       [
+        "EXAMPLE 1",
+        "result"
+       ],
+       [
+        "EXAMPLE 2",
+        "result"
+       ],
+       [
+        "EXAMPLE 3",
+        "result"
+       ]
+      ],
+      "fr": [
+       [
+        "EXAMPLE 1",
+        "result"
+       ],
+       [
+        "EXAMPLE 2",
+        "result"
+       ],
+       [
+        "EXAMPLE 3",
+        "result"
+       ]
+      ]
+     },
+     "caption": {
+      "en": "EXAMPLE: what I did and what the team did.",
+      "fr": "EXAMPLE: what I did and what the team did."
+     },
+     "notes": {
+      "en": "EXAMPLE notes.",
+      "fr": "EXAMPLE notes."
+     }
+    },
+    {
+     "layout": "three_numbers",
+     "note_key": "projectA2",
+     "take_key": "ftir_take",
+     "eyebrow": {
+      "en": "EXAMPLE: the part I led",
+      "fr": "EXAMPLE: the part I led"
+     },
+     "title": {
+      "en": "EXAMPLE: reading the measurement",
+      "fr": "EXAMPLE: reading the measurement"
+     },
+     "numbers": {
+      "en": [
+       [
+        "100",
+        "unit",
+        "EXAMPLE finding"
+       ],
+       [
+        "200",
+        "unit",
+        "EXAMPLE finding"
+       ],
+       [
+        "300",
+        "unit",
+        "EXAMPLE finding"
+       ]
+      ],
+      "fr": [
+       [
+        "100",
+        "unit",
+        "EXAMPLE finding"
+       ],
+       [
+        "200",
+        "unit",
+        "EXAMPLE finding"
+       ],
+       [
+        "300",
+        "unit",
+        "EXAMPLE finding"
+       ]
+      ]
+     },
+     "notes": {
+      "en": "EXAMPLE notes.",
+      "fr": "EXAMPLE notes."
+     }
+    }
+   ]
+  },
+  "projectB": {
+   "slides": [
+    {
+     "layout": "two_states",
+     "note_key": "projectB1",
+     "eyebrow": {
+      "en": "EXAMPLE place  ·  dates",
+      "fr": "EXAMPLE place  ·  dates"
+     },
+     "title": {
+      "en": "EXAMPLE: before and after",
+      "fr": "EXAMPLE: before and after"
+     },
+     "states": [
+      {
+       "name": "yel",
+       "color": "F2C94C",
+       "label": {
+        "en": "before",
+        "fr": "before"
+       }
+      },
+      {
+       "name": "pink",
+       "color": "E86A92",
+       "label": {
+        "en": "after",
+        "fr": "after"
+       }
+      }
+     ],
+     "facts": {
+      "en": [
+       [
+        "1",
+        "EXAMPLE fact"
+       ],
+       [
+        "2",
+        "EXAMPLE fact"
+       ],
+       [
+        "3",
+        "EXAMPLE fact"
+       ]
+      ],
+      "fr": [
+       [
+        "1",
+        "EXAMPLE fact"
+       ],
+       [
+        "2",
+        "EXAMPLE fact"
+       ],
+       [
+        "3",
+        "EXAMPLE fact"
+       ]
+      ]
+     },
+     "caption": {
+      "en": "EXAMPLE caption.",
+      "fr": "EXAMPLE caption."
+     },
+     "notes": {
+      "en": "EXAMPLE notes.",
+      "fr": "EXAMPLE notes."
+     }
+    },
+    {
+     "layout": "signal_chart",
+     "note_key": "projectB2",
+     "eyebrow": {
+      "en": "EXAMPLE: the quantitative side",
+      "fr": "EXAMPLE: the quantitative side"
+     },
+     "title": {
+      "en": "EXAMPLE: choosing the signal",
+      "fr": "EXAMPLE: choosing the signal"
+     },
+     "chart": {
+      "name": "R²",
+      "labels": {
+       "en": [
+        "Signal A",
+        "Signal B",
+        "Signal C"
+       ],
+       "fr": [
+        "Signal A",
+        "Signal B",
+        "Signal C"
+       ]
+      },
+      "values": [
+       0.99,
+       0.95,
+       0.9
+      ],
+      "min": 0.7,
+      "max": 1.0,
+      "format": "0.00"
+     },
+     "big": [
+      {
+       "value": {
+        "en": "1.0 unit",
+        "fr": "1.0 unit"
+       },
+       "label": {
+        "en": "EXAMPLE",
+        "fr": "EXAMPLE"
+       }
+      },
+      {
+       "value": {
+        "en": "2.0 unit",
+        "fr": "2.0 unit"
+       },
+       "label": {
+        "en": "EXAMPLE",
+        "fr": "EXAMPLE"
+       }
+      }
+     ],
+     "caption": {
+      "en": "EXAMPLE caption.",
+      "fr": "EXAMPLE caption."
+     },
+     "notes": {
+      "en": "EXAMPLE notes.",
+      "fr": "EXAMPLE notes."
+     }
+    }
+   ]
+  }
+ },
+ "instruments": {
+  "title": {
+   "en": "What I have run, and where",
+   "fr": "What I have run, and where"
+  },
+  "cards": {
+   "en": [
+    [
+     "EXAMPLE 1",
+     "where"
+    ],
+    [
+     "EXAMPLE 2",
+     "where"
+    ],
+    [
+     "EXAMPLE 3",
+     "where"
+    ],
+    [
+     "EXAMPLE 4",
+     "where"
+    ],
+    [
+     "EXAMPLE 5",
+     "where"
+    ],
+    [
+     "EXAMPLE 6",
+     "where"
+    ],
+    [
+     "EXAMPLE 7",
+     "where"
+    ]
+   ],
+   "fr": [
+    [
+     "EXAMPLE 1",
+     "where"
+    ],
+    [
+     "EXAMPLE 2",
+     "where"
+    ],
+    [
+     "EXAMPLE 3",
+     "where"
+    ],
+    [
+     "EXAMPLE 4",
+     "where"
+    ],
+    [
+     "EXAMPLE 5",
+     "where"
+    ],
+    [
+     "EXAMPLE 6",
+     "where"
+    ],
+    [
+     "EXAMPLE 7",
+     "where"
+    ]
+   ]
+  },
+  "notes": {
+   "en": "EXAMPLE notes.",
+   "fr": "EXAMPLE notes."
+  }
+ },
+ "practical": {
+  "en": [
+   [
+    "{{PFE_WINDOW}}",
+    "26 weeks, full time"
+   ],
+   [
+    "Agreement",
+    "signed by {{SCHOOL}}"
+   ],
+   [
+    "Visa",
+    "I handle it, with your supporting letter"
+   ]
+  ],
+  "fr": [
+   [
+    "{{PFE_WINDOW}}",
+    "26 weeks, full time"
+   ],
+   [
+    "Agreement",
+    "signed by {{SCHOOL}}"
+   ],
+   [
+    "Visa",
+    "I handle it, with your supporting letter"
+   ]
+  ]
+ },
+ "contact_line": "{{GMAIL_ACCOUNT}}  ·  {{PHONE}}"
+}
