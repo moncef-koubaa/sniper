@@ -222,7 +222,7 @@ P7 "Superconducting Materials: From Synthesis Routes to Structural Characterizat
 |---|---|---|
 | HPLC, TLC (CCM), MS, NMR (RMN), FTIR, UV-Vis, XRD, SEM (MEB), TEM (MET) | listed in every CV "Techniques de laboratoire"; no task bullet | CV01–CV13 |
 | Raman, FTIR, XRD, SEM, TEM | studied in P7 (literature review) | CV03 |
-| Cyclic voltammetry | listed in skills; CL03 "familiar with" | CV02, CL03 |
+| Cyclic voltammetry (voltamétrie cyclique) | listed in skills; CL03 "familiar with" | CV02, CV04, CL03 |
 | UV-Vis, Soxhlet extraction, radical polymerisation | P6 (status unresolved, Q-01) | CV02, CV13 |
 | Sol-gel synthesis | claimed "hands-on" only in CL03, no CV evidence | CL03 → Q-02 |
 
